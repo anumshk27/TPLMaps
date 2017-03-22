@@ -33,3 +33,7 @@ end
 cd <path-to-project>
 ```
 
+6. Run the `pod install` command. This will install the APIs specified in the `Podfile`, along with any dependencies they may have.
+
+7. Close Xcode, and then open (double-click) your project's `.xcworkspace` file to launch Xcode. From this time onwards, you must use the `.xcworkspace` file to open the project.
+
