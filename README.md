@@ -77,13 +77,35 @@ Now, add or update a few methods inside your app's default ViewController to cre
     circle.transparent = YES;
     circle.fillColor = [UIColor purpleColor];
     circle.outlineColor = [UIColor yellowColor];
-    circle.zIndex = circleIndex;
+    circle.zIndex = 1;
     [mapView drawCircle:circle];
 
 ```
 
 #### Add Polyline On MapView
 ```objective-c
+
+  int pointCount = (int)[coordinates count];
+    CLLocationCoordinate2D *coordinateArray = (CLLocationCoordinate2D *)malloc(pointCount * sizeof(CLLocationCoordinate2D));
+    
+    for (int i = 0; i < pointCount; ++i) {
+        
+        double lat = [coordinates[i][@"lat"] doubleValue];
+        double lon = [coordinates[i][@"lon"] doubleValue];
+        CLLocation *location = [[CLLocation alloc] initWithLatitude:lat longitude:lon];
+        coordinateArray[i] = [location coordinate];
+        
+    }
+
+
+    TPLPolyLine * polyline = [TPLPolyLine polylineWithCoordinates:coordinateArray count:pointCount];
+    polyline.outlineWidth=1;
+    polyline.transparent = NO;
+    polyline.lineWidth = 5;
+    polyline.outlineColor = [UIColor purpleColor];
+    polyline.fillColor = [UIColor colorWithRed:255.f/255.f green:111.f/255.f blue:105.f/255.f alpha:.1f];
+    [mapView drawPolyLine:polyline];
+
 
 ```
 #### Add Polygon On MapView
