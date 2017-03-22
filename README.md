@@ -4,7 +4,7 @@ TPL Maps, a product of TPL Trakker Ltd. is Pakistan’s first indigenous digital
 ## Getting Started
 Before you can begin working with TPL Maps on iOS, you need to download the TPL Maps SDK for iOS.
 
-#### Step 1: Get the latest version of Xcode
+### Step 1: Get the latest version of Xcode
 To build a project using the Google Maps SDK for iOS, you need **version 7.3** or later of [Xcode](https://developer.apple.com/xcode/).
 
 ### Step 2: Install the SDK
@@ -16,13 +16,13 @@ If you don't already have the CocoaPods tool, install it on macOS by running the
 
 > sudo gem install cocoapods
 
-Create a Podfile for the TPLMaps SDK for iOS and use it to install the API and its dependencies:
+Create a `Podfile` for the TPLMaps SDK for iOS and use it to install the API and its dependencies:
 
 1. If you don't have an Xcode project yet, create one now and save it to your local machine. (If you're new to iOS development, create a Single View Application.)
 
-2. Create a file named Podfile in your project directory. This file defines your project's dependencies. 
+2. Create a file named `Podfile` in your project directory. This file defines your project's dependencies. 
 
-3. Edit the Podfile and add your dependencies. Here is an example which includes the dependencies you need for the TPLMaps SDK for iOS:
+3. Edit the `Podfile` and add your dependencies. Here is an example which includes the dependencies you need for the TPLMaps SDK for iOS:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
