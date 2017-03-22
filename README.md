@@ -26,9 +26,9 @@ pod 'TPLMaps'
 end
 ```
 
-4. Save the >Podfile
+4. Save the `Podfile`
 
-5. Open a terminal and go to the directory containing the >Podfile:
+5. Open a terminal and go to the directory containing the `Podfile`:
 ```ruby
 cd <path-to-project>
 ```
