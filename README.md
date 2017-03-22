@@ -6,3 +6,9 @@ Before you can begin working with TPL Maps on iOS, you need to download the TPL 
 The TPLMap SDK for iOS is available as a CocoaPods pod. CocoaPods is an open source dependency manager for Swift and Objective-C Cocoa projects.
 
 If you don't already have the CocoaPods tool, install it on macOS by running the following command from the terminal. For details, see the [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+
+> sudo gem install cocoapods
+
+Create a Podfile for the Google Maps SDK for iOS and use it to install the API and its dependencies:
+
+1. Get current/continious/frequent location and get current geocode/address with simple API call. 
