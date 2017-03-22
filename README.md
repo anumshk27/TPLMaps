@@ -68,6 +68,27 @@ Now, add or update a few methods inside your app's default ViewController to cre
 
 ```
 
+#### Add Circle On MapView
+```objective-c
+    // CLLocationCoordinate2D coordinates
+    // CLLocationDistance radius
+    TPLCircle * circle = [TPLCircle circleWithCenterCoordinate:coordinates radius:radius];
+    circle.outlineWidth=5;
+    circle.transparent = YES;
+    circle.fillColor = [UIColor purpleColor];
+    circle.outlineColor = [UIColor yellowColor];
+    circle.zIndex = circleIndex;
+    [mapView drawCircle:circle];
 
+```
+
+#### Add Polyline On MapView
+```objective-c
+
+```
+#### Add Polygon On MapView
+```objective-c
+
+```
 
 
