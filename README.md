@@ -85,6 +85,7 @@ Now, add or update a few methods inside your app's default ViewController to cre
 #### Add Polyline On MapView
 ```objective-c
 
+  //NSArray * coordinates; contains latitude and longitude values in array.
   int pointCount = (int)[coordinates count];
     CLLocationCoordinate2D *coordinateArray = (CLLocationCoordinate2D *)malloc(pointCount * sizeof(CLLocationCoordinate2D));
     
@@ -110,7 +111,14 @@ Now, add or update a few methods inside your app's default ViewController to cre
 ```
 #### Add Polygon On MapView
 ```objective-c
-
+    
+    TPLPolygon *polygon = [TPLPolygon polygonWithCoordinates:coordinateArray count:pointCount];
+    polygon.outlineWidth=5;
+    polygon.fillColor = [UIColor redColor];
+    polygon.transparent = NO;
+    polygon.outlineColor = [UIColor colorWithRed:244.0/255.0 green:66.0/255.0 blue:226.0/255.0 alpha:1.0];
+    [mapView drawPolygon:polygon];
+    
 ```
 
 
