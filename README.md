@@ -9,7 +9,7 @@ If you don't already have the CocoaPods tool, install it on macOS by running the
 
 > sudo gem install cocoapods
 
-Create a Podfile for the Google Maps SDK for iOS and use it to install the API and its dependencies:
+Create a Podfile for the TPLMaps SDK for iOS and use it to install the API and its dependencies:
 
 1. If you don't have an Xcode project yet, create one now and save it to your local machine. (If you're new to iOS development, create a Single View Application.)
 
