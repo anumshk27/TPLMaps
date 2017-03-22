@@ -49,6 +49,26 @@ The code below demonstrates how to add a simple map to an existing ViewControlle
 
 Now, add or update a few methods inside your app's default ViewController to create and initialize an instance of `TPLMapView`.
 
+```objective-c
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    TPLMapView * mapView = [[TPLMapView alloc] initWithFrame:self.view.frame];
+    mapView.showsUserLocation = YES;
+    mapView.myLocationButtonEnabled = YES;
+    [self.view addSubview:mapView];
+
+    TPLMarker * marker = [TPLMarker markerWithPosition:CLLocationCoordinate2DMake(33.522484, 73.094552)];
+    marker.title = @"TPL Trakker";
+    marker.subTitle = @"Rawalpindi Office";
+    [mapView addMarker:marker];
+    
+}
+
+```
+
 
 
 
