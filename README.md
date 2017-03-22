@@ -17,7 +17,7 @@ Create a Podfile for the TPLMaps SDK for iOS and use it to install the API and i
 
 3. Edit the Podfile and add your dependencies. Here is an example which includes the dependencies you need for the TPLMaps SDK for iOS:
 
->
->
->
->
+>source 'https://github.com/CocoaPods/Specs.git'
+>target 'YOUR_APPLICATION_TARGET_NAME_HERE' do
+>  pod 'TPLMaps'
+>end
