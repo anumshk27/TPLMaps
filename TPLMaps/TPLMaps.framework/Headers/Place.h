@@ -3,7 +3,7 @@
 //  TPLMapsSearch
 //
 //  TPL Maps SDK for iOS 17/02/2017.
-//  Copyright © 2017 Muhammad Anum. All rights reserved.
+//  Copyright © 2017 TPL Maps. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

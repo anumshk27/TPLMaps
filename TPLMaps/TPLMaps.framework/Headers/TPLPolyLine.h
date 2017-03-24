@@ -2,7 +2,7 @@
 //  TPLPloyLine.h
 //  TPLMapsSDK
 //
-//  TPL Maps SDK for iOS 10/02/2017.
+//  Copyright © 2017 TPL Maps. All rights reserved.
 //
 //
 
@@ -16,7 +16,7 @@
 /** The Width of the line in screen points.Default is 2 */
 @property (nonatomic, assign) CGFloat lineWidth;
 
-/** The UIColor used to render the polyline. if empty or nil default color will be Blue */
+/** The UIColor used to render the polyline. if not set than default color will be Blue */
 @property (nonatomic, strong) UIColor *outlineColor;
 
 /** The outline width of the line in screen points.Default is 2 */
@@ -25,7 +25,7 @@
 /** The UIColor used to fill the shape’s path */
 @property (nonatomic, strong) UIColor *fillColor;
 
-/** Specifies the item’s position on the z axis. Min 500 Max 2000 */
+/** Specifies the item’s position on the z axis. */
 @property(nonatomic) int zIndex;
 
 /** A pointer to the array of coordinates that define the path. */
@@ -40,7 +40,7 @@
 
 
 /*! A pointer to the array of coordinates that define the path.
- *  \param CLLocationCoordinate2D The array of coordinates defining the shape.
+ *  \param coords The array of coordinates defining the shape.
  *  \param count The number of items in the coords array.
  */
 + (instancetype)polylineWithCoordinates:(CLLocationCoordinate2D *)coords count:(NSUInteger)count;

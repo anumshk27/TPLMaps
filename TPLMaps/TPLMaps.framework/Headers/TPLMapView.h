@@ -2,7 +2,7 @@
 //  TPLMapView.h
 //  TPLMapsSDK
 //
-//  Created by Muhammad Sajad on 02/02/2017.
+//  Copyright © 2017 TPL Maps. All rights reserved.
 //
 //
 
@@ -221,7 +221,6 @@ NS_ASSUME_NONNULL_BEGIN
  * Enum provide MapView Mode Standard or Night.
  */
 @property (nonatomic) MapViewMode mapMode;
-
 /**
  * A Boolean indicating whether the map displays point-of-interest information.
  */
@@ -242,6 +241,10 @@ NS_ASSUME_NONNULL_BEGIN
  A Boolean indicating whether the map displays zoom controls.
  */
 @property(nonatomic) BOOL zoomControlsEnabled;
+/**
+ A Boolean indicating whether the map displays Road names.
+ */
+@property(nonatomic) BOOL showRoadNames;
 
 @property (nonatomic) int maximumZoom;
 @property (nonatomic) int minimumZoom;

@@ -2,7 +2,7 @@
 //  TPLPloyLine.h
 //  TPLMapsSDK
 //
-//  TPL Maps SDK for iOS 10/02/2017.
+//  Copyright © 2017 TPL Maps. All rights reserved.
 //
 //
 
@@ -34,7 +34,10 @@
 @property (nonatomic, assign) BOOL transparent;
 
 
-
+/*! A pointer to the array of coordinates that define the path.
+ *  \param coord The center point of the circle, specified as a latitude and longitude value.
+ *  \param radius The radius of the circle, measured in meters from the center point.
+ */
 + (instancetype)circleWithCenterCoordinate:(CLLocationCoordinate2D)coord radius:(CLLocationDistance)radius;
 
 

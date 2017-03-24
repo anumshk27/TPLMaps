@@ -3,14 +3,13 @@
 //  SearchHandlerApi
 //
 //  Created by TPL Maps on 8/31/16.
-//  Copyright © 2016 TPL Maps. All rights reserved.
+//  Copyright © 2017 TPL Maps. All rights reserved.
 //
 
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@class Place;
 
 
 @interface SearchHandler : NSObject  
@@ -23,10 +22,6 @@
  */
 + (void)searchPlaceWithAPIKey:(NSString*)APIkey searchText:(NSString *)searchText place:(CLLocation *)place responseHandler:(void(^)(NSArray *places, NSError *error))responseHandler;
 
-+ (void)cancalSearchPlaces;
-
-
-+(SearchHandler *)sharedSearchHandler;
 
 @end
 
