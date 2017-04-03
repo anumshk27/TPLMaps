@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TPLMaps"
-  s.version      = "1.0"
+  s.version      = "0.1"
   s.summary      = "TPL Maps, a product of TPL Trakker Ltd. is Pakistan’s first indigenous digital mapping solution."
 
   # This description is used to generate tags and improve search results.
@@ -82,7 +82,7 @@ SOFTWARE.
   s.author             = { "TPLMaps" => "tplmaps.dev@gmail.com" }
   # Or just: s.author    = "Muhammad Anum"
   # s.authors            = { "Muhammad Anum" => "anumshk27@gmail.com" }
-  s.social_media_url   = "https://www.facebook.com/TPLMaps/"
+  #s.social_media_url   = "https://www.facebook.com/TPLMaps/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -107,7 +107,7 @@ SOFTWARE.
   
   s.platform = :ios, '8.0'
   s.ios.deployment_target = '8.0'
-  s.source       = { :git => "https://github.com/anumshk27/TPLMaps.git", :tag => '1.0' }
+  s.source       = { :git => "https://github.com/anumshk27/TPLMaps.git", :tag => '0.1' }
   s.ios.vendored_frameworks = 'TPLMaps/TPLMaps.framework'
   s.resource = 'TPLMaps/TPLMaps.bundle'
   s.ios.framework    = 'UIKit', 'CoreLocation', 'SystemConfiguration', 'CFNetwork', 'CoreGraphics' , 'QuartzCore', 'GLKit', 'OpenGLES' 
