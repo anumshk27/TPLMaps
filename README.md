@@ -59,12 +59,19 @@ Now, add or update a few methods inside your app's default ViewController to cre
     mapView.myLocationButtonEnabled = YES;
     [self.view addSubview:mapView];
 
+
+    
+}
+
+```
+
+#### Add Point On MapView
+```objective-c
+
     TPLMarker * marker = [TPLMarker markerWithPosition:CLLocationCoordinate2DMake(33.522484, 73.094552)];
     marker.title = @"TPL Trakker";
     marker.subTitle = @"Rawalpindi Office";
     [mapView addMarker:marker];
-    
-}
 
 ```
 
@@ -120,5 +127,16 @@ Now, add or update a few methods inside your app's default ViewController to cre
     [mapView drawPolygon:polygon];
     
 ```
+#### Controls and Gestures
+```objective-c
+You can enable gesture by setting the delegtes `<TPLMapViewDelegate>`
+
+`scrollGestures` controls whether scroll gestures are enabled or disabled. If enabled, users may swipe to pan the camera.
+`zoomGestures` controls whether zoom gestures are enabled or disabled. If enabled, users may double tap, two-finger tap, or pinch to zoom the camera. Note that double tapping or pinching when scrollGestures are enabled may pan the camera to the specified point.
+`tiltGestures` controls whether tilt gestures are enabled or disabled. If enabled, users may use a two-finger vertical down or up swipe to tilt the camera.
+`rotateGestures` controls whether rotate gestures are enabled or disabled. If enabled, users may use a two-finger rotate gesture to rotate the camera.
+
+```
+
 
 
