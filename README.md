@@ -44,7 +44,7 @@ cd <path-to-project>
 7. Close Xcode, and then open (double-click) your project's `.xcworkspace` file to launch Xcode. From this time onwards, you must use the `.xcworkspace` file to open the project.
 
 ### Step 3: Add a map
-The code below demonstrates how to add a simple map to an existing ViewController. If you're creating a new app, first follow the installation instructions above, and create a new **Single View Application**; disabling **Use Storyboards** but enabling Use **Automatic Reference Counting** (ARC).
+The code below demonstrates how to add a simple map to an existing ViewController. If you're creating a new app, first follow the installation instructions above, and create a new **Single View Application**, Use **Automatic Reference Counting** (ARC).
 
 Now, add or update a few methods inside your app's default ViewController to create and initialize an instance of `TPLMapView`.
 
