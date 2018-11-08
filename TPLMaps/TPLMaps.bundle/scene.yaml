@@ -3,8 +3,9 @@ global:
 
     currentTime: 'day'
     currentVersion: 'high'
-    buildingStatus: true
-    poiStatus: true     
+    buildingStatus: false
+    poiStatus: true
+    sdk_api_key : tmp
 
     colorscheme: 
         #roads
@@ -947,17 +948,23 @@ styles:
 sources:
     local:
         type: MVT
-        url:  http://175.107.206.39:8004/composite/{z}/{x}/{y}.mvt
+        url: http://api.tplmaps.com:8888/tile?layer=composite_en&zoom={z}&x={x}&y={y}
+        url_params:
+            apikey: global.sdk_api_key
         min_zoom: 1
         max_zoom: 17
     local2:
         type: MVT
-        url:  http://175.107.206.39:8003/buildings/{z}/{x}/{y}.mvt
+        url:  http://api.tplmaps.com:8888/tile?layer=buildings_en&zoom={z}&x={x}&y={y}
+        url_params:
+            apikey: global.sdk_api_key
         min_zoom: 14
         max_zoom: 17
     local-pois:
         type: MVT
-        url:  http://175.107.206.39:8004/pois/{z}/{x}/{y}.mvt
+        url:  http://api.tplmaps.com:8888/tile?layer=pois_en&zoom={z}&x={x}&y={y}
+        url_params:
+            apikey: global.sdk_api_key
         min_zoom: 10
         max_zoom: 17
 
@@ -2028,126 +2035,131 @@ layers:
                 width: 2px
     pois:
         data: { source: local-pois }
-        filter: function(){ return global.poiStatus == true}
-        poisiconsandtext:
-            filter: { $zoom: [10,11,12,13,14,15,16,17] , z: [12,13,14,15,16,17,18,19] }
-            draw:
-                icons:
-                    interactive: true
-                    priority: 10
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    sprite: |
-                        function() {
-                            if(feature.s == null)
-                            {
-                              return 'othergeneral';
-                            }
-                            else
-                            {
-                              var str = feature.s;
-                              str = str.replace(/\s+/g,'');
-                              str = str.replace(/\&+/g,'');
-                              str = str.replace(/\/+/g,'');
-                              str = str.replace(/\-+/g,'');
-                              return str.toLowerCase();
-                            }
-                            }
-                    size: [[10, 13px], [20, 20px]]
-                    text:
-                        interactive: true
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        text_source: |
-                            function() {
-                                if (feature.d && feature.d.length > 30) {
-                                    return feature.d.slice(0, 30) + '…';
-                                }
-                                return feature.d;
-                            }
-                        font:
-                            family: sans-serif
-                            fill: global.colorscheme.poi_fill
-                            size: [[10, 12px], [18, 15px]]
-                            stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
+        draw:
+            points:
+                color: black
+                size: 5px
+                priority: 1
+        # filter: function(){ return global.poiStatus == true}
+        # poisiconsandtext:
+        #     filter: { $zoom: [10,11,12,13,14,15,16,17] , z: [12,13,14,15,16,17,18,19] }
+        #     draw:
+        #         icons:
+        #             interactive: true
+        #             priority: 10
+        #             transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+        #             sprite: |
+        #                 function() {
+        #                     if(feature.s == null)
+        #                     {
+        #                       return 'othergeneral';
+        #                     }
+        #                     else
+        #                     {
+        #                       var str = feature.s;
+        #                       str = str.replace(/\s+/g,'');
+        #                       str = str.replace(/\&+/g,'');
+        #                       str = str.replace(/\/+/g,'');
+        #                       str = str.replace(/\-+/g,'');
+        #                       return str.toLowerCase();
+        #                     }
+        #                     }
+        #             size: [[10, 13px], [20, 20px]]
+        #             text:
+        #                 interactive: true
+        #                 transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+        #                 text_source: |
+        #                     function() {
+        #                         if (feature.d && feature.d.length > 30) {
+        #                             return feature.d.slice(0, 30) + '…';
+        #                         }
+        #                         return feature.d;
+        #                     }
+        #                 font:
+        #                     family: sans-serif
+        #                     fill: global.colorscheme.poi_fill
+        #                     size: [[10, 12px], [18, 15px]]
+        #                     stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
 
-        poisiconsandtext-18:
-            filter: { $zoom: [18] , z: [12,13,14,15,16,17,18,19,20] }
-            draw:
-                icons:
-                    interactive: true
-                    priority: 10
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    sprite: |
-                        function() {
-                            if(feature.s == null)
-                            {
-                              return 'othergeneral';
-                            }
-                            else
-                            {
-                              var str = feature.s;
-                              str = str.replace(/\s+/g,'');
-                              str = str.replace(/\&+/g,'');
-                              str = str.replace(/\/+/g,'');
-                              str = str.replace(/\-+/g,'');
-                              return str.toLowerCase();
-                            }
-                            }
-                    size: [[10, 13px], [20, 20px]]
-                    text:
-                        interactive: true
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        text_source: |
-                                function() {
-                                    if (feature.d && feature.d.length > 30) {
-                                        return feature.d.slice(0, 30) + '…';
-                                    }
-                                    return feature.d;
-                                }
-                        font:
-                            family: sans-serif
-                            fill: global.colorscheme.poi_fill
-                            size: [[10, 12px], [18, 15px]]
-                            stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
+        # poisiconsandtext-18:
+        #     filter: { $zoom: [18] , z: [12,13,14,15,16,17,18,19,20] }
+        #     draw:
+        #         icons:
+        #             interactive: true
+        #             priority: 10
+        #             transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+        #             sprite: |
+        #                 function() {
+        #                     if(feature.s == null)
+        #                     {
+        #                       return 'othergeneral';
+        #                     }
+        #                     else
+        #                     {
+        #                       var str = feature.s;
+        #                       str = str.replace(/\s+/g,'');
+        #                       str = str.replace(/\&+/g,'');
+        #                       str = str.replace(/\/+/g,'');
+        #                       str = str.replace(/\-+/g,'');
+        #                       return str.toLowerCase();
+        #                     }
+        #                     }
+        #             size: [[10, 13px], [20, 20px]]
+        #             text:
+        #                 interactive: true
+        #                 transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+        #                 text_source: |
+        #                         function() {
+        #                             if (feature.d && feature.d.length > 30) {
+        #                                 return feature.d.slice(0, 30) + '…';
+        #                             }
+        #                             return feature.d;
+        #                         }
+        #                 font:
+        #                     family: sans-serif
+        #                     fill: global.colorscheme.poi_fill
+        #                     size: [[10, 12px], [18, 15px]]
+        #                     stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
 
-        poisiconsandtext-19:
-            filter: { $zoom: [19,20,21] , z: [12,13,14,15,16,17,18,19,20,21] }
-            draw:
-                icons:
-                    interactive: true
-                    priority: 10
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    sprite: |
-                        function() {
-                            if(feature.s == null)
-                            {
-                              return 'othergeneral';
-                            }
-                            else
-                            {
-                              var str = feature.s;
-                              str = str.replace(/\s+/g,'');
-                              str = str.replace(/\&+/g,'');
-                              str = str.replace(/\/+/g,'');
-                              str = str.replace(/\-+/g,'');
-                              return str.toLowerCase();
-                            }
-                            }
-                    size: [[10, 13px], [20, 20px]]
-                    text:
-                        interactive: true
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        text_source: |
-                                function() {
-                                    if (feature.d && feature.d.length > 30) {
-                                        return feature.d.slice(0, 30) + '…';
-                                    }
-                                    return feature.d;
-                                }
-                        font:
-                            family: sans-serif
-                            fill: global.colorscheme.poi_fill
-                            size: [[10, 12px], [18, 15px]]
-                            stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
+        # poisiconsandtext-19:
+        #     filter: { $zoom: [19,20,21] , z: [12,13,14,15,16,17,18,19,20,21] }
+        #     draw:
+        #         icons:
+        #             interactive: true
+        #             priority: 10
+        #             transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+        #             sprite: |
+        #                 function() {
+        #                     if(feature.s == null)
+        #                     {
+        #                       return 'othergeneral';
+        #                     }
+        #                     else
+        #                     {
+        #                       var str = feature.s;
+        #                       str = str.replace(/\s+/g,'');
+        #                       str = str.replace(/\&+/g,'');
+        #                       str = str.replace(/\/+/g,'');
+        #                       str = str.replace(/\-+/g,'');
+        #                       return str.toLowerCase();
+        #                     }
+        #                     }
+        #             size: [[10, 13px], [20, 20px]]
+        #             text:
+        #                 interactive: true
+        #                 transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+        #                 text_source: |
+        #                         function() {
+        #                             if (feature.d && feature.d.length > 30) {
+        #                                 return feature.d.slice(0, 30) + '…';
+        #                             }
+        #                             return feature.d;
+        #                         }
+        #                 font:
+        #                     family: sans-serif
+        #                     fill: global.colorscheme.poi_fill
+        #                     size: [[10, 12px], [18, 15px]]
+        #                     stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
 
     search-pois:
         data: { source: search-pois }

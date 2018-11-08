@@ -2,7 +2,7 @@
 //  TPLPath.h
 //  TPLMapsSDK
 //
-//  Copyright © 2017 TPL Maps. All rights reserved.
+//  Created by Muhammad Sajad on 15/02/2017.
 //
 //
 

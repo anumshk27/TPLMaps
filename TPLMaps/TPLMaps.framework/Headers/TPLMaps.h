@@ -25,7 +25,11 @@ FOUNDATION_EXPORT const unsigned char TPLMapsVersionString[];
 #import <TPLMaps/TPLMarker.h>
 #import <TPLMaps/TPLPolygon.h>
 #import <TPLMaps/TPLPolyLine.h>
-#import <TPLMaps/SearchHandler.h>
+#import <TPLMaps/TPLSearch.h>
 #import <TPLMaps/Place.h>
 #import <TPLMaps/FeaturesStyle.h>
 #import <TPLMaps/TPLCircle.h>
+#import <TPLMaps/TPLDirection.h>
+#import <TPLMaps/TPLDirectionObject.h>
+#import <TPLMaps/TPLDirectionSegment.h>
+

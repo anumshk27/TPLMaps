@@ -2,7 +2,7 @@
 //  TPLPolygon.h
 //  TPLMapsSDK
 //
-//  Copyright © 2017 TPL Maps. All rights reserved.
+//  TPL Maps SDK for iOS 13/02/2017.
 //
 //
 
@@ -15,13 +15,13 @@
 /** The width of the line in screen points.Default is 2 .*/
 @property (nonatomic, assign) CGFloat outlineWidth;
 
-/** The UIColor used to render the polyline. if not set than default color will be Blue */
+/** The UIColor used to render the polyline. If empty or nil default color will be Blue. */
 @property (nonatomic, strong) UIColor *outlineColor;
 
 /** The color used to fill the shape’s path */
 @property (nonatomic, strong) UIColor *fillColor;
 
-/** Specifies the item’s position on the z axis. */
+/** Specifies the item’s position on the z axis. Min 100 Max 2000 */
 @property(nonatomic) int zIndex;
 
 /** The number of items in the coords array. */

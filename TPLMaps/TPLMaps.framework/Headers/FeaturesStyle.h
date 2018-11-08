@@ -2,7 +2,7 @@
 //  FeaturesStyle.h
 //  tangram
 //
-//  Copyright © 2017 TPL Maps. All rights reserved.
+//  TPL Maps SDK for iOS on 18/02/2017.
 //
 //
 

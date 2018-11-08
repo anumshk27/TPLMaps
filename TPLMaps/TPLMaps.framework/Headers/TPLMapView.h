@@ -2,7 +2,7 @@
 //  TPLMapView.h
 //  TPLMapsSDK
 //
-//  Copyright © 2017 TPL Maps. All rights reserved.
+//  Created by Muhammad Sajad on 02/02/2017.
 //
 //
 
@@ -104,7 +104,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * TPLMapView Delegate
  */
-@property (nonatomic, weak, nullable) id <TPLMapViewDelegate> delegate;
+@property (nonatomic, weak, nullable) IBOutlet id <TPLMapViewDelegate> delegate;
 
 /**
  * Builds the map view for specified frame
@@ -221,6 +221,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Enum provide MapView Mode Standard or Night.
  */
 @property (nonatomic) MapViewMode mapMode;
+
 /**
  * A Boolean indicating whether the map displays point-of-interest information.
  */
@@ -242,25 +243,48 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic) BOOL zoomControlsEnabled;
 /**
- A Boolean indicating whether the map displays Road names.
+ The maximum zoom level that the map can be zoomed into.
  */
-@property(nonatomic) BOOL showRoadNames;
-
 @property (nonatomic) int maximumZoom;
+/**
+ The minimum zoom level that the map cab be zoomed out to.
+ */
 @property (nonatomic) int minimumZoom;
-
-
-
+/**
+ Sets the location that define the geo-point.
+ */
 - (void)addMarker:(TPLMarker *)marker;
+/**
+ Remove geo-point from map.
+ */
 - (void)removeMarker:(TPLMarker*)marker;
+/**
+ Remove all geo-point from map.
+ */
 - (void)removeAllMarkers;
-
+/**
+ Sets the locations that define the polyline.
+ */
 - (void)drawPolyLine:(TPLPolyLine *)polyline;
+/**
+ Remove polyline from map.
+ */
 - (void)removePolyLine:(TPLPolyLine*)polyline;
+/**
+ Remove all polylines from map.
+ */
 - (void)removeAllPolylines;
-
+/**
+ Sets the locations that define the polygon.
+ */
 - (void)drawPolygon:(TPLPolygon*)polygon;
+/**
+ Remove polygon from map.
+ */
 - (void)removePolygon:(TPLPolygon*)polygon;
+/**
+ Remove polygons from map.
+ */
 - (void)removeAllPolygons;
 
 - (void)drawCircle:(TPLCircle *)circle;
@@ -268,7 +292,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeAllCircles;
 
 
-- (void)JSONStlyleFile:(NSString*)file;
+//- (void)JSONStlyleFile:(NSString*)file;
 
 
 

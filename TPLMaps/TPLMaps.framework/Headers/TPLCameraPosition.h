@@ -2,7 +2,7 @@
 //  TPLCameraPosition.h
 //  TPLMapsSDK
 //
-//  Copyright © 2017 TPL Maps. All rights reserved.
+//  Created by Muhammad Sajad on 10/02/2017.
 //
 //
 
@@ -68,7 +68,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-/** Mutable version of GMSCameraPosition. */
+/** Mutable version of TPLCameraPosition. */
 @interface TPLMutableCameraPosition : TPLCameraPosition
 @property(nonatomic, assign) CLLocationCoordinate2D location;
 @property(nonatomic, assign) float zoom;

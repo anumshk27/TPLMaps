@@ -2,7 +2,7 @@
 //  TPLMarker.h
 //  TPLMapsSDK
 //
-//  Copyright © 2017 TPL Maps. All rights reserved.
+//  TPL Maps SDK for iOS 06/02/2017.
 //
 //
 
