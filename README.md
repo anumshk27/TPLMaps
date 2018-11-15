@@ -4,14 +4,14 @@
 Before you can begin working with TPL Maps on iOS, you need to download the TPL Maps SDK for iOS.
 
 ### Step 1: Get the latest version of Xcode
-To build a project using the TPL Maps SDK for iOS, you need **version 7.3** or later of [Xcode](https://developer.apple.com/xcode/).
+To build a project using the TPL Maps SDK for iOS, you need **version 9.0** or later of [Xcode](https://developer.apple.com/xcode/).
 
 ### Step 2: Install the SDK
 
 To use the TPLMaps SDK for iOS, you must get an API key which you can then add to your iOS application.  The API key is used to track API requests associated with your project for usage and billing.
 
-`Download the latest config file` 
-(http://api.tplmaps.com/apiportal/#/portal/home).
+**Download the latest config file**
+[TPLMaps](http://api.tplmaps.com/apiportal/#/portal/home).
 
 This file contains configuration details, such as keys and identifiers, for the services that you have just enabled.
 
