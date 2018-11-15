@@ -243,6 +243,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic) BOOL zoomControlsEnabled;
 /**
+ A Boolean indicating whether the map displays traffic.
+ */
+@property(nonatomic) BOOL trafficEnabled;
+/**
  The maximum zoom level that the map can be zoomed into.
  */
 @property (nonatomic) int maximumZoom;
