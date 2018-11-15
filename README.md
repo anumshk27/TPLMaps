@@ -8,6 +8,14 @@ To build a project using the TPL Maps SDK for iOS, you need **version 7.3** or l
 
 ### Step 2: Install the SDK
 
+To use the TPLMaps SDK for iOS, you must get an API key which you can then add to your iOS application.  The API key is used to track API requests associated with your project for usage and billing.
+
+`Download the latest config file` 
+(http://api.tplmaps.com/apiportal/#/portal/home).
+
+This file contains configuration details, such as keys and identifiers, for the services that you have just enabled.
+
+### Step 3: Install the SDK
 
 The TPLMap SDK for iOS is available as a CocoaPods pod. CocoaPods is an open source dependency manager for Swift and Objective-C Cocoa projects.
 
@@ -43,7 +51,7 @@ cd <path-to-project>
 
 7. Close Xcode, and then open (double-click) your project's `.xcworkspace` file to launch Xcode. From this time onwards, you must use the `.xcworkspace` file to open the project.
 
-### Step 3: Add a map
+### Step 4: Add a map
 The code below demonstrates how to add a simple map to an existing ViewController. If you're creating a new app, first follow the installation instructions above, and create a new **Single View Application**, Use **Automatic Reference Counting** (ARC).
 
 Now, add or update a few methods inside your app's default ViewController to create and initialize an instance of `TPLMapView`.
