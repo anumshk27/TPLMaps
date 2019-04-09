@@ -948,25 +948,33 @@ styles:
 sources:
     local:
         type: MVT
-        url: http://api.tplmaps.com:8888/tile?layer=composite_en&zoom={z}&x={x}&y={y}
+        url: https://www.tplmaps.com
         url_params:
             apikey: global.sdk_api_key
         min_zoom: 1
         max_zoom: 17
     local2:
         type: MVT
-        url:  http://api.tplmaps.com:8888/tile?layer=buildings_en&zoom={z}&x={x}&y={y}
+        url:  https://www.tplmaps.com
         url_params:
             apikey: global.sdk_api_key
         min_zoom: 14
         max_zoom: 17
     local-pois:
         type: MVT
-        url:  http://api.tplmaps.com:8888/tile?layer=pois_en&zoom={z}&x={x}&y={y}
+        url:  https://www.tplmaps.com
         url_params:
             apikey: global.sdk_api_key
         min_zoom: 10
         max_zoom: 17
+    generalTraffic:
+        type: null
+        url: https://www.tplmaps.com
+        url_params:
+            apikey: global.sdk_api_key
+        min_display_zoom: 5
+        max_zoom: 13
+
 
 # As we are using the Composite GeoJSON for the source, each layer drawn here is the object class, the layer name acts as the layer from
 # source JSON if we don't explicitly define it, boundary layer here is using the data in the JSON that is followed by the "boundary": key word
@@ -1081,7 +1089,7 @@ layers:
                             stroke: { color: global.colorscheme.poi_stroke , width: 1.0 }
 
     livetrafficlayer:
-        data: { source: livetrafficlayer }
+        data: { source: generalTraffic }
         trafficP5:
             filter: function() { return feature.roadpriority=='5'; }
             draw:
