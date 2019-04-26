@@ -1,0 +1,4 @@
+
+Step 1 pod lib lint
+Step 2 - pod trunk register tplmaps.dev@gmail.com 'TPLMaps'
+Step 3 - pod trunk push
