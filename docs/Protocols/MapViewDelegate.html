@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MapViewDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/MapViewDelegate" class="dashAnchor"></a>
+    <a title="MapViewDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (95% documented)</p>
+        <p class="header-right"><a href="https://github.com/anumshk27/TPLMaps"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MapViewDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CameraPosition.html">CameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Circle.html">Circle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoordinateGeometry.html">CoordinateGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Direction.html">Direction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MapBounds.html">MapBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MapPOI.html">MapPOI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Marker.html">Marker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MutableCameraPosition.html">MutableCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MutableCoordinateGeometry.html">MutableCoordinateGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Place.html">Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PolyLine.html">PolyLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Polygon.html">Polygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Search.html">Search</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TPLMapView.html">TPLMapView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MapsSDKVersionNumber">MapsSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MapsSDKVersionString">MapsSDKVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MapViewMode.html">MapViewMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RouteType.html">RouteType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MapViewDelegate.html">MapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MapViewDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MapViewDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>TPLMapView Delegate Methods</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapViewDidCompleteLoading:"></a>
+                    <a name="//apple_ref/objc/Method/-mapViewDidCompleteLoading:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapViewDidCompleteLoading:">-mapViewDidCompleteLoading:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when Map is completed loading. It tell that view is complete to perform any operation like applying styles etc.</p>
+
+<ul>
+<li>Map may be rendering when this method is called</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapViewDidCompleteLoading</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapViewDidCompleteLoading</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:didSingleTapAtCoordinate:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:didSingleTapAtCoordinate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:didSingleTapAtCoordinate:">-mapView:didSingleTapAtCoordinate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when tap on particular coordinate. Not get called when tap gets a Marker or POI</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">didSingleTapAtCoordinate</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">coordinate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">didSingleTapAt</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:didDoubleTapAtCoordinate:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:didDoubleTapAtCoordinate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:didDoubleTapAtCoordinate:">-mapView:didDoubleTapAtCoordinate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when double tap gesture recognized on a particular coordinate on map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">didDoubleTapAtCoordinate</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">coordinate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">didDoubleTapAt</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:didLongPressAtCoordinate:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:didLongPressAtCoordinate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:didLongPressAtCoordinate:">-mapView:didLongPressAtCoordinate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when long gesture recognized on a particular coordinate on map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">didLongPressAtCoordinate</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">coordinate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">didLongPressAt</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:didSelectMarker:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:didSelectMarker:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:didSelectMarker:">-mapView:didSelectMarker:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called a Marker is tapped.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">didSelectMarker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/Marker.html">Marker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">marker</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">didSelect</span> <span class="nv">marker</span><span class="p">:</span> <span class="kt"><a href="../Classes/Marker.html">Marker</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:didSelectPOI:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:didSelectPOI:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:didSelectPOI:">-mapView:didSelectPOI:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a POI is tapped.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">didSelectPOI</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MapPOI.html">MapPOI</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">poi</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">didSelect</span> <span class="nv">poi</span><span class="p">:</span> <span class="kt"><a href="../Classes/MapPOI.html">MapPOI</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:userLocationUpdatedTo:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:userLocationUpdatedTo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:userLocationUpdatedTo:">-mapView:userLocationUpdatedTo:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user location is updated. It only gets called when showsUserLocation is set true</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">userLocationUpdatedTo</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">CLLocation</span> <span class="o">*</span><span class="p">)</span><span class="nv">location</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">userLocationUpdatedTo</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocation</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:didFailToUpdateUserLocationWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:didFailToUpdateUserLocationWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:didFailToUpdateUserLocationWithError:">-mapView:didFailToUpdateUserLocationWithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user location update failed. Reason can be extracted from error</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">didFailToUpdateUserLocationWithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">didFailToUpdateUserLocationWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:cameraPositionDidStartChange:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:cameraPositionDidStartChange:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:cameraPositionDidStartChange:">-mapView:cameraPositionDidStartChange:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when camera position is start changing on map. It can be triggerd by setting camera position of map.</p>
+
+<ul>
+<li>Or by calling any method changes either zoom, tilt, rotation, position of map.</li>
+<li>Can also be triggered due to some gesutres.</li>
+<li>cameraPosition param can be used to fetch current camera position on map.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">cameraPositionDidStartChange</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/CameraPosition.html">CameraPosition</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cameraPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">cameraPositionDidStartChange</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/CameraPosition.html">CameraPosition</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:cameraPositionDidChange:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:cameraPositionDidChange:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:cameraPositionDidChange:">-mapView:cameraPositionDidChange:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Same as cameraPositionDidStartChange: but get called when camera position is changing</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">cameraPositionDidChange</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/CameraPosition.html">CameraPosition</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cameraPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">cameraPositionDidChange</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/CameraPosition.html">CameraPosition</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:cameraPositionDidEndChange:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:cameraPositionDidEndChange:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:cameraPositionDidEndChange:">-mapView:cameraPositionDidEndChange:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Same as cameraPositionDidStartChange: but get called when any change camera position is complete and map is still now</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">cameraPositionDidEndChange</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/CameraPosition.html">CameraPosition</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cameraPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">cameraPositionDidEndChange</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/CameraPosition.html">CameraPosition</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:regionWillChangeAnimated:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:regionWillChangeAnimated:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:regionWillChangeAnimated:">-mapView:regionWillChangeAnimated:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called immediately before the displayed map region moves.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">regionWillChangeAnimated</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">animated</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">regionWillChangeAnimated</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mapView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The map view instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If YES the move will be animated over time, if NO the move will happen immediately.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapViewRegionIsChanging:"></a>
+                    <a name="//apple_ref/objc/Method/-mapViewRegionIsChanging:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapViewRegionIsChanging:">-mapViewRegionIsChanging:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called repeatedly when the displayed map region is moving due to an animation or a gesture.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapViewRegionIsChanging</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapViewRegionIsChanging</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mapView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The map view instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MapViewDelegate(im)mapView:regionDidChangeAnimated:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:regionDidChangeAnimated:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MapViewDelegate(im)mapView:regionDidChangeAnimated:">-mapView:regionDidChangeAnimated:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after the displayed map region moves.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TPLMapView.html">TPLMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">regionDidChangeAnimated</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">animated</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/TPLMapView.html">TPLMapView</a></span><span class="p">,</span> <span class="n">regionDidChangeAnimated</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mapView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The map view instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If YES the move was animated over time, if NO the move happened immediately.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://tplmaps.com" target="_blank" rel="external">TPLMaps</a>. All rights reserved. (Last updated: 2019-09-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,61 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/haidershahzad/Documents/GitHub/MapsSDK/MapsSDK/MapsSDK1.h",
+      "line": 12,
+      "symbol": "MapsSDKVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/haidershahzad/Documents/GitHub/MapsSDK/MapsSDK/MapsSDK1.h",
+      "line": 15,
+      "symbol": "MapsSDKVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/haidershahzad/Documents/GitHub/MapsSDK/MapsSDK/Source/CoordinateGeometry.h",
+      "line": 35,
+      "symbol": "MutableCoordinateGeometry",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/haidershahzad/Documents/GitHub/MapsSDK/MapsSDK/Source/PolyLine.h",
+      "line": 44,
+      "symbol": "PolyLine.+polylineWithCoordinates:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/haidershahzad/Documents/GitHub/MapsSDK/MapsSDK/Source/Polygon.h",
+      "line": 41,
+      "symbol": "Polygon.+polygonWithCoordinates:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/haidershahzad/Documents/GitHub/MapsSDK/MapsSDK/Source/TPLMapView.h",
+      "line": 27,
+      "symbol": "MapViewMode.STANDARD",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/haidershahzad/Documents/GitHub/MapsSDK/MapsSDK/Source/TPLMapView.h",
+      "line": 28,
+      "symbol": "MapViewMode.NIGHT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/haidershahzad/Documents/GitHub/MapsSDK/MapsSDK/Source/TPLMapView.h",
+      "line": 452,
+      "symbol": "TPLMapView.-removeRoute:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/haidershahzad/Documents/GitHub/MapsSDK"
+}

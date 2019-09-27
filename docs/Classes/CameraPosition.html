@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CameraPosition Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/CameraPosition" class="dashAnchor"></a>
+    <a title="CameraPosition Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (95% documented)</p>
+        <p class="header-right"><a href="https://github.com/anumshk27/TPLMaps"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CameraPosition Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CameraPosition.html">CameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Circle.html">Circle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoordinateGeometry.html">CoordinateGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Direction.html">Direction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MapBounds.html">MapBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MapPOI.html">MapPOI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Marker.html">Marker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MutableCameraPosition.html">MutableCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MutableCoordinateGeometry.html">MutableCoordinateGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Place.html">Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PolyLine.html">PolyLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Polygon.html">Polygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Search.html">Search</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TPLMapView.html">TPLMapView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MapsSDKVersionNumber">MapsSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MapsSDKVersionString">MapsSDKVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MapViewMode.html">MapViewMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RouteType.html">RouteType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MapViewDelegate.html">MapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CameraPosition</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">CameraPosition</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class for setting properties related to camera postion.
+This is immutable and values cannot be changed</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CameraPosition(py)location"></a>
+                    <a name="//apple_ref/objc/Property/location" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CameraPosition(py)location">location</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Location on map where camera should point</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CLLocationCoordinate2D</span> <span class="n">location</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CameraPosition(py)zoom"></a>
+                    <a name="//apple_ref/objc/Property/zoom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CameraPosition(py)zoom">zoom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Zoom level ranging from 1 to 22 where 1 is world level</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">zoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CameraPosition(py)rotation"></a>
+                    <a name="//apple_ref/objc/Property/rotation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CameraPosition(py)rotation">rotation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rotation in degrees in clockwise direction from true north, 0 means camera pointing towards true north.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">rotation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rotation</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CameraPosition(py)tilt"></a>
+                    <a name="//apple_ref/objc/Property/tilt" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CameraPosition(py)tilt">tilt</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>View angle of the camera, 0 means camera pointed straight down on map, 90 means its parallel to ground</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">tilt</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tilt</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CameraPosition(im)initWithLocation:zoom:rotation:tilt:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithLocation:zoom:rotation:tilt:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CameraPosition(im)initWithLocation:zoom:rotation:tilt:">-initWithLocation:zoom:rotation:tilt:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Its designated initializer which can be used to obtain camera object by setting all four params.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="p">)</span><span class="nf">initWithLocation</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">location</span>
+                          <span class="nf">zoom</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">zoom</span>
+                      <span class="nf">rotation</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">rotation</span>
+                          <span class="nf">tilt</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">tilt</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">rotation</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">tilt</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>location</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Location on map where camera should point.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Zoom level ranging from 1 to 22 where 1 is world level</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rotation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Rotation in degrees in clockwise direction from true north, 0 means camera pointing towards true north.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tilt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>View angle of the camera, 0 means camera pointed straight down on map, 90 means its parallel to ground</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CameraPosition(cm)cameraPositionWithLocation:zoom:"></a>
+                    <a name="//apple_ref/objc/Method/+cameraPositionWithLocation:zoom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CameraPosition(cm)cameraPositionWithLocation:zoom:">+cameraPositionWithLocation:zoom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new camera position with specified value of location and zoom.
+ Rotation and Tilt are set to default values (Map is points to north with</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">cameraPositionWithLocation</span><span class="p">:</span>
+                            <span class="p">(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">location</span>
+                                              <span class="nf">zoom</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">zoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CameraPosition(cm)cameraPositionWithLocation:zoom:rotation:tilt:"></a>
+                    <a name="//apple_ref/objc/Method/+cameraPositionWithLocation:zoom:rotation:tilt:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CameraPosition(cm)cameraPositionWithLocation:zoom:rotation:tilt:">+cameraPositionWithLocation:zoom:rotation:tilt:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience constructor for GMSCameraPosition, with all camera properties as per
+initWithTarget:zoom:bearing:viewingAngle:.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">cameraPositionWithLocation</span><span class="p">:</span>
+                            <span class="p">(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">location</span>
+                                              <span class="nf">zoom</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">zoom</span>
+                                          <span class="nf">rotation</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">rotation</span>
+                                              <span class="nf">tilt</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">tilt</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://tplmaps.com" target="_blank" rel="external">TPLMaps</a>. All rights reserved. (Last updated: 2019-09-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

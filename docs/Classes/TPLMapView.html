@@ -1,0 +1,2380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TPLMapView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/TPLMapView" class="dashAnchor"></a>
+    <a title="TPLMapView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (95% documented)</p>
+        <p class="header-right"><a href="https://github.com/anumshk27/TPLMaps"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TPLMapView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CameraPosition.html">CameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Circle.html">Circle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoordinateGeometry.html">CoordinateGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Direction.html">Direction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MapBounds.html">MapBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MapPOI.html">MapPOI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Marker.html">Marker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MutableCameraPosition.html">MutableCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MutableCoordinateGeometry.html">MutableCoordinateGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Place.html">Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PolyLine.html">PolyLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Polygon.html">Polygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Search.html">Search</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TPLMapView.html">TPLMapView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MapsSDKVersionNumber">MapsSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MapsSDKVersionString">MapsSDKVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MapViewMode.html">MapViewMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RouteType.html">RouteType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MapViewDelegate.html">MapViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TPLMapView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">TPLMapView</span> <span class="p">:</span> <span class="nc">UIView</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>TPLMapView</code> is a flexible and customizable map view managing the lifecycle of an OpenGL ES map. This view provides
+gesture handlers for tap, double-tap, long press, pan, pinch, rotate, and shove gestures.</p>
+
+<p>The public interface provides dynamic map marker placement, change of camera view settings, and map description changes
+through scene updates.</p>
+
+<p>To use basemap styles you can <a href="https://api.tplmaps.com/apiportal/#/portal/home"> sign up for an API key</a> and load it
+through your application:</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    All the screen positions used in this inteface are in <em>logical pixel</em> or <em>drawing coordinate system</em> (based on a
+<code>UIKit</code> coordinate system), which is independent of the phone pixel density. Refer to the
+<a href="https://developer.apple.com/library/content/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/GraphicsDrawingOverview/GraphicsDrawingOverview.html">Apple documentation</a>
+regarding <em>Coordinate Systems and Drawing in iOS</em> for more information.
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialize%20the%20View"></a>
+                <a name="//apple_ref/objc/Section/Initialize the View" class="dashAnchor"></a>
+                <a href="#/Initialize%20the%20View">
+                  <h3 class="section-name">Initialize the View</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(cm)mapViewWithFrame:"></a>
+                    <a name="//apple_ref/objc/Method/+mapViewWithFrame:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(cm)mapViewWithFrame:">+mapViewWithFrame:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes and returns a new map view for specified frame</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">mapViewWithFrame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view frame.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An initialized map view.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Delegates"></a>
+                <a name="//apple_ref/objc/Section/Delegates" class="dashAnchor"></a>
+                <a href="#/Delegates">
+                  <h3 class="section-name">Delegates</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The map view delegate
+May be <code>nil</code>. See <code>MapView</code> for more details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MapViewDelegate.html">MapViewDelegate</a></span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MapViewDelegate.html">MapViewDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Changing%20the%20Map%20Viewport"></a>
+                <a name="//apple_ref/objc/Section/Changing the Map Viewport" class="dashAnchor"></a>
+                <a href="#/Changing%20the%20Map%20Viewport">
+                  <h3 class="section-name">Changing the Map Viewport</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)cameraPosition"></a>
+                    <a name="//apple_ref/objc/Property/cameraPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)cameraPosition">cameraPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current position and orientation of the map camera.</p>
+
+<p>Setting this property will move the map immediately. To animate the movement use
+<code>-[MapView setCameraPositionAnimated:(nonnull CameraPosition *)]</code> or
+<code>-[TPLMapView setCameraPositionAnimated:(nonnull CameraPosition *) withDuration:(float)]</code>
+`</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/CameraPosition.html">CameraPosition</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cameraPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/CameraPosition.html">CameraPosition</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)setCameraPositionAnimated:"></a>
+                    <a name="//apple_ref/objc/Method/-setCameraPositionAnimated:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)setCameraPositionAnimated:">-setCameraPositionAnimated:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Apply camera position with animation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCameraPositionAnimated</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/CameraPosition.html">CameraPosition</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cameraPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCameraPositionAnimated</span><span class="p">(</span><span class="n">_</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/CameraPosition.html">CameraPosition</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)setCameraPositionAnimated:withDuration:"></a>
+                    <a name="//apple_ref/objc/Method/-setCameraPositionAnimated:withDuration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)setCameraPositionAnimated:withDuration:">-setCameraPositionAnimated:withDuration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Apply camera position with animation over specified duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCameraPositionAnimated</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/CameraPosition.html">CameraPosition</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cameraPosition</span>
+                     <span class="nf">withDuration</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCameraPositionAnimated</span><span class="p">(</span><span class="n">_</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/CameraPosition.html">CameraPosition</a></span><span class="p">,</span> <span class="n">withDuration</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Gesture%20Recognizers"></a>
+                <a name="//apple_ref/objc/Section/Gesture Recognizers" class="dashAnchor"></a>
+                <a href="#/Gesture%20Recognizers">
+                  <h3 class="section-name">Gesture Recognizers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)allGesturesEnabled"></a>
+                    <a name="//apple_ref/objc/Property/allGesturesEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)allGesturesEnabled">allGesturesEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the preference for whether all gestures should be enabled (default) or
+disabled. This doesn&rsquo;t restrict users from tapping any on screen buttons to
+move the camera (e.g., compass or zoom controls), nor does it restrict
+programmatic movements and animation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">allGesturesEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allGesturesEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)zoomEnabled"></a>
+                    <a name="//apple_ref/objc/Property/zoomEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)zoomEnabled">zoomEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wether zoom gesture is enabled or disabled on map .</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">zoomEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">zoomEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)scrollEnabled"></a>
+                    <a name="//apple_ref/objc/Property/scrollEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)scrollEnabled">scrollEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wether pan gesture is enabled or disabled on map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">scrollEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">scrollEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)tiltEnabled"></a>
+                    <a name="//apple_ref/objc/Property/tiltEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)tiltEnabled">tiltEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wether tilt gesture is enabled or disabled on map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">tiltEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tiltEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)rotateEnabled"></a>
+                    <a name="//apple_ref/objc/Property/rotateEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)rotateEnabled">rotateEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wether rotate gesture is enabled or disabled on map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">rotateEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rotateEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)showsUserLocation"></a>
+                    <a name="//apple_ref/objc/Property/showsUserLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)showsUserLocation">showsUserLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set to YES to add the user location annotation to the map and start updating its location
+Set key in info.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showsUserLocation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showsUserLocation</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)myCurrentLocation"></a>
+                    <a name="//apple_ref/objc/Property/myCurrentLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)myCurrentLocation">myCurrentLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If My Location is enabled, reveals where the user location dot is being
+drawn. If it is disabled, or it is enabled but no location data is available,
+this will be nil.  This property is observable using KVO.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CLLocation</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">myCurrentLocation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">myCurrentLocation</span><span class="p">:</span> <span class="kt">CLLocation</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Coordinate%20Conversions"></a>
+                <a name="//apple_ref/objc/Section/Coordinate Conversions" class="dashAnchor"></a>
+                <a href="#/Coordinate%20Conversions">
+                  <h3 class="section-name">Coordinate Conversions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)pointForCoordinate:"></a>
+                    <a name="//apple_ref/objc/Method/-pointForCoordinate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)pointForCoordinate:">-pointForCoordinate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convert a longitude and latitude to a view position.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nf">pointForCoordinate</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">coordinate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pointForCoordinate</span><span class="p">(</span><span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coordinate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The geographic coordinate to convert</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The view position of the input coordinate</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)coordinateForPoint:"></a>
+                    <a name="//apple_ref/objc/Method/-coordinateForPoint:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)coordinateForPoint:">-coordinateForPoint:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convert a position in view coordinates into the longitude and latitude of the corresponding geographic location.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nf">coordinateForPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">coordinateForPoint</span><span class="p">(</span><span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CLLocationCoordinate2D</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the position in view coordinates to convert</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the latitude and longitude</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Changing%20the%20Map%20Viewport2"></a>
+                <a name="//apple_ref/objc/Section/Changing the Map Viewport" class="dashAnchor"></a>
+                <a href="#/Changing%20the%20Map%20Viewport2">
+                  <h3 class="section-name">Changing the Map Viewport</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)animateToLocation:"></a>
+                    <a name="//apple_ref/objc/Method/-animateToLocation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)animateToLocation:">-animateToLocation:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Changes the postion of map. Map will be centered to new position.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">animateToLocation</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">location</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">animateToLocation</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>location</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the position in view coordinates to convert</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)animateToLocation:withDuration:"></a>
+                    <a name="//apple_ref/objc/Method/-animateToLocation:withDuration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)animateToLocation:withDuration:">-animateToLocation:withDuration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To animate the location movement with user define duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">animateToLocation</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">location</span>
+             <span class="nf">withDuration</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">animateToLocation</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>location</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the position in view coordinates to convert</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of animation duration in seconds</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)animateToZoom:"></a>
+                    <a name="//apple_ref/objc/Method/-animateToZoom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)animateToZoom:">-animateToZoom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Changes zoom of the map. If value of zoom is out of zoom bounds (minzoom, maxzoom) zoom will be set to either minzoom or maxzoom</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">animateToZoom</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">zoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">animateToZoom</span><span class="p">(</span><span class="nv">zoom</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>fvalue of zoom level in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)animateToZoom:withDuration:"></a>
+                    <a name="//apple_ref/objc/Method/-animateToZoom:withDuration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)animateToZoom:withDuration:">-animateToZoom:withDuration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To animate the zoom movement with user define duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">animateToZoom</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">zoom</span> <span class="nf">withDuration</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">animateToLocation</span><span class="p">(</span><span class="nv">zoom</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of zoom level in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of animation duration in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)animateToRotation:"></a>
+                    <a name="//apple_ref/objc/Method/-animateToRotation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)animateToRotation:">-animateToRotation:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Changes the rotation of map from true north. Zero indicates true north.
+Rotation should be in radians</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">animateToRotation</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">rotation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">animateToRotation</span><span class="p">(</span><span class="nv">rotation</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rotation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of rotation in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)animateToRotation:withDuration:"></a>
+                    <a name="//apple_ref/objc/Method/-animateToRotation:withDuration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)animateToRotation:withDuration:">-animateToRotation:withDuration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To animate the rotation movement with user define duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">animateToRotation</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">rotation</span> <span class="nf">withDuration</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">animateToRotation</span><span class="p">(</span><span class="nv">rotation</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rotation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of rotation in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of animation duration in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)animateToTilt:"></a>
+                    <a name="//apple_ref/objc/Method/-animateToTilt:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)animateToTilt:">-animateToTilt:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Changes the tilt of map. 0 means looking straight down at map.
+If value is greater than PI/4 then it uses maxLimit (PI/4).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">animateToTilt</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">tilt</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">animateToTilt</span><span class="p">(</span><span class="nv">tilt</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tilt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of tilt in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)animateToTilt:withDuration:"></a>
+                    <a name="//apple_ref/objc/Method/-animateToTilt:withDuration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)animateToTilt:withDuration:">-animateToTilt:withDuration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To animate the tilt movement with user define duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">animateToTilt</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">tilt</span> <span class="nf">withDuration</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">animateToTilt</span><span class="p">(</span><span class="n">rotation</span> <span class="nv">tilt</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tilt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of tilt in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of animation duration in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)setBounds:withPadding:"></a>
+                    <a name="//apple_ref/objc/Method/-setBounds:withPadding:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)setBounds:withPadding:">-setBounds:withPadding:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adjust camera postion to fit MapBounds with in the mapview.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setBounds</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MapBounds.html">MapBounds</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">bounds</span> <span class="nf">withPadding</span><span class="p">:(</span><span class="n">UIEdgeInsets</span><span class="p">)</span><span class="nv">padding</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setBounds</span><span class="p">(</span><span class="nv">bounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/MapBounds.html">MapBounds</a></span><span class="p">,</span> <span class="nv">padding</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bounds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Represents a rectangular bounds on map</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>padding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Padding is specify the distance of bounds box from view&rsquo;s edges</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)setBoundsAnimated:withPadding:duration:"></a>
+                    <a name="//apple_ref/objc/Method/-setBoundsAnimated:withPadding:duration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)setBoundsAnimated:withPadding:duration:">-setBoundsAnimated:withPadding:duration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Same as setBounds:withPadding: but with animation over specified duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setBoundsAnimated</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MapBounds.html">MapBounds</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">bounds</span>
+              <span class="nf">withPadding</span><span class="p">:(</span><span class="n">UIEdgeInsets</span><span class="p">)</span><span class="nv">padding</span>
+                 <span class="nf">duration</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setBoundsAnimated</span><span class="p">(</span><span class="nv">bounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/MapBounds.html">MapBounds</a></span><span class="p">,</span> <span class="nv">padding</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bounds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Represents a rectangular bounds on map</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>padding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Padding is specify the distance of bounds box from view&rsquo;s edges</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of animation duration in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)setBoundsFitInRect:rect:withPadding:"></a>
+                    <a name="//apple_ref/objc/Method/-setBoundsFitInRect:rect:withPadding:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)setBoundsFitInRect:rect:withPadding:">-setBoundsFitInRect:rect:withPadding:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adjust camera postion to fit TPLMapBounds with in the rect on mapview.
+Padding is specify the distance of bounds box from rect edges</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setBoundsFitInRect</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MapBounds.html">MapBounds</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">bounds</span>
+                      <span class="nf">rect</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">rect</span>
+               <span class="nf">withPadding</span><span class="p">:(</span><span class="n">UIEdgeInsets</span><span class="p">)</span><span class="nv">padding</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setBoundsFitInRect</span><span class="p">(</span><span class="nv">bounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/MapBounds.html">MapBounds</a></span><span class="p">,</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">padding</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bounds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Represents a rectangular bounds on map</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rect</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>in which maps need padding</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>padding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Padding is specify the distance of bounds box from view&rsquo;s edges</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)setBoundsFitInRectAnimated:rect:withPadding:duration:"></a>
+                    <a name="//apple_ref/objc/Method/-setBoundsFitInRectAnimated:rect:withPadding:duration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)setBoundsFitInRectAnimated:rect:withPadding:duration:">-setBoundsFitInRectAnimated:rect:withPadding:duration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Same as setBounds:rect:withPadding: but with animation over specified duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setBoundsFitInRectAnimated</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MapBounds.html">MapBounds</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">bounds</span>
+                              <span class="nf">rect</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">rect</span>
+                       <span class="nf">withPadding</span><span class="p">:(</span><span class="n">UIEdgeInsets</span><span class="p">)</span><span class="nv">padding</span>
+                          <span class="nf">duration</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setBoundsFitInRectAnimated</span><span class="p">(</span><span class="nv">bounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/MapBounds.html">MapBounds</a></span><span class="p">,</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">padding</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bounds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Represents a rectangular bounds on map</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rect</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>in which maps need padding</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>padding</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Padding is specify the distance of bounds box from view&rsquo;s edges</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of animation duration in float</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Changing%20the%20Map%20Options"></a>
+                <a name="//apple_ref/objc/Section/Changing the Map Options" class="dashAnchor"></a>
+                <a href="#/Changing%20the%20Map%20Options">
+                  <h3 class="section-name">Changing the Map Options</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)mapMode"></a>
+                    <a name="//apple_ref/objc/Property/mapMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)mapMode">mapMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enum provide MapView Mode Standard or Night.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/MapViewMode.html">MapViewMode</a></span> <span class="n">mapMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mapMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/MapViewMode.html">MapViewMode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)showsPointsOfInterest"></a>
+                    <a name="//apple_ref/objc/Property/showsPointsOfInterest" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)showsPointsOfInterest">showsPointsOfInterest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean indicating whether the map displays point-of-interest information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showsPointsOfInterest</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showsPointsOfInterest</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)showsBuildings"></a>
+                    <a name="//apple_ref/objc/Property/showsBuildings" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)showsBuildings">showsBuildings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean indicating whether the map displays extruded building information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showsBuildings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showsPointsOfInterest</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)myLocationButtonEnabled"></a>
+                    <a name="//apple_ref/objc/Property/myLocationButtonEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)myLocationButtonEnabled">myLocationButtonEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean indicating whether the map displays a location button control.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">myLocationButtonEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">myLocationButtonEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)showsCompass"></a>
+                    <a name="//apple_ref/objc/Property/showsCompass" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)showsCompass">showsCompass</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean indicating whether the map displays a compass control.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showsCompass</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showsCompass</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)zoomControlsEnabled"></a>
+                    <a name="//apple_ref/objc/Property/zoomControlsEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)zoomControlsEnabled">zoomControlsEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean indicating whether the map displays zoom controls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">zoomControlsEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">zoomControlsEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)trafficEnabled"></a>
+                    <a name="//apple_ref/objc/Property/trafficEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)trafficEnabled">trafficEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean indicating whether the map displays traffic.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">trafficEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">trafficEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)maximumZoom"></a>
+                    <a name="//apple_ref/objc/Property/maximumZoom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)maximumZoom">maximumZoom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum zoom level that the map can be zoomed into.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGFloat</span> <span class="n">maximumZoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maximumZoom</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(py)minimumZoom"></a>
+                    <a name="//apple_ref/objc/Property/minimumZoom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(py)minimumZoom">minimumZoom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minimum zoom level that the map cab be zoomed out to.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGFloat</span> <span class="n">minimumZoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maximumZoom</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Markers"></a>
+                <a name="//apple_ref/objc/Section/Markers" class="dashAnchor"></a>
+                <a href="#/Markers">
+                  <h3 class="section-name">Markers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)addMarker:"></a>
+                    <a name="//apple_ref/objc/Method/-addMarker:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)addMarker:">-addMarker:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the location that define the geo-point.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addMarker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/Marker.html">Marker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">marker</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addMarker</span><span class="p">(</span><span class="kt"><a href="../Classes/Marker.html">Marker</a></span> <span class="nv">marker</span><span class="p">:</span> <span class="kt"><a href="../Classes/Marker.html">Marker</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removeMarker:"></a>
+                    <a name="//apple_ref/objc/Method/-removeMarker:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removeMarker:">-removeMarker:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove Marker from map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeMarker</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/Marker.html">Marker</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">marker</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeMarker</span><span class="p">(</span><span class="kt"><a href="../Classes/Marker.html">Marker</a></span> <span class="nv">marker</span><span class="p">:</span> <span class="kt"><a href="../Classes/Marker.html">Marker</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removeAllMarkers"></a>
+                    <a name="//apple_ref/objc/Method/-removeAllMarkers" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removeAllMarkers">-removeAllMarkers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all the Markers from the map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">removeAllMarkers</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeAllMarkers</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)drawPolyLine:"></a>
+                    <a name="//apple_ref/objc/Method/-drawPolyLine:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)drawPolyLine:">-drawPolyLine:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the locations that define the Polyline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">drawPolyLine</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PolyLine.html">PolyLine</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">polyline</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">drawPolyLine</span><span class="p">(</span><span class="kt"><a href="../Classes/PolyLine.html">PolyLine</a></span> <span class="nv">polyline</span><span class="p">:</span> <span class="kt"><a href="../Classes/PolyLine.html">PolyLine</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removePolyLine:"></a>
+                    <a name="//apple_ref/objc/Method/-removePolyLine:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removePolyLine:">-removePolyLine:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove Polyline from map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removePolyLine</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PolyLine.html">PolyLine</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">polyline</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removePolyLine</span><span class="p">(</span><span class="kt"><a href="../Classes/PolyLine.html">PolyLine</a></span> <span class="nv">polyline</span><span class="p">:</span> <span class="kt"><a href="../Classes/PolyLine.html">PolyLine</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removeAllPolylines"></a>
+                    <a name="//apple_ref/objc/Method/-removeAllPolylines" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removeAllPolylines">-removeAllPolylines</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all Polylines from map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">removeAllPolylines</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeAllPolylines</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)drawPolygon:"></a>
+                    <a name="//apple_ref/objc/Method/-drawPolygon:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)drawPolygon:">-drawPolygon:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the locations that define the Polygon.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">drawPolygon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/Polygon.html">Polygon</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">polygon</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">drawPolygon</span><span class="p">(</span><span class="kt"><a href="../Classes/Polygon.html">Polygon</a></span> <span class="nv">polygon</span><span class="p">:</span> <span class="kt"><a href="../Classes/Polygon.html">Polygon</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removePolygon:"></a>
+                    <a name="//apple_ref/objc/Method/-removePolygon:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removePolygon:">-removePolygon:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove Polygon from map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removePolygon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/Polygon.html">Polygon</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">polygon</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removePolygon</span><span class="p">(</span><span class="kt"><a href="../Classes/Polygon.html">Polygon</a></span> <span class="nv">polygon</span><span class="p">:</span> <span class="kt"><a href="../Classes/Polygon.html">Polygon</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removeAllPolygons"></a>
+                    <a name="//apple_ref/objc/Method/-removeAllPolygons" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removeAllPolygons">-removeAllPolygons</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all Polygons from map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">removeAllPolygons</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeAllPolygons</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)drawCircle:"></a>
+                    <a name="//apple_ref/objc/Method/-drawCircle:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)drawCircle:">-drawCircle:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the location that define the Circle.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">drawCircle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/Circle.html">Circle</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">circle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">drawCircle</span><span class="p">(</span><span class="kt"><a href="../Classes/Circle.html">Circle</a></span> <span class="nv">circle</span><span class="p">:</span> <span class="kt"><a href="../Classes/Circle.html">Circle</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removeCircle:"></a>
+                    <a name="//apple_ref/objc/Method/-removeCircle:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removeCircle:">-removeCircle:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove Circle from map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeCircle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/Circle.html">Circle</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">circle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeCircle</span><span class="p">(</span><span class="kt"><a href="../Classes/Circle.html">Circle</a></span> <span class="nv">circle</span><span class="p">:</span> <span class="kt"><a href="../Classes/Circle.html">Circle</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removeAllCircles"></a>
+                    <a name="//apple_ref/objc/Method/-removeAllCircles" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removeAllCircles">-removeAllCircles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all Circles from map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">removeAllCircles</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeAllCircles</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)drawRoute:"></a>
+                    <a name="//apple_ref/objc/Method/-drawRoute:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)drawRoute:">-drawRoute:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Draw route on Map using Direction object.
+It will draw route on Map.
+User can draw route using Direction object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">drawRoute</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/Direction.html">Direction</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">route</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">drawRoute</span><span class="p">(</span><span class="kt"><a href="../Classes/Direction.html">Direction</a></span> <span class="nv">route</span><span class="p">:</span> <span class="kt"><a href="../Classes/Direction.html">Direction</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>route</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>is the Direction object obtained from Direction class.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)drawRouteFrom:to:heading:routeType:completionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-drawRouteFrom:to:heading:routeType:completionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)drawRouteFrom:to:heading:routeType:completionBlock:">-drawRouteFrom:to:heading:routeType:completionBlock:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Draw single route on Map from start to end positions.
+This method will draw the route between two points.
+This method will draw route on Map, also provide Direction object which includes all routing instructions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">drawRouteFrom</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">orgin</span>
+                   <span class="nf">to</span><span class="p">:(</span><span class="n">CLLocationCoordinate2D</span><span class="p">)</span><span class="nv">destination</span>
+              <span class="nf">heading</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">heading</span>
+            <span class="nf">routeType</span><span class="p">:(</span><span class="n"><a href="../Enums/RouteType.html">RouteType</a></span><span class="p">)</span><span class="nv">routeType</span>
+      <span class="nf">completionBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes/Direction.html">Direction</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                        <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">drawRoute</span><span class="p">(</span><span class="n">from</span> <span class="nv">orgin</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="n">to</span> <span class="nv">destination</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">,</span> <span class="nv">heading</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">routeType</span><span class="p">:</span> <span class="kt"><a href="../Enums/RouteType.html">RouteType</a></span><span class="p">,</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/Direction.html">Direction</a></span><span class="p">,</span> <span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>orgin</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The start point of the route.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>destination</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The end point of the route.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>heading</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An integer value between 0 and 359 that represents degrees from north where north is 0 degrees and the heading is specified clockwise from north. For example, setting the heading of 270 degrees creates a route that initially heads west.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>routeType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the route required e.g ROUTE_TYPE_SHORTEST, ROUTE_TYPE_FASTEST, ROUTE_TYPE_UNDETERMINED.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)TPLMapView(im)removeRoute:"></a>
+                    <a name="//apple_ref/objc/Method/-removeRoute:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)TPLMapView(im)removeRoute:">-removeRoute:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeRoute</span><span class="p">:(</span><span class="n"><a href="../Classes/Direction.html">Direction</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">route</span> <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">removeRoute</span><span class="p">(</span><span class="n"><a href="../Classes/Direction.html">Direction</a></span><span class="o">:</span><span class="p">));</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeRoute</span><span class="p">(</span><span class="kt"><a href="../Classes/Direction.html">Direction</a></span> <span class="nv">route</span><span class="p">:</span> <span class="kt"><a href="../Classes/Direction.html">Direction</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://tplmaps.com" target="_blank" rel="external">TPLMaps</a>. All rights reserved. (Last updated: 2019-09-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
