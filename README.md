@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/anumshk27/TPLMaps.svg?branch=master)](https://travis-ci.org/anumshk27/TPLMaps)
 
 ![TPLMaps](https://dl.dropboxusercontent.com/s/ks2tbo6ghpwwda0/TPLMapsLogo.png)
 
+[![Build Status](https://travis-ci.org/anumshk27/TPLMaps.svg?branch=master)](https://travis-ci.org/anumshk27/TPLMaps)
 ## Getting Started
 Before you can begin working with TPL Maps on iOS, you need to download the TPL Maps SDK for iOS.
 
