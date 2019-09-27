@@ -6,6 +6,8 @@ global:
     buildingStatus: false
     poiStatus: true
     sdk_api_key : tmp
+    trafficStatus: false
+
 
     colorscheme: 
         #roads
@@ -530,11 +532,17 @@ textures:
             search_woodwork: [1067,821,80,80]
             search_zoo: [903, 903, 80, 80]
 
-    currentLocationMarker:
-        url: TPLBaseMapResources.bundle/BaseMapIcons/user_location.png
-        filtering: mipmap
-        sprites:
-            SPRITE: [0, 0, 32, 32]
+    restIcons:
+          url: TPLBaseMapResources.bundle/BaseMapIcons/restIcons.png
+          sprites:
+            currentLocationMarker: [0, 0, 32, 32]
+            routeMarker: [90, 152, 160, 160]
+            routeMarkerTilt: [154, 72, 80, 80]
+            endflag: [168, 0, 72, 72]
+            droppin: [0, 152, 90, 90]
+            favspin: [0, 72, 74, 75]
+            aftarispin: [32, 0, 136, 49]
+            selectedPOIPin: [0, 152, 90, 90]
 
     routeMarker:
         url: TPLBaseMapResources.bundle/BaseMapIcons/heading_arrow_nav.png
@@ -560,16 +568,6 @@ textures:
         sprites:
             SPRITE: [0, 0, 48, 48]
 
-    droppin:
-        url: TPLBaseMapResources.bundle/BaseMapIcons/default_marker.png
-        filtering: mipmap
-        sprites:
-            SPRITE: [0, 0, 90, 90]
-
-    pintexture:
-        url: null
-
-
 # Will have to define styles for each icon seperately as the textures can't be directly called in the draw function of the layer
 # The style will tell the type of object it can be applied to (points for pois) and the applicable texture file
 # if the texture is not referenced in a style, then we will get a error
@@ -592,13 +590,18 @@ styles:
     icons:
         base: points
         texture: pois
-        blend: inlay
+        blend_order: 2
     search_icons:
         base: points
         texture: pois_search
+        blend_order: 3
     currentLocationMarker:
         base: points
-        texture: currentLocationMarker
+        texture: restIcons
+        blend_order: 5
+    live_location_marker:
+        base: points
+        blend_order: 8
     routeMarker:
         base: points
         texture: routeMarker
@@ -612,10 +615,10 @@ styles:
     endflag:
         base: points
         texture: endflag
-
     droppin:
         base: points
-        texture: droppin
+        texture: restIcons
+        blend_order: 7
     pinmarker:
         base: points
         texture: pinmarker
@@ -624,30 +627,19 @@ styles:
         blend_order: 1
     pois_text:
         base: text
-        
-    location_marker_droppin:
-        base: points
-        blend_order: 4
-        texture: pintexture
-
     urdu_text:
         base: text
         blend: inlay
-
     english_text:
         base: text
         blend: inlay
-
     road_text:
         base: text
         blend: inlay
-
     lines2:
         base: lines
-
     lines3:
         base: lines
-
     # Color variation in 3d-buildings
     solidbuildings_night:
         base: polygons
@@ -954,38 +946,83 @@ styles:
 sources:
     local:
         type: MVT
-        url: https://www.tplmaps.com
+        url:
         url_params:
             apikey: global.sdk_api_key
         min_zoom: 1
         max_zoom: 17
     local2:
         type: MVT
-        url:  https://www.tplmaps.com
+        url:
         url_params:
             apikey: global.sdk_api_key
         min_zoom: 14
         max_zoom: 17
     local-pois:
         type: MVT
-        url:  https://www.tplmaps.com
+        url:
         url_params:
             apikey: global.sdk_api_key
         min_zoom: 10
         max_zoom: 17
     generalTraffic:
-        type: null
-        url: https://www.tplmaps.com
+        type: MVT
+        url:
         url_params:
             apikey: global.sdk_api_key
         min_display_zoom: 5
-        max_zoom: 13
+        max_zoom: 17
 
 
 # As we are using the Composite GeoJSON for the source, each layer drawn here is the object class, the layer name acts as the layer from
 # source JSON if we don't explicitly define it, boundary layer here is using the data in the JSON that is followed by the "boundary": key word
 # before the features are defined
 layers:
+
+    traffic:
+        data: { source: generalTraffic , layer: category_traffic}
+        filter: function(){ return global.trafficStatus == true}
+        highway-m:
+            # apply a function in the filter, the resulting objects are used
+            filter: function () { return (feature.p == 6 )}
+            draw:
+                lines:
+                    order: function() {if(feature.s=='#d50000'){return 119;}else if(feature.s=='#f3450e'){return 118;}else if(feature.s=='#ffff00'){return 117;}else if(feature.s=='#a5d414'){return 116;}else if(feature.s=='#0bce0a'){return 115;}else{return 114;} }
+                    color: function () { return feature.s; }
+                    cap: round
+                    width: [[5, 0.1px],[10,0.5px],[15,2px],[20,7px]]
+        highway-nm:
+            filter: function () { return (feature.p == 5 )}
+            draw:
+                lines:
+                    order: function() {if(feature.s=='#d50000'){return 119;}else if(feature.s=='#f3450e'){return 118;}else if(feature.s=='#ffff00'){return 117;}else if(feature.s=='#a5d414'){return 116;}else if(feature.s=='#0bce0a'){return 115;}else{return 114;} }
+                    cap: round
+                    color: function () { return feature.s; }
+                    width: [[5, 0.1px],[10,0.5px],[15,2px],[20,6px]]
+        main-roads:
+            filter: function() { return feature.p == 4 && $zoom >= 7 ; }
+            draw:
+                lines:
+                    order: function() {if(feature.s=='#d50000'){return 119;}else if(feature.s=='#f3450e'){return 118;}else if(feature.s=='#ffff00'){return 117;}else if(feature.s=='#a5d414'){return 116;}else if(feature.s=='#0bce0a'){return 115;}else{return 114;} }
+                    color: function () { return feature.s; }
+                    cap: round
+                    width: [[7, 0.125px],[10,0.25px],[15,1.5px],[20,6px]]
+
+        secondary-roads:
+            filter: function() { return feature.p == 3; }
+            draw:
+                lines:
+                    order: function() {if(feature.s=='#d50000'){return 119;}else if(feature.s=='#f3450e'){return 118;}else if(feature.s=='#ffff00'){return 117;}else if(feature.s=='#a5d414'){return 116;}else if(feature.s=='#0bce0a'){return 115;}else{return 114;} }
+                    color: function () { return feature.s; }
+                    cap: round
+                    width: [[10, 0.125px],[15,1.25px],[20,5px]]
+
+    terrain:
+        data: { source: satellite }
+        filter: function() { return global.currentTime == 'satellite' }
+        draw:
+            raster:
+                order: 0
 
     touch:
         data: { source: touch }
@@ -1095,7 +1132,7 @@ layers:
                             stroke: { color: global.colorscheme.poi_stroke , width: 1.0 }
 
     livetrafficlayer:
-        data: { source: generalTraffic }
+        data: { source: livetrafficlayer }
         trafficP5:
             filter: function() { return feature.roadpriority=='5'; }
             draw:
@@ -1140,6 +1177,18 @@ layers:
                     order: function() {if(feature.color=='#ff0000'){return 52;}if(feature.color=='#008000'){return 51;}else{return 50;} }
                     cap: round
                     width: [[14, 1px],[15,3px],[20,18px]]
+
+    locationmarker:
+        data: { source: locationmarker }
+        currentLocationMarker:
+            filter: { type: currentLocationMarker }
+            draw:
+                currentLocationMarker:
+                    priority: 0.5
+                    interactive: true
+                    sprite: currentLocationMarker
+                    size: [[12, 22px], [15, 22px]]
+                    collide: false
 
     droppinmarker:
         data: { source: droppinmarker }

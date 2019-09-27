@@ -1,6 +1,0 @@
-framework module TPLMaps {
-  umbrella header "TPLMaps.h"
-
-  export *
-  module * { export * }
-}

@@ -1,0 +1,6 @@
+framework module MapsSDK {
+  umbrella header "MapsSDK.h"
+
+  export *
+  module * { export * }
+}
