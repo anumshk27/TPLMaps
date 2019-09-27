@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/anumshk27/TPLMaps.svg?branch=master)](https://travis-ci.org/anumshk27/TPLMaps)
+
 ![TPLMaps](https://dl.dropboxusercontent.com/s/ks2tbo6ghpwwda0/TPLMapsLogo.png)
 
 ## Getting Started
