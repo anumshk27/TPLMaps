@@ -2,7 +2,6 @@
 ![TPLMaps](https://dl.dropboxusercontent.com/s/ks2tbo6ghpwwda0/TPLMapsLogo.png)
 
 [![Build Status](https://travis-ci.com/anumshk27/TPLMapDemo.svg?token=pAxNL3frqpRC6rqwAYgv&branch=master)](https://travis-ci.com/anumshk27/TPLMapDemo)
-
 ## Getting Started
 Before you can begin working with TPL Maps on iOS, you need to download the TPL Maps SDK for iOS.
 
@@ -37,7 +36,7 @@ Create a `Podfile` for the TPLMaps SDK for iOS and use it to install the API and
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
+platform :ios, '8.0'
 
 target 'YOUR_APPLICATION_TARGET_NAME_HERE' do
 pod 'TPLMaps'
@@ -63,161 +62,161 @@ Now, add or update a few methods inside your app's default ViewController to cre
 ```objective-c
 
 - (void)viewDidLoad {
-    
-    [super viewDidLoad];
 
-    //Initializes and returns a new map view for specified frame
-    TPLMapView * mapView = [[TPLMapView alloc] initWithFrame:self.view.bounds];
-    
-    //The map view delegate
-    mapView.delegate = self;
-    
-    //Show user location on map. Read documentation for more info
-    mapView.showsUserLocation = true;
-    
-    //Show user location button on map. Read documentation for more info
-    mapView.myLocationButtonEnabled = true;
-    
-    //Show map zoom controls
-    mapView.zoomControlsEnabled = true;
-    
-    //Show compass on map
-    mapView.showsCompass = true;
-    
-    //Show POI's in map
-    mapView.showsPointsOfInterest = true;
-    
-    //Show Buildings on map
-    mapView.showsBuildings = true;
-    
-    //Map modes DAY || NIGHT
-    mapView.mapMode = NIGHT;
-    
-    //Map Max zoom
-    mapView.maximumZoom = 20;
-    
-    //Map Min zoom
-    mapView.minimumZoom = 10;
-    
-    //Render Maps to view
-    [self.view addSubview:mapView];
-        
+[super viewDidLoad];
+
+//Initializes and returns a new map view for specified frame
+TPLMapView * mapView = [[TPLMapView alloc] initWithFrame:self.view.bounds];
+
+//The map view delegate
+mapView.delegate = self;
+
+//Show user location on map. Read documentation for more info
+mapView.showsUserLocation = true;
+
+//Show user location button on map. Read documentation for more info
+mapView.myLocationButtonEnabled = true;
+
+//Show map zoom controls
+mapView.zoomControlsEnabled = true;
+
+//Show compass on map
+mapView.showsCompass = true;
+
+//Show POI's in map
+mapView.showsPointsOfInterest = true;
+
+//Show Buildings on map
+mapView.showsBuildings = true;
+
+//Map modes DAY || NIGHT
+mapView.mapMode = NIGHT;
+
+//Map Max zoom
+mapView.maximumZoom = 20;
+
+//Map Min zoom
+mapView.minimumZoom = 10;
+
+//Render Maps to view
+[self.view addSubview:mapView];
+
 }
 ```
 
 #### Add Point On MapView
 ```objective-c
 
-     CLLocation * newLoc = ;
-    
-    //Initilize Marker with set of coordinate
-    Marker * annotationPin = [Marker markerWithPosition:newLoc.coordinate];
-    
-    //The string containing the Marker's Title.
-    annotationPin.title = @"Point";
-    
-    //A Boolean value indicating whether the annotation view display in a callout bubble.
-    annotationPin.canShowCallout = true;
-    
-    //Marker icon to render. If left nil, uses a default SDK place marker.
-    annotationPin.icon = [UIImage imageNamed:@"car"];
-    
-    //Sets the rotation angle for the Marker in degrees
-    annotationPin.rotation = 60.0;
-    
-    //Controls whether this marker should be flat against the Earth's surface
-    annotationPin.flat = false;
-    
-    //Method to render marker on map
-    [self.mapView addMarker:annotationPin];
+CLLocation * newLoc = ;
+
+//Initilize Marker with set of coordinate
+Marker * annotationPin = [Marker markerWithPosition:newLoc.coordinate];
+
+//The string containing the Marker's Title.
+annotationPin.title = @"Point";
+
+//A Boolean value indicating whether the annotation view display in a callout bubble.
+annotationPin.canShowCallout = true;
+
+//Marker icon to render. If left nil, uses a default SDK place marker.
+annotationPin.icon = [UIImage imageNamed:@"car"];
+
+//Sets the rotation angle for the Marker in degrees
+annotationPin.rotation = 60.0;
+
+//Controls whether this marker should be flat against the Earth's surface
+annotationPin.flat = false;
+
+//Method to render marker on map
+[self.mapView addMarker:annotationPin];
 
 ```
 
 #### Add Circle On MapView
 ```objective-c
 
-    CLLocation * loc = ;
-    
-    //Initilize Circle with set of Coordinate and radius
-    Circle * circle = [Circle circleWithCenterCoordinate:loc.coordinate radius:100];
-    
-    //The outline width of the line in screen points.Default is 2
-    circle.outlineWidth = 0.1;
-    
-    //A Boolean value that indicates whether the polyline is transparent.
-    circle.transparent = true;
-    
-    //The UIColor used to render the polyline. if empty or nil default color will be Blue
-    circle.outlineColor = [UIColor colorWithRed:244.0/255.0 green:66.0/255.0 blue:226.0/255.0 alpha:1.0];
-    
-    //Method to render Circle on map
-    [self.mapView drawCircle:circle];
+CLLocation * loc = ;
+
+//Initilize Circle with set of Coordinate and radius
+Circle * circle = [Circle circleWithCenterCoordinate:loc.coordinate radius:100];
+
+//The outline width of the line in screen points.Default is 2
+circle.outlineWidth = 0.1;
+
+//A Boolean value that indicates whether the polyline is transparent.
+circle.transparent = true;
+
+//The UIColor used to render the polyline. if empty or nil default color will be Blue
+circle.outlineColor = [UIColor colorWithRed:244.0/255.0 green:66.0/255.0 blue:226.0/255.0 alpha:1.0];
+
+//Method to render Circle on map
+[self.mapView drawCircle:circle];
 
 ```
 
 #### Add Polyline On MapView
 ```objective-c
 
-    CLLocation * lineCoordinates1 = ;
-    CLLocation * lineCoordinates2 = ;
- 
-      //CoordinateGeometry is colloction of CLLocationCooordinate2D
-    MutableCoordinateGeometry * geometry = [[MutableCoordinateGeometry alloc] init];
-    
-    //Adds coordinate to the end of geometry
-    [geometry addCoordinate:lineCoordinates1.coordinate];
-    [geometry addCoordinate:lineCoordinates2.coordinate];
-    
-    //Initilize Polyline with set of MutableCoordinateGeometry
-    PolyLine * polyline = [PolyLine polylineWithCoordinates:geometry];
-    
-    //The outline width of the line in screen points.Default is 2
-    polyline.outlineWidth = 3;
-    
-    //A Boolean value that indicates whether the polyline is transparent.
-    polyline.transparent = false;
-    
-    //The Width of the line in screen points.Default is 2
-    polyline.lineWidth = 3;
-    
-    //The UIColor used to render the polyline. if empty or nil default color will be Blue
-    polyline.outlineColor = [UIColor redColor];
-    
-    //The UIColor used to fill the shape’s path
-    polyline.fillColor = [UIColor blueColor];
-    
-    //Method to render polyline on map
-    [self.mapView drawPolyLine:polyline];
+CLLocation * lineCoordinates1 = ;
+CLLocation * lineCoordinates2 = ;
+
+//CoordinateGeometry is colloction of CLLocationCooordinate2D
+MutableCoordinateGeometry * geometry = [[MutableCoordinateGeometry alloc] init];
+
+//Adds coordinate to the end of geometry
+[geometry addCoordinate:lineCoordinates1.coordinate];
+[geometry addCoordinate:lineCoordinates2.coordinate];
+
+//Initilize Polyline with set of MutableCoordinateGeometry
+PolyLine * polyline = [PolyLine polylineWithCoordinates:geometry];
+
+//The outline width of the line in screen points.Default is 2
+polyline.outlineWidth = 3;
+
+//A Boolean value that indicates whether the polyline is transparent.
+polyline.transparent = false;
+
+//The Width of the line in screen points.Default is 2
+polyline.lineWidth = 3;
+
+//The UIColor used to render the polyline. if empty or nil default color will be Blue
+polyline.outlineColor = [UIColor redColor];
+
+//The UIColor used to fill the shape’s path
+polyline.fillColor = [UIColor blueColor];
+
+//Method to render polyline on map
+[self.mapView drawPolyLine:polyline];
 
 
 ```
 #### Add Polygon On MapView
 ```objective-c
-    
-       //CoordinateGeometry is colloction of CLLocationCooordinate2D
-    MutableCoordinateGeometry * geometry = [[MutableCoordinateGeometry alloc] init];
 
-    //Adds coordinate to the end of geometry
-    [geometry addCoordinate:loc1.coordinate];
-    [geometry addCoordinate:loc2.coordinate];
-    [geometry addCoordinate:loc3.coordinate];
-    [geometry addCoordinate:loc4.coordinate];
-    
-    //Initilize Polygon with set of MutableCoordinateGeometry
-    Polygon * polygon = [Polygon polygonWithCoordinates:geometry];
-    
-    //The outline width of the line in screen points.Default is 2
-    polygon.outlineWidth = 0.1;
-    
-    //A Boolean value that indicates whether the polyline is transparent.
-    polygon.transparent = true;
-    
-    //The UIColor used to render the polyline. if empty or nil default color will be Blue
-    polygon.outlineColor = [UIColor colorWithRed:244.0/255.0 green:66.0/255.0 blue:226.0/255.0 alpha:1.0];
-    
-    //Method to render Polygon on map
-    [self.mapView drawPolygon:polygon];
-    
+//CoordinateGeometry is colloction of CLLocationCooordinate2D
+MutableCoordinateGeometry * geometry = [[MutableCoordinateGeometry alloc] init];
+
+//Adds coordinate to the end of geometry
+[geometry addCoordinate:loc1.coordinate];
+[geometry addCoordinate:loc2.coordinate];
+[geometry addCoordinate:loc3.coordinate];
+[geometry addCoordinate:loc4.coordinate];
+
+//Initilize Polygon with set of MutableCoordinateGeometry
+Polygon * polygon = [Polygon polygonWithCoordinates:geometry];
+
+//The outline width of the line in screen points.Default is 2
+polygon.outlineWidth = 0.1;
+
+//A Boolean value that indicates whether the polyline is transparent.
+polygon.transparent = true;
+
+//The UIColor used to render the polyline. if empty or nil default color will be Blue
+polygon.outlineColor = [UIColor colorWithRed:244.0/255.0 green:66.0/255.0 blue:226.0/255.0 alpha:1.0];
+
+//Method to render Polygon on map
+[self.mapView drawPolygon:polygon];
+
 ```
 #### Controls and Gestures
 ```objective-c
