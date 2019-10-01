@@ -29,6 +29,9 @@
 /** The string containing the Marker's subtitle. */
 @property (nonatomic, strong) NSString *subTitle;
 
+/** The id containing custom user data. */
+@property (nonatomic, strong) id userData;
+
 /** Specifies the item’s position on the z axis. Min 100 Max 2000 */
 @property(nonatomic) int zIndex;
 

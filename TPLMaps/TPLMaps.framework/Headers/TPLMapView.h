@@ -23,8 +23,8 @@
 /**
  * Enum provide MapView Mode Standard or Night.
  */
-typedef NS_ENUM (NSUInteger, MapViewMode) {
-    STANDARD = 0,
+typedef NS_ENUM (NSUInteger, MapViewTheme) {
+    DAY = 0,
     NIGHT
 };
 
@@ -330,7 +330,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Enum provide MapView Mode Standard or Night.
  */
-@property (nonatomic) MapViewMode mapMode NS_SWIFT_NAME(mapMode);
+@property (nonatomic) MapViewTheme mapTheme NS_SWIFT_NAME(mapMode);
 
 /**
  * A Boolean indicating whether the map displays point-of-interest information.
