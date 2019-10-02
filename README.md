@@ -3,7 +3,6 @@
 
 [![Build Status](https://travis-ci.com/anumshk27/TPLMapDemo.svg?token=pAxNL3frqpRC6rqwAYgv&branch=master)](https://travis-ci.com/anumshk27/TPLMapDemo)
 [![Version](https://img.shields.io/cocoapods/v/TPLMaps.svg?style=flat)](http://cocoapods.org/pods/TPLMaps)
-[![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](http://cocoapods.org/pods/TPLMaps)
 
 
 ## Getting Started
