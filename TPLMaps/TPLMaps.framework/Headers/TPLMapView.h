@@ -340,7 +340,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * A Boolean indicating whether the map displays extruded building information.
  */
-@property (nonatomic) BOOL showsBuildings NS_SWIFT_NAME(showsPointsOfInterest);
+@property (nonatomic) BOOL showsBuildings NS_SWIFT_NAME(showsBuildings);
 
 /**
  A Boolean indicating whether the map displays a location button control.
@@ -370,7 +370,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The minimum zoom level that the map cab be zoomed out to.
  */
-@property (nonatomic) CGFloat minimumZoom NS_SWIFT_NAME(maximumZoom);
+@property (nonatomic) CGFloat minimumZoom NS_SWIFT_NAME(minimumZoom);
 
 #pragma mark Markers
 /**

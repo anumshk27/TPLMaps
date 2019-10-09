@@ -29,4 +29,5 @@ FOUNDATION_EXPORT const unsigned char TPLMapsVersionString[];
 #import <TPLMaps/Search.h>
 #import <TPLMaps/Place.h>
 #import <TPLMaps/LocationManager.h>
+#import <TPLMaps/DirectionSegment.h>
 
