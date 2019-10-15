@@ -49,6 +49,19 @@
  */
 + (instancetype)circleWithCenterCoordinate:(CLLocationCoordinate2D)coord radius:(CLLocationDistance)radius;
 
+/*!
+ *  Unavailable. Use -circleWithCenterCoordinate instead.
+ */
+- (instancetype)init __attribute__((unavailable("Use -circleWithCenterCoordinate instead.")));
 
+/*!
+ *  Unavailable. Use -circleWithCenterCoordinate instead.
+ */
+- (instancetype)initWithFrame:(CGRect)frame __attribute__((unavailable("Use -circleWithCenterCoordinate instead.")));
+
+/*!
+ *  Unavailable. Use -circleWithCenterCoordinate instead.
+ */
++ (instancetype)new __attribute__((unavailable("Use -circleWithCenterCoordinate instead.")));
 
 @end

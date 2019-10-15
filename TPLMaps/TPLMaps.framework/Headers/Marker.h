@@ -16,7 +16,6 @@
 
 @interface Marker : NSObject
 
-
 /** Convenience constructor for a default marker. */
 +(instancetype)markerWithPosition:(CLLocationCoordinate2D)position NS_SWIFT_NAME(markerWithPosition(CLLocationCoordinate2D:));
 
@@ -50,7 +49,6 @@
 /** A Boolean value indicating whether the annotation view display in a callout bubble. */
 @property (nonatomic) BOOL canShowCallout;
 
-
 /** Get Marker Postion. Read-only */
 -(CLLocationCoordinate2D)getPosition;
 
@@ -76,5 +74,19 @@
 -(BOOL)getCanShowCallout;
 
 
+/*!
+ *  Unavailable. Use -markerWithPosition instead.
+ */
+- (instancetype)init __attribute__((unavailable("Use -markerWithPosition instead.")));
+
+/*!
+ *  Unavailable. Use -markerWithPosition instead.
+ */
+- (instancetype)initWithFrame:(CGRect)frame __attribute__((unavailable("Use -markerWithPosition instead.")));
+
+/*!
+ *  Unavailable. Use -markerWithPosition instead.
+ */
++ (instancetype)new __attribute__((unavailable("Use -markerWithPosition instead.")));
 
 @end

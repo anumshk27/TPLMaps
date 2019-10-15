@@ -40,5 +40,19 @@
  */
 + (instancetype)polygonWithCoordinates:(MutableCoordinateGeometry *)geometryCoordinates NS_SWIFT_NAME(polygonWithCoordinates(geometryCoordinates:));
 
+/*!
+ *  Unavailable. Use -polygonWithCoordinates instead.
+ */
+- (instancetype)init __attribute__((unavailable("Use -polygonWithCoordinates instead.")));
+
+/*!
+ *  Unavailable. Use -polygonWithCoordinates instead.
+ */
+- (instancetype)initWithFrame:(CGRect)frame __attribute__((unavailable("Use -polygonWithCoordinates instead.")));
+
+/*!
+ *  Unavailable. Use -polygonWithCoordinates instead.
+ */
++ (instancetype)new __attribute__((unavailable("Use -polygonWithCoordinates instead.")));
 
 @end

@@ -41,8 +41,21 @@
 /*! A pointer to the array of coordinates that define the path.
  *  \param geometryCoordinates The array of coordinates defining the shape.
  */
-+ (instancetype)polylineWithCoordinates:(MutableCoordinateGeometry *)geometryCoordinates NS_SWIFT_NAME(polylineWithCoordinates(geometryCoordinates:));;
++ (instancetype)polylineWithCoordinates:(MutableCoordinateGeometry *)geometryCoordinates NS_SWIFT_NAME(polylineWithCoordinates(geometryCoordinates:));
 
+/*!
+ *  Unavailable. Use -polylineWithCoordinates instead.
+ */
+- (instancetype)init __attribute__((unavailable("Use -polylineWithCoordinates instead.")));
 
+/*!
+ *  Unavailable. Use -polylineWithCoordinates instead.
+ */
+- (instancetype)initWithFrame:(CGRect)frame __attribute__((unavailable("Use -polylineWithCoordinates instead.")));
+
+/*!
+ *  Unavailable. Use -polylineWithCoordinates instead.
+ */
++ (instancetype)new __attribute__((unavailable("Use -polylineWithCoordinates instead.")));
 
 @end

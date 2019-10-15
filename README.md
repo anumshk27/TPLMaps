@@ -39,7 +39,7 @@ Create a `Podfile` for the TPLMaps SDK for iOS and use it to install the API and
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.3'
 
 target 'YOUR_APPLICATION_TARGET_NAME_HERE' do
 pod 'TPLMaps'
