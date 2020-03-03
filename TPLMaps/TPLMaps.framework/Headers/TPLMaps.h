@@ -30,4 +30,5 @@ FOUNDATION_EXPORT const unsigned char TPLMapsVersionString[];
 #import <TPLMaps/Place.h>
 #import <TPLMaps/LocationManager.h>
 #import <TPLMaps/DirectionSegment.h>
+#import <TPLMaps/Geocoder.h>
 

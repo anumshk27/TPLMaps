@@ -328,9 +328,9 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark Changing the Map Options
 
 /**
- * Enum provide MapView Mode Standard or Night.
+ * Enum provide MapView theme Day or Night.
  */
-@property (nonatomic) MapViewTheme mapTheme NS_SWIFT_NAME(mapMode);
+@property (nonatomic) MapViewTheme mapTheme NS_SWIFT_NAME(mapTheme);
 
 /**
  * A Boolean indicating whether the map displays point-of-interest information.
@@ -450,6 +450,8 @@ NS_ASSUME_NONNULL_BEGIN
 //- (void)JSONStlyleFile:(NSString*)file;
 
 - (void)removeRoute:(Direction *)route NS_SWIFT_NAME(removeRoute(Direction:));
+
+//- (NSArray*)getSessionResponseData;
 
 NS_ASSUME_NONNULL_END
 

@@ -92,8 +92,20 @@ mapView.showsPointsOfInterest = true;
 //Show Buildings on map
 mapView.showsBuildings = true;
 
-//Map modes DAY || NIGHT
-mapView.mapMode = NIGHT;
+//Enum provide MapView theme Day | Night.
+mapView.mapTheme = NIGHT;
+
+//Wether pan gesture is enabled or disabled on map.
+mapView.scrollEnabled = true;
+    
+//Wether tilt gesture is enabled or disabled on map.
+mapView.tiltEnabled = true;
+    
+//Wether rotate gesture is enabled or disabled on map.
+mapView.rotateEnabled = true;
+    
+//Whether all gestures should be enabled (default) or disabled.
+mapView.allGesturesEnabled = true;
 
 //Map Max zoom
 mapView.maximumZoom = 20;
@@ -221,14 +233,21 @@ polygon.outlineColor = [UIColor colorWithRed:244.0/255.0 green:66.0/255.0 blue:2
 [self.mapView drawPolygon:polygon];
 
 ```
-#### Controls and Gestures
+#### Reverse Geocoding 
 ```objective-c
-You can enable gesture by setting the delegtes `<TPLMapViewDelegate>`
 
-`scrollGestures` controls whether scroll gestures are enabled or disabled. If enabled, users may swipe to pan the camera.
-`zoomGestures` controls whether zoom gestures are enabled or disabled. If enabled, users may double tap, two-finger tap, or pinch to zoom the camera. Note that double tapping or pinching when scrollGestures are enabled may pan the camera to the specified point.
-`tiltGestures` controls whether tilt gestures are enabled or disabled. If enabled, users may use a two-finger vertical down or up swipe to tilt the camera.
-`rotateGestures` controls whether rotate gestures are enabled or disabled. If enabled, users may use a two-finger rotate gesture to rotate the camera.
+//Create location object
+CLLocation * location = [[CLLocation alloc] initWithLatitude:coordinate.latitude 
+															longitude:coordinate.longitude];
+
+//Submits a reverse-geocoding request for the specified location and return place
+[Geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<Place *> * placemarks, NSError * error) {
+      if (error) {
+         	 NSLog(@"%@", error.localizedDescription);
+      }else {
+			NSLog(@"placemark %@", placemarks.description);
+      }
+ } ];
 
 ```
 
