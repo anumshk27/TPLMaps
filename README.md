@@ -1,5 +1,5 @@
 
-![TPLMaps](https://dl.dropboxusercontent.com/s/ks2tbo6ghpwwda0/TPLMapsLogo.png)
+![TPLMaps](https://api.tplmaps.com/ios-assets/portal_landing_image.png)
 
 [![Build Status](https://travis-ci.com/anumshk27/TPLMapDemo.svg?token=pAxNL3frqpRC6rqwAYgv&branch=master)](https://travis-ci.com/anumshk27/TPLMapDemo)
 [![Version](https://img.shields.io/cocoapods/v/TPLMaps.svg?style=flat)](http://cocoapods.org/pods/TPLMaps)
@@ -250,6 +250,3 @@ CLLocation * location = [[CLLocation alloc] initWithLatitude:coordinate.latitude
  } ];
 
 ```
-
-
-
