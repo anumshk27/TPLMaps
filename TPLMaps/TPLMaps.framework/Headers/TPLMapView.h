@@ -451,6 +451,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)removeRoute:(Direction *)route NS_SWIFT_NAME(removeRoute(Direction:));
 
+- (void)displayMarkerViaGeoJson:(NSDictionary*)geoJson;
 //- (NSArray*)getSessionResponseData;
 
 NS_ASSUME_NONNULL_END
