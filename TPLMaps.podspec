@@ -30,9 +30,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/anumshk27/TPLMaps"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-  s.screenshots = [ 'https://dl.dropboxusercontent.com/s/39nvaudsw5q063i/1.png',
-                     'https://dl.dropboxusercontent.com/s/jciheijrmo8ip3g/2.png',
-                     'https://dl.dropboxusercontent.com/s/ev7kkqh5npr6aga/3.png' ]
+  s.screenshots = [ 'https://camo.githubusercontent.com/2db9cfb61b7c61fda824ac27b7d43276f00b48846b2964593a9d2e52289e0963/68747470733a2f2f6170692e74706c6d6170732e636f6d2f696f732d6173736574732f706f7274616c5f6c616e64696e675f696d6167652e706e67']
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
