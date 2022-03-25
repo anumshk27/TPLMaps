@@ -377,7 +377,10 @@ NS_ASSUME_NONNULL_BEGIN
  Sets the location that define the geo-point.
  */
 - (void)addMarker:(Marker *)marker NS_SWIFT_NAME(addMarker(Marker:));
-
+/**
+ Sets the location that define array of geo-points.
+ */
+- (void)addMarkers:(NSArray<Marker *>*)markers NS_SWIFT_NAME(addMarkers(markers:));
 /**
  Remove Marker from map.
  */
@@ -447,12 +450,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)drawRouteFrom:(CLLocationCoordinate2D)orgin to:(CLLocationCoordinate2D)destination heading:(float)heading routeType:(RouteType)routeType completionBlock:(void (^)(Direction* direction,NSError* error))completionBlock;
 
-//- (void)JSONStlyleFile:(NSString*)file;
-
 - (void)removeRoute:(Direction *)route NS_SWIFT_NAME(removeRoute(Direction:));
-
-- (void)displayMarkerViaGeoJson:(NSDictionary*)geoJson;
-//- (NSArray*)getSessionResponseData;
 
 NS_ASSUME_NONNULL_END
 
