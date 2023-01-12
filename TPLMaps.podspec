@@ -103,8 +103,8 @@ SOFTWARE.
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   
-  s.platform = :ios, '10.0'
-  s.ios.deployment_target = '10.0'
+  s.platform = :ios, '12.0'
+  s.ios.deployment_target = '12.0'
   s.source       = { :git => "https://github.com/anumshk27/TPLMaps.git", :tag => '3.2.1' }
   s.ios.vendored_frameworks = 'TPLMaps/TPLMaps.framework'
   s.resource = 'TPLMaps/TPLMaps.bundle'
