@@ -106,7 +106,7 @@ SOFTWARE.
   s.platform = :ios, '12.0'
   s.ios.deployment_target = '12.0'
   s.source       = { :git => "https://github.com/anumshk27/TPLMaps.git", :tag => '3.2.2' }
-  s.ios.vendored_frameworks = 'TPLMaps/TPLMaps.framework'
+  s.ios.vendored_frameworks = 'TPLMaps/TPLMaps.xcframework'
   s.resource = 'TPLMaps/TPLMaps.bundle'
   s.ios.framework    = 'UIKit', 'CoreLocation', 'SystemConfiguration', 'CFNetwork', 'CoreGraphics' , 'QuartzCore', 'GLKit', 'OpenGLES' , 'JavaScriptCore'
 

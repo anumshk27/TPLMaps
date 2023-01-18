@@ -550,6 +550,9 @@ textures:
         sprites:
             SPRITE: [0, 0, 160, 160]
 
+    defaultMarker:
+        url: TPLBaseMapResources.bundle/BaseMapIcons/default_marker.png
+
     routeMarkerTilt:
         url: TPLBaseMapResources.bundle/BaseMapIcons/heading_arrow_tilt.png
         filtering: mipmap
@@ -599,6 +602,12 @@ styles:
         base: points
         texture: restIcons
         blend_order: 5
+
+    defaultMarker:
+        base: points
+        texture: defaultMarker
+        blend_order: 5
+
     live_location_marker:
         base: points
         blend_order: 8
@@ -615,13 +624,19 @@ styles:
     endflag:
         base: points
         texture: endflag
+        
     droppin:
         base: points
         texture: restIcons
         blend_order: 7
+        
     pinmarker:
         base: points
         texture: pinmarker
+        
+    recordroutepin:
+        base: points
+        # blend_order: 5
     text-blend-order:
         base: text
         blend_order: 1
@@ -1197,9 +1212,26 @@ layers:
             draw:
                 droppin:
                     priority: 0.5
-                    sprite: SPRITE
+                    sprite: droppin
                     size: [[3, 22px], [21, 22px]]
+                    
+    recordroutepin:
+        data: {source : recordroutepin}
+        draw:
+            recordroutepin:
+                priority: 1
+                size: 14px
+                color: '#F44336'
 
+
+    defaultMarker:
+        data: {source : defaultMarker}
+        draw:
+            defaultMarker:
+                priority: 1
+                size: 20px
+                collide: false
+        
     world:
         data: { source: local }
         filter: [ $zoom: { max: 8 } ]
