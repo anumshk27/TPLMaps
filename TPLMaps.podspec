@@ -109,8 +109,7 @@ SOFTWARE.
   s.ios.vendored_frameworks = 'TPLMaps/TPLMaps.xcframework'
   s.resource = 'TPLMaps/TPLMaps.bundle'
   s.ios.framework    = 'UIKit', 'CoreLocation', 'SystemConfiguration', 'CFNetwork', 'CoreGraphics' , 'QuartzCore', 'GLKit', 'OpenGLES' , 'JavaScriptCore'
-
-
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   #s.source_files = 'TPLMaps/TPLMaps.framework'
   # s.public_header_files = 'TPLMaps/TPLMaps.framework/Headers/Public/*.h'
