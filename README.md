@@ -1,5 +1,5 @@
 
-![TPLMaps](https://api.tplmaps.com/ios-assets/portal_landing_image.png)
+![TPLMaps](https://api.tplmaps.com/apiportal/assets/images/logo-af7d4a2a6d.svg)
 
 [![Build Status](https://travis-ci.com/anumshk27/TPLMapDemo.svg?token=pAxNL3frqpRC6rqwAYgv&branch=master)](https://travis-ci.com/anumshk27/TPLMapDemo)
 [![Version](https://img.shields.io/cocoapods/v/TPLMaps.svg?style=flat)](http://cocoapods.org/pods/TPLMaps)
