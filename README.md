@@ -1,6 +1,5 @@
 
-![TPLMaps](https://api.tplmaps.com/apiportal/assets/images/logo-af7d4a2a6d.svg)
-
+![TPLMaps](https://api.tplmaps.com/apiportal/assets-doc/documentation/flutter-guide/documentation/Images/assets/tpl_logo.svg)
 [![Build Status](https://travis-ci.com/anumshk27/TPLMapDemo.svg?token=pAxNL3frqpRC6rqwAYgv&branch=master)](https://travis-ci.com/anumshk27/TPLMapDemo)
 [![Version](https://img.shields.io/cocoapods/v/TPLMaps.svg?style=flat)](http://cocoapods.org/pods/TPLMaps)
 [![Platform](https://img.shields.io/cocoapods/p/TPLMaps.svg?style=flat)](http://cocoapods.org/pods/TPLMaps)
