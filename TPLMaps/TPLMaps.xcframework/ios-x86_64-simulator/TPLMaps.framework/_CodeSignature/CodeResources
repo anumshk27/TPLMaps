@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/Direction.h</key>
 		<data>
-		DySn2O9M8I5OHitIhEFG+m+Nop0=
+		pDmr3l2ZZF1IKf2n2JLiHBoXzAs=
 		</data>
 		<key>Headers/DirectionSegment.h</key>
 		<data>
@@ -44,6 +44,10 @@
 		<data>
 		p+3LQ3iRrJdpcZsA6Mn+dgz8+Zg=
 		</data>
+		<key>Headers/NearbyPlace.h</key>
+		<data>
+		q/8tWMzplTUi+fbnv/As53sqP6w=
+		</data>
 		<key>Headers/Place.h</key>
 		<data>
 		2VjhDR5Pfk7HFgOQ+EZdAgMod6E=
@@ -58,7 +62,7 @@
 		</data>
 		<key>Headers/Search.h</key>
 		<data>
-		6grPsWXHYYtcmxFwXSG4eQnLuX8=
+		ykdivLI3+5a7iwbKlRcnDCs+jIY=
 		</data>
 		<key>Headers/TPLMapView.h</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>Headers/TPLMaps.h</key>
 		<data>
-		q+Wktalj6rwNE+JNGMW5QSa741Q=
+		YmZDJU9nOyjcLEhmQez4LII6lis=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -104,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/+nYWtAmkIZ51Vxzmdz6M8S7AJZsJNDhU9hwP5lRKoA=
+			9jpcQFbd8NQQVNh3QLkT592f2+953f7ilHFLIIOzWCo=
 			</data>
 		</dict>
 		<key>Headers/DirectionSegment.h</key>
@@ -149,6 +153,13 @@
 			0an6bDenDHMc/eaY6X7kIX9NzJgT+MOavBiaMq+0uys=
 			</data>
 		</dict>
+		<key>Headers/NearbyPlace.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ThBxG4+gO65QugRL5k7g1pUDka4u24hsx5/9arxtfhI=
+			</data>
+		</dict>
 		<key>Headers/Place.h</key>
 		<dict>
 			<key>hash2</key>
@@ -174,7 +185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AjZtAiIto+0PlWgVjj+HJVu7eDte+ar1dxyVWLuart8=
+			V28Vl25R2YBlOnowaNE31ajQaT0/rJvQRtwlbdOitlA=
 			</data>
 		</dict>
 		<key>Headers/TPLMapView.h</key>
@@ -188,7 +199,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8aWqJV4v/4f5CByjaisZJ/GyuOc0dFvkqKViSklPPqQ=
+			zE8emtcj+bQjSyXZloqZdo5LuXt4zdQuKt3cC02Y8Zo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
