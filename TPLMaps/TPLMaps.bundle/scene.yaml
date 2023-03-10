@@ -11,95 +11,306 @@ global:
 
     colorscheme: 
         #roads
-        motorway: function(){if(global.currentTime == 'day'){return '#f56b3d'; }else if(global.currentTime == 'night'){return '#262626'; }}
-        motorway_outline: function(){if(global.currentTime == 'day'){return '#ff4000'; }else if(global.currentTime == 'night'){return '#e4aa81'; }}
-        highway: function(){if(global.currentTime == 'day'){return '#ff9f80'; }else if(global.currentTime == 'night'){return '#262626'; }}
-        highway_outline: function(){if(global.currentTime == 'day'){return '#f46d25'; }else if(global.currentTime == 'night'){return '#ddc588'; }}
-        main_roads: function(){if(global.currentTime == 'day'){return '#ffc6b3'; }else if(global.currentTime == 'night'){return '#262626'; }}
-        main_roads_outline: function(){if(global.currentTime == 'day'){return '#ff9f80'; }else if(global.currentTime == 'night'){return '#1785cf'; }}
-        secondary_roads: function(){if(global.currentTime == 'day'){return '#e9e5e1'; }else if(global.currentTime == 'night'){return '#262626'; }}
-        secondary_roads_outline: function(){if(global.currentTime == 'day'){return '#dbc6bd'; }else if(global.currentTime == 'night'){return '#262626'; }}
-        tertiary_roads: function(){if(global.currentTime == 'day'){return '#e9e5e1'; }else if(global.currentTime == 'night'){return '#262626'; }}
-        tertiary_roads_outline: function(){if(global.currentTime == 'day'){return '#dbc6bd'; }else if(global.currentTime == 'night'){return '#262626'; }}
+        motorway: function(){if(global.currentTime == 'day'){return '#fff7e1'; }else if(global.currentTime == 'night'){return '#695e4d'; }}
+        motorway_outline: function(){if(global.currentTime == 'day'){return '#ffd983'; }else if(global.currentTime == 'night'){return '#202934'; }}
+        highway: function(){if(global.currentTime == 'day'){return '#fff7e1'; }else if(global.currentTime == 'night'){return '#695e4d'; }}
+        highway_outline: function(){if(global.currentTime == 'day'){return '#ffd983'; }else if(global.currentTime == 'night'){return '#202934'; }}
+        main_roads: function(){if(global.currentTime == 'day'){return '#fff7e1'; }else if(global.currentTime == 'night'){return '#7f725d'; }}
+        main_roads_outline: function(){if(global.currentTime == 'day'){return '#ffd983'; }else if(global.currentTime == 'night'){return '#232c39'; }}
+        secondary_roads: function(){if(global.currentTime == 'day'){return '#ffffff'; }else if(global.currentTime == 'night'){return '#38414e'; }}
+        secondary_roads_outline: function(){if(global.currentTime == 'day'){return '#cfd2d7'; }else if(global.currentTime == 'night'){return '#232c39'; }}
+        tertiary_roads: function(){if(global.currentTime == 'day'){return '#ffffff'; }else if(global.currentTime == 'night'){return '#38414e'; }}
+        tertiary_roads_outline: function(){if(global.currentTime == 'day'){return '#cfd2d7'; }else if(global.currentTime == 'night'){return '#232c39'; }}
+        streets: function(){if(global.currentTime == 'day'){return '#edeae6'; }else if(global.currentTime == 'night'){return '#38414e'; }}
         streetview: function(){if(global.currentTime == 'day'){return '#009e83'; }else if(global.currentTime == 'night'){return '#e25936'; }}
-        streets: function(){if(global.currentTime == 'day'){return '#edeae6'; }else if(global.currentTime == 'night'){return '#282d35'; }}
-        selected_route: function(){if(global.currentTime == 'day'){return '#a594b8'; }else if(global.currentTime == 'night'){return '#2196F3'; }}
+        selected_route: function(){if(global.currentTime == 'day'){return '#7ab899'; }else if(global.currentTime == 'night'){return '#7ab899'; }}
         selected_route_outline: function(){if(global.currentTime == 'day'){return '#782bca'; }else if(global.currentTime == 'night'){return '#782bca'; }}
-        segment: function(){if(global.currentTime == 'day'){return '#7ab899'; }else if(global.currentTime == 'night'){return '#4CAF50'; }}
+        segment: function(){if(global.currentTime == 'day'){return '#136734'; }else if(global.currentTime == 'night'){return '#136734'; }}
         segment_outline: function(){if(global.currentTime == 'day'){return '#67cc33'; }else if(global.currentTime == 'night'){return '#59a65d'; }}
         nonselected_route: function(){if(global.currentTime == 'day'){return '#d1c7c7'; }else if(global.currentTime == 'night'){return '#A9A9A9'; }}
         nonselected_route_outline: function(){if(global.currentTime == 'day'){return '#8c8c8c'; }else if(global.currentTime == 'night'){return '#8c8c8c'; }}
 
         #landuse
-        cemetery: function(){if(global.currentTime == 'day'){return '#c9d2c6'; }else if(global.currentTime == 'night'){return '#869881'; }}
-        religious: function(){if(global.currentTime == 'day'){return '#b2a899'; }else if(global.currentTime == 'night'){return '#a6b398'; }}
-        parking: function(){if(global.currentTime == 'day'){return '#e0d1b8'; }else if(global.currentTime == 'night'){return '#808080'; }}
-        runway: function(){if(global.currentTime == 'day'){return '#c6b9c6'; }else if(global.currentTime == 'night'){return '#8B8B8B'; }}
-#        citiesfill8: function(){if(global.currentTime == 'day'){return '#f7f1d9'; }else if(global.currentTime == 'night'){return '#0a3b5c'; }}
-#        citiesfill15: function(){if(global.currentTime == 'day'){return '#f8f0d6'; }else if(global.currentTime == 'night'){return '#19394d'; }}
-        citiesfill8_day: '#fff1e8'
-        citiesfill15_day: '#fffaf5'
-        citiesfill8_night: '#0A3B5C'
-        citiesfill15_night: '#19394D'
-        water: function(){if(global.currentTime == 'day'){return '#81e3e4'; }else if(global.currentTime == 'night'){return '#001f33'; }}
-        park: function(){if(global.currentTime == 'day'){return '#d3e996'; }else if(global.currentTime == 'night'){return '#197D77'; }}
-        grass: function(){if(global.currentTime == 'day'){return '#bbd279'; }else if(global.currentTime == 'night'){return '#1A6E69'; }}
-        commercial: function(){if(global.currentTime == 'day'){return '#d1c7c7'; }else if(global.currentTime == 'night'){return '#2C4240'; }}
-        hospital: function(){if(global.currentTime == 'day'){return '#eac8c8'; }else if(global.currentTime == 'night'){return '#c98983'; }}
-        school: function(){if(global.currentTime == 'day'){return '#f2da8c'; }else if(global.currentTime == 'night'){return '#a89d8a'; }}
-        industrial: function(){if(global.currentTime == 'day'){return '#c7cdd1'; }else if(global.currentTime == 'night'){return '#858593'; }}
-        #others
-        misc: function(){if(global.currentTime == 'day'){return '#ece6c6'; }else if(global.currentTime == 'night'){return '#746f3e'; }}
-        port: function(){if(global.currentTime == 'day'){return '#ece8ec'; }else if(global.currentTime == 'night'){return '#666666'; }}
-        world: function(){if(global.currentTime == 'day'){return '#f7f3f1'; }else if(global.currentTime == 'night'){return '#4A95D9'; }}
-        world_8: function(){if(global.currentTime == 'day'){return '#fffbf5'; }else if(global.currentTime == 'night'){return '#0d4a73'; }}
-        continent_a: function(){if(global.currentTime == 'day'){return '#d8e3b5'; }else if(global.currentTime == 'night'){return '#4696DD'; }}
-        continent_p: function(){if(global.currentTime == 'day'){return '#fffbf5'; }else if(global.currentTime == 'night'){return '#0d4a73'; }}
-        continent_b: function(){if(global.currentTime == 'day'){return '#FFF3EF'; }else if(global.currentTime == 'night'){return '#204F85'; }}
-        continent_c: function(){if(global.currentTime == 'day'){return '#f5f5bc'; }else if(global.currentTime == 'night'){return '#4085BE'; }}
-        continent_i: function(){if(global.currentTime == 'day'){return '#ffe0cc'; }else if(global.currentTime == 'night'){return '#2A97FC'; }}
-        continent_t: function(){if(global.currentTime == 'day'){return '#f7efe5'; }else if(global.currentTime == 'night'){return '#225189'; }}
-        continent_r: function(){if(global.currentTime == 'day'){return '#e5f7ef'; }else if(global.currentTime == 'night'){return '#518FDA'; }}
-        continent_u: function(){if(global.currentTime == 'day'){return '#f7e5ee'; }else if(global.currentTime == 'night'){return '#3280C8'; }}
-        continent_s: function(){if(global.currentTime == 'day'){return '#f6f9eb'; }else if(global.currentTime == 'night'){return '#2C5A95'; }}
-        borders_3: function(){if(global.currentTime == 'day'){return '#a09c9a'; }else if(global.currentTime == 'night'){return '#16476a'; }}
-        borders_2: function(){if(global.currentTime == 'day'){return '#E6F3D8'; }else if(global.currentTime == 'night'){return '#1e6394'; }}
-        borders_1: function(){if(global.currentTime == 'day'){return '#FFECE5'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
+        religious: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        sport: function(){if(global.currentTime == 'day'){return '#EEDFC8'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        coveredarea: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        water: function(){if(global.currentTime == 'day'){return '#91B8F8'; }else if(global.currentTime == 'night'){return '#17263c'; }}
+        park: function(){if(global.currentTime == 'day'){return '#b3debf'; }else if(global.currentTime == 'night'){return '#263c3f'; }}
+        vegetation: function(){if(global.currentTime == 'day'){return '#b3debf'; }else if(global.currentTime == 'night'){return '#263c3f'; }}
+        commercial: function(){if(global.currentTime == 'day'){return '#fff6dc'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        hospital: function(){if(global.currentTime == 'day'){return '#fad8d4'; }else if(global.currentTime == 'night'){return '#9d6561'; }}
+        school: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        industrial: function(){if(global.currentTime == 'day'){return '#f8f9fa'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        misc: function(){if(global.currentTime == 'day'){return '#faf8f2'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        openarea: function(){if(global.currentTime == 'day'){return '#f8f9fa'; }else if(global.currentTime == 'night'){return '#2f3948'; }}
 
-        province: function(){if(global.currentTime == 'day'){return '#808080'; }else if(global.currentTime == 'night'){return '#93c5eb'; }}
+        #others
+        citiesfill8_day: '#f8f9fa'
+        citiesfill15_day: '#f8f9fa'
+
+        world: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_a: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_p: function(){if(global.currentTime == 'day'){return '#fbf8f3'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_b: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_c: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_i: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_t: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_r: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_u: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        continent_s: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        
+        borders_3: function(){if(global.currentTime == 'day'){return '#a09c9a'; }else if(global.currentTime == 'night'){return '#2b384b'; }}
+        borders_2: function(){if(global.currentTime == 'day'){return '#E6F3D8'; }else if(global.currentTime == 'night'){return '#16476a'; }}
+        borders_1: function(){if(global.currentTime == 'day'){return '#FFECE5'; }else if(global.currentTime == 'night'){return '#2b384b'; }}
+        province: function(){if(global.currentTime == 'day'){return '#808080'; }else if(global.currentTime == 'night'){return '#16476a'; }}
         #labels
 
-        capitals: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#FFFFFF'; }}
-        capitals_stroke: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
-        country_34: function(){if(global.currentTime == 'day'){return '#000'; }else if(global.currentTime == 'night'){return '#ffffff'; }}
-        country_34_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
-        country_567: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'night'){return '#ffffff'; }}
-        country_567_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
-        provinces_fill: function(){if(global.currentTime == 'day'){return '#7f6e60'; }else if(global.currentTime == 'night'){return '#ffffff'; }}
-        provinces_stroke: function(){if(global.currentTime == 'day'){return '#f6d7bc'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
-        province_cap_fill: function(){if(global.currentTime == 'day'){return '#49311c'; }else if(global.currentTime == 'night'){return '#d4c4ca'; }}
-        province_cap_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#604020'; }}
+        capitals: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'night'){return '#c88e60'; }}
+        capitals_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#3a332f'; }}
+        country: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'night'){return '#726654'; }}
+        country_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
+        provinces_fill: function(){if(global.currentTime == 'day'){return '#4e5256'; }else if(global.currentTime == 'night'){return '#726654'; }}
+        provinces_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
+        province_cap_fill: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'night'){return '#d39463'; }}
+        province_cap_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#000000'; }}
 
-        cities_fill: function(){if(global.currentTime == 'day'){return '#49311c'; }else if(global.currentTime == 'night'){return '#e9f3fb'; }}
-        cities_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
-        area_sector_fill: function(){if(global.currentTime == 'day'){return '#49311c'; }else if(global.currentTime == 'night'){return '#e9f3fb'; }}
+        cities_fill: function(){if(global.currentTime == 'day'){return '#49311c'; }else if(global.currentTime == 'night'){return '#c88e60'; }}
+        cities_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#000000'; }}
+        area_sector_fill: function(){if(global.currentTime == 'day'){return '#717273'; }else if(global.currentTime == 'night'){return '#726654'; }}
         area_sector_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
 
-        road_text: function(){if(global.currentTime == 'day'){return '#595959'; }else if(global.currentTime == 'night'){return '#95b7b7'; }}
-        road_text_stroke: function(){if(global.currentTime == 'day'){return '#EEEEEE'; }else if(global.currentTime == 'night'){return '#532e19'; }}
-        highway_text: function(){if(global.currentTime == 'day'){return '#8f473d'; }else if(global.currentTime == 'night'){return '#e4eaef'; }}
-        highway_text_border: function(){if(global.currentTime == 'day'){return '#ffd9cc'; }else if(global.currentTime == 'night'){return '#532e19'; }}
+        road_text: function(){if(global.currentTime == 'day'){return '#4e5256'; }else if(global.currentTime == 'night'){return '#9ca5b3'; }}
+        road_text_stroke: function(){if(global.currentTime == 'day'){return '#d5d6d6'; }else if(global.currentTime == 'night'){return '#4e5868'; }}
+        highway_text: function(){if(global.currentTime == 'day'){return '#7a3e06'; }else if(global.currentTime == 'night'){return '#f3d19c'; }}
+        highway_text_border: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#333b45'; }}
 
         poi_fill: function(){if(global.currentTime == 'day'){return '#636363'; }else if(global.currentTime == 'night'){return '#87d1f5'; }}
-        poi_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#532e19'; }}
+        poi_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#17263d'; }}
         search_poi_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#282d35'; }}
 
-        water_fill: function(){if(global.currentTime == 'day'){return '#1b7d7e'; }else if(global.currentTime == 'night'){return '#66ffff'; }}
-        water_stroke: function(){if(global.currentTime == 'day'){return '#edf7f7'; }else if(global.currentTime == 'night'){return '#001f33'; }}
+        water_fill: function(){if(global.currentTime == 'day'){return '#3470c9'; }else if(global.currentTime == 'night'){return '#525c6c'; }}
+        water_stroke: function(){if(global.currentTime == 'day'){return '#5488d8'; }else if(global.currentTime == 'night'){return '#2a3546'; }}
 
-        parks_fill: function(){if(global.currentTime == 'day'){return '#447F08'; }else if(global.currentTime == 'night'){return '#65E3DB'; }}
-        parks_stroke: function(){if(global.currentTime == 'day'){return '#93e006'; }else if(global.currentTime == 'night'){return '#115551'; }}
+        parks_fill: function(){if(global.currentTime == 'day'){return '#188038'; }else if(global.currentTime == 'night'){return '#659071'; }}
+        parks_stroke: function(){if(global.currentTime == 'day'){return '#e6f4ea'; }else if(global.currentTime == 'night'){return '#324449'; }}
         endflag: function(){if(global.currentTime == 'day'){return '#404040'; }else if(global.currentTime == 'night'){return '#FFFFFF'; }}
+
+    pois_color:
+        dark_mode: '#87d1f5'
+
+        accounting: '#ab47bc'
+        advertisingagency: '#7b6242'
+        agribusiness: '#ab47bc'
+        airport: '#ec407a'
+        ambulance: '#29b6f6'
+        amusementpark: '#26c6da'
+        aquarium: '#26c6da'
+        artgallery: '#26c6da'
+        atm: '#5c6bc0'
+        auditorium: '#26c6da'
+        autospareparts: '#8d6e63'
+        bank: '#5c6bc0'
+        barber: '#ff7043'
+        basketballcourt: '#4527a0'
+        beautysalon: '#ff7043'
+        bookstore: '#c62828'
+        booksandstationers: '#ab47bc'
+
+        busstation: '#ec407a'
+        busstop: '#ec407a'
+        cafe: '#7e57c2'
+        campground: '#26c6da'
+        canteen: '#7e57c2'
+        carrepair: '#8d6e63'
+        carshowroom: '#8d6e63'
+        carwash: '#8d6e63'
+        catererseventplanners: '#ab47bc'
+        cemetery: '#4527a0'
+        church: '#ffca28'
+        cinema: '#26c6da'
+        cleaningandlaundry: '#ab47bc'
+        clothingstore: '#c62828'
+        college: '#42a5f5'
+        communitycenter: '#29b6f6'
+
+        computerstore: '#c62828'
+        constructionservices: '#afb42b'
+        conveniencestore: '#c62961'
+        cosmeticsstore: '#c62828'
+        courierservice: '#424242'
+        court: '#26a69a'
+        cricketground: '#4527a0'
+        currencyexchange: '#9ccc65'
+        dairyshop: '#c62961'
+        dentist: '#ef5350'
+        dhaba: '#7e57c2'
+        drivingschool: '#ab47bc'
+        dryport: '#ec407a'
+        electricalstore: '#c62828'
+        electrician: '#ab47bc'
+        electricityoffice: '#26a69a'
+        electronicsstore: '#c62828'
+
+        embassy: '#78909c'
+        equipment: '#afb42b'
+        exhibitionhall: '#6a1b9a'
+        factory: '#ffa81e'
+        fastfood: '#7e57c2'
+        filterationplant: '#26a69a'
+        firestation: '#26a69a'
+        fitnesscenter: '#4527a0'
+        florist: '#ab47bc'
+        flyingclub: '#26c6da'
+        footballground: '#4527a0'
+        fruitandvegetable: '#c62961'
+        fuelstation: '#8d6e63'
+        functionhall: '#6a1b9a'
+        furniturestore: '#c62828'
+        giftstore: '#c62828'
+        glasswork: '#afb42b'
+
+        governmentbuilding: '#78909c'
+        guesthouse: '#ad1457'
+        gurdwara: '#ffca28'
+        hardwareandsanitary: '#afb42b'
+        herbalclinic: '#ef5350'
+        hijamacenter: '#ef5350'
+        hikmat: '#ef5350'
+        historicalplace: '#66bb6a'
+        hockeyground: '#4527a0'
+        homegoodsstore: '#c62828'
+        homeopathicclinic: '#ef5350'
+        hospital: '#ef5350'
+        hostel: '#ad1457'
+        hotel: '#ad1457'
+        icecreamparlor: '#7e57c2'
+        imambargah: '#66bb6a'
+        indoorgames: '#26c6da'
+
+        insuranceagency: '#ab47bc'
+        intersection: '#4527a0'
+        jazz: '#fcc718'
+        jewellerystore: '#c62828'
+        juicebar: '#7e57c2'
+        khokha: '#c62828'
+        laboratory: '#ef5350'
+        langar: '#29b6f6'
+        lawenforcement: '#26a69a'
+        lawyer: '#ab47bc'
+        library: '#29b6f6'
+        localadministration: '#26a69a'
+        lpgsupplier: '#ab47bc'
+        madrassa: '#29b6f6'
+        materialsupplier: '#afb42b'
+        meatstore: '#c62961'
+        medicalclinic: '#ef5350'
+
+        metalwork: '#afb42b'
+        mill: '#ffca28'
+        mobileshop: '#ab47bc'
+        moneytransfer: '#9ccc65'
+        monument: '#66bb6a'
+        mosque: '#ffca28'
+        motel: '#ad1457'
+        motorbikerepair: '#8d6e63'
+        motorbikeshowroom: '#8d6e63'
+        museum: '#66bb6a'
+        newspaper: '#7b6242'
+        ngo: '#29b6f6'
+        oiltraders: '#ab47bc'
+        optician: '#ab47bc'
+        orphanage: '#29b6f6'
+        otherbeautyandspa: '#ff7043'
+        othercivicutilities: '#26a69a'
+
+        otherconstruction: '#afb42b'
+        othereducation: '#29b6f6'
+        otherevents: '#6a1b9a'
+        otherfinance: '#66bb6a'
+        otherfood: '#ab47bc'
+        othergeneral: '#4527a0'
+        othergovernment: '#78909c'
+        othergrocery: '#c62961'
+        otherindustry: '#ffa81e'
+        otherlocalbusinesses: '#ab47bc'
+        otherlodging: '#ad1457'
+        othermedia: '#7b6242'
+        othermedical: '#ef5350'
+        otherrecreation: '#26c6da'
+        otherreligion: '#ffca28'
+        othershopping: '#c62828'
+        othersocialservice: '#29b6f6'
+
+        othersports: '#4527a0'
+        othertourist: '#66bb6a'
+        othertransportation: '#ec407a'
+        othervehicle: '#8d6e63'
+        park: '#26c6da'
+        parking: '#8d6e63'
+        petstore: '#ab47bc'
+        pharmacy: '#ef5350'
+        photostudio: '#ab47bc'
+        plumber: '#ab47bc'
+        postoffice: '#424242'
+        powerstation: '#ffa81e'
+        pressclub: '#7b6242'
+        printing: '#4527a0'
+        privatecompany: '#ab47bc'
+        radiostation: '#7b6242'
+        railwaystation: '#ec407a'
+
+        realestateagency: '#ab47bc'
+        recyclestore: '#4527a0'
+        refinery: '#ffa81e'
+        rentacar: '#8d6e63'
+        rescueservice: '#26a69a'
+        restaurant: '#7e57c2'
+        school: '#29b6f6'
+        seaport: '#ec407a'
+        shoestore: '#c62828'
+        shoppingmall: '#c62828'
+        shrine: '#ffca28'
+        spa: '#ff7043'
+        sportsgoods: '#c62828'
+        squashcourt: '#4527a0'
+        stadium: '#4527a0'
+        stockbroker: '#9ccc65'
+        suigasoffice: '#26a69a'
+
+        supermarket: '#c62961'
+        sweetsandbakers: '#7e57c2'
+        swimmingpool: '#4527a0'
+        tailor: '#ab47bc'
+        tandoor: '#7e57c2'
+        taxistand: '#ec407a'
+        technicalservices: '#ab47bc'
+        telecommunication: '#26a69a'
+        telenor: '#00a8e4'
+        temple: '#ffca28'
+        tenniscourt: '#4527a0'
+        tomb: '#66bb6a'
+        toystore: '#c62828'
+        tplcorp: '#1e4079'
+        tplinsurance: '#f47920'
+        tpllifeinsurance: '#79c685'
+        tplmaps: '#156735'
+        tplproperties: '#47257a'
+        tpltrakker: '#a72c32'
+        traininginstitute: '#29b6f6'
+        travelagency: '#ab47bc'
+        tuitioncenter: '#29b6f6'
+
+        tvchannel: '#7b6242'
+        tvstudio: '#7b6242'
+        tyreshop: '#8d6e63'
+        university: '#29b6f6'
+        veterinarycare: '#ef5350'
+        vocationalcenter: '#29b6f6'
+        volleyballcourt: '#4527a0'
+        warehouse: '#ffa81e'
+        wholesale: '#c62828'
+        woodwork: '#afb42b'
+        zoo: '#26c6da'
 
 cameras:
     perspective:
@@ -119,7 +330,7 @@ lights:
 
 scene:
     background:
-        color: '#fffbf5'
+        color: '#fbf8f3'
 
 cinnabar-colors:
     cameras:
@@ -533,8 +744,8 @@ textures:
             search_zoo: [903, 903, 80, 80]
 
     restIcons:
-          url: TPLBaseMapResources.bundle/BaseMapIcons/restIcons.png
-          sprites:
+        url: TPLBaseMapResources.bundle/BaseMapIcons/restIcons.png
+        sprites:
             currentLocationMarker: [0, 0, 32, 32]
             routeMarker: [90, 152, 160, 160]
             routeMarkerTilt: [154, 72, 80, 80]
@@ -574,8 +785,7 @@ textures:
 # Will have to define styles for each icon seperately as the textures can't be directly called in the draw function of the layer
 # The style will tell the type of object it can be applied to (points for pois) and the applicable texture file
 # if the texture is not referenced in a style, then we will get a error
-styles:
-    
+styles:   
     transparent_polyline:
         base: lines
         blend: inlay
@@ -1233,8 +1443,7 @@ layers:
                 collide: false
         
     world:
-        data: { source: local }
-        filter: [ $zoom: { max: 8 } ]
+        data: { source: local, layer: [world,world150,world500] }
         draw:
             polygons:
                 # the higher the order, the greater the importance when drawn
@@ -1248,12 +1457,25 @@ layers:
                     order: 1
                     color: global.colorscheme.continent_a
         continent-p:
-            filter: function() { return (feature.n.slice(0, 1) == 'P')}
-            draw:
-                polygons:
-                    # the higher the order, the greater the importance when drawn
-                    order: 1
-                    color: global.colorscheme.continent_p
+            filter: function() { return (feature.n.slice(0, 3) == 'Pak')}
+            day:
+                filter: function() { return global.currentTime == 'day' }
+                draw:
+                    polygons:
+                        order: 1
+                        color:
+                            [
+                              [1, '#fbf8f3'],
+                              [10, '#f5f0e4'],
+                              [15, '#f8f9fa'],
+
+                            ]
+            other:
+                filter: function() { return global.currentTime != 'day' }
+                draw:
+                    polygons:
+                        order: 1
+                        color: global.colorscheme.continent_p
         continent-b:
             filter: function() { return (feature.n.slice(0, 1) == 'B')}
             draw:
@@ -1310,24 +1532,10 @@ layers:
                     # the higher the order, the greater the importance when drawn
                     order: 1
                     color: global.colorscheme.water
-    world-8:
-        data: { source: local, layer: world }
-        filter: [ $zoom: { min: 8 } ]
-        draw:
-            polygons:
-                # the higher the order, the greater the importance when drawn
-                order: 2
-                color: global.colorscheme.world_8
-        ocean:
-            filter: function() { return (feature.n == 'ocean')}
-            draw:
-                polygons:
-                    # the higher the order, the greater the importance when drawn
-                    order: 1
-                    color: global.colorscheme.water
+
 
     borders:
-        data: { source: local }
+        data: { source: local, layer: [borders,borders150,borders500]  }
         country3:
             filter: { p: 0, $zoom: { min: 1 }  }
             draw:
@@ -1357,7 +1565,7 @@ layers:
                     width: 1px
 
     citiesfill:
-        data: { source: local }
+        data: { source: local, layer: [citiesfill,citiesfill150] }
         day:
             filter: function() { return global.currentTime == 'day' }
             draw:
@@ -1365,368 +1573,467 @@ layers:
                     # the higher the order, the greater the importance when drawn
                     order: 5
                     color: [[8,global.colorscheme.citiesfill8_day],[15,global.colorscheme.citiesfill15_day]]
-        night:
-            filter: function() { return global.currentTime == 'night' }
-            draw:
-                polygons:
-                    # the higher the order, the greater the importance when drawn
-                    order: 5
-                    color: [[8,global.colorscheme.citiesfill8_night],[15,global.colorscheme.citiesfill15_night]]
-
+        
     roads:
-        data: { source: local }
-        highway-m:
-            # apply a function in the filter, the resulting objects are used
+        data: { source: local, layer: [roads,roads150,roads500] }
+        motorway:
             filter: function () { return (feature.p == 6 )}
             draw:
                 lines:
-                    order: 25
+                    order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if ((feature.gt==10 && feature.gf == 10) ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 25;
+                                }                                
+                                return 25;
+                            }
                     color: global.colorscheme.motorway
-                    cap: round
-                    width: [[5, 0.4px],[10,2px],[15,5px],[20,65px]]
+                    width: [[5, 2px], [10, 4px], [15, 8.5px], [17, 18px], [20, 28px]]
                     outline:
+                        order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if ((feature.gt==10 && feature.gf == 10) ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 25;
+                                }
+                                return 20;
+                            }
                         color: global.colorscheme.motorway_outline
-                        width: [[5, 0.1px],[10, 0.5px],[15,1px],[20,2px]]
-        highway-nm:
+                        width: [[5, 0.1px], [10, 0.5px], [15, 1px], [20, 2px]]
+        highway:
             filter: function () { return (feature.p == 5 )}
             draw:
                 lines:
-                    order: 24
-                    interactive: true
-                    cap: round
+                    order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if ((feature.gt==10 && feature.gf == 10) ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 25;
+                                }                                
+                                return 24;
+                            }
                     color: global.colorscheme.highway
-                    width: [[5, 0.4px],[10,2px],[15,5px],[20,65px]]
+                    width: [[5, 2px], [10, 4px], [15, 5px], [17, 17px], [20, 27px]]
                     outline:
+                        order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if ((feature.gt==10 && feature.gf == 10) ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 20;
+                                }
+                                return 20;
+                            }
                         color: global.colorscheme.highway_outline
-                        width: [[5, 0.1px],[10, 0.5px],[15,1px]]
+                        width: [[5, 0.1px], [10, 0.5px], [15, 1px]]
         main-roads:
             filter: function() { return feature.p == 4 && $zoom >= 7 ; }
             draw:
                 lines:
-                    order: 23
+                    order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if (feature.gt==10 && feature.gf == 10 ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 25;
+                                }                                
+                                return 23;
+                            }
                     color: global.colorscheme.main_roads
-                    cap: round
-                    width: [[7, 0.5px],[10,1px],[15,4px],[20,60px]]
+                    width: [[7, 2px], [10, 3px], [15, 7px], [17, 14px], [20, 25px]]
                     outline:
+                        order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if (feature.gt==10 && feature.gf == 10 ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 20;
+                                }
+                                return 20;
+                            }
                         color: global.colorscheme.main_roads_outline
-                        width: [[5, 0.1px],[10, 0.5px],[15,1px]]
+                        width: [[5, 0.1px], [10, 0.5px], [15, 1px]]
         secondary-roads:
             filter: function() { return feature.p == 3; }
             draw:
                 lines:
-                    order: 22
+                    order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if ((feature.gt==10 && feature.gf == 10) ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 25;
+                                }                                
+                                return 22;
+                            }
                     color: global.colorscheme.secondary_roads
-                    cap: round
-                    width: [[10, 0.5px],[15,3px],[20,55px]]
+                    width: [[10, 2px], [15, 5.5px], [17, 12px], [20, 23px]]
                     outline:
+                        order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if ((feature.gt==10 && feature.gf == 10) ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 20;
+                                }
+                                return 20;
+                            }
                         color: global.colorscheme.secondary_roads_outline
-                        width: [[10, 0px],[15, 0.75px]]
+                        width: [[10, 0px], [15, 0.75px]]
         tertiary-roads:
             filter: function() { return feature.p == 2; }
             draw:
                 lines:
-                    order: 21
+                    order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if ((feature.gt==10 && feature.gf == 10) ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 25;
+                                }                                
+                                return 21;
+                            }
                     color: global.colorscheme.tertiary_roads
-                    cap: round
-                    width: [[12, 0.5px],[15,3px],[20,50px]]
+                    width: [[12, 2px], [15, 5px], [17, 11px], [20, 21px]]
                     outline:
+                        order: |
+                            function(){
+                                if(feature.gt){
+                                    if(feature.gt==2 && feature.gf == 2){
+                                        return 27;
+                                    }
+                                    else if ((feature.gt==1 && feature.gf == 1) || feature.gt==2 || feature.gf==2){
+                                        return 26;
+                                    }
+                                    else if ((feature.gt==10 && feature.gf == 10) ){
+                                        return 19;
+                                    }
+                                    else 
+                                        return 20;
+                                }
+                                return 20;
+                            }
                         color: global.colorscheme.tertiary_roads_outline
-                        width: [[12, 0px],[15, 0.5px]]
+                        width: [[12, 0px], [15, 0.5px]]
         streets:
             filter: function() { return feature.p == 1 && $zoom >= 14 ; }
             draw:
                 lines:
                     order: 20
-                    color:  global.colorscheme.streets
-                    cap: round
-                    width: [[14, 1px],[15,3.5px],[20,50px]]
-                    #outline:
-                     #   color: global.colorscheme.streets_outline
-                     #   width: 0.5px
-                road_text:
-                    order: 30
-                    text_source: n
-                    anchor: center
-                    align: center
-                    repeat_distance: 1000px
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.road_text
-                        size: [[15, 12px],[20, 22px]]
-                        stroke: { color: global.colorscheme.road_text_stroke, width: 1.5 }
+                    color: global.colorscheme.streets
+                    width: [[14, 2px], [15, 3.5px], [17, 9px], [20, 17px]]
+            road_text:
+                filter: function() { return $zoom >= 15 ; }
+                draw:
+                    road_text:
+                        priority: 34
+                        text_source: n
+                        anchor: center
+                        align: center
+                        # repeat_distance: 512px
+                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+                        font:
+                            family: sans-serif
+                            fill: global.colorscheme.road_text
+                            size: 9px #[[15, 12px], [20, 22px]]
+                            stroke: { color: global.colorscheme.road_text_stroke, width: 1.5 }
 
-
-        labels-highway-z12:
-            filter: { $zoom: { min: 12 }, p: [4,5] }
+        labels_highway:
+            filter: { $zoom: { min: 11 }, p: 5 }
             draw:
                 road_text:
-                    repeat_group: labels-highway-z12
-                    order: 30
+                    # repeat_group: labels-highway-z12
+                    priority: 31
                     text_source: n
+                    text_wrap: 15
                     anchor: center
                     align: center
-                    repeat_distance: 1000px
+                    repeat_distance: 150px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.highway_text
-                        size: [[12, 10px],[15,14px],[17, 24px]]
-                        #weight: bold
+                        size: 12px #[[12, 10px], [15, 14px], [17, 24px]]
                         stroke: { color: global.colorscheme.highway_text_border, width: 1.5 }
-                urdu_text:
-                    repeat_group: labels-highway-z12
-                    priority: 3.5
-                    visible: true
-                    text_source: name_urdu
+        labels_main:
+            filter: { $zoom: { min: 13 }, p: 4 }
+            draw:
+                road_text:
+                    # repeat_group: labels-highway-z12
+                    priority: 32
+                    text_source: n
+                    text_wrap: 15
                     anchor: center
                     align: center
-                    offset: [ -20px, 0px ]
-                    repeat_distance: 1000px
+                    repeat_distance: 150px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.highway_text
-                        size: [[12, 10px],[15, 15px]]
-                        #weight: bold
+                        size: 12px #[[12, 10px], [15, 14px], [17, 24px]]
                         stroke: { color: global.colorscheme.highway_text_border, width: 1.5 }
 
-        labels-motorway-route:
+        symbol_motorway:
             filter: function () { return (feature.p == 6 && $zoom >= 7); }
             draw:
                 english_text:
-                    priority: 3
+                    priority: 7
                     visible: true
                     text_source: r
                     anchor: center
                     align: center
-                    repeat_distance: 1000px
+                    # repeat_distance: 512px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: white
-                        size: [[7, 9px],[15, 15px]]
-                        #weight: bold
-                        stroke: { color: green, width: [[7, 1px],[15, 3px]]  }
+                        size: [[7, 9px], [15, 15px]]
+                        stroke: { color: green, width: [[7, 2px], [15, 3px]] }
 
-
-
-        labels-nh-route:
-            filter: function () { return (feature.p == 5 && $zoom >= 7 ); }
+        symbol_highway:
+            filter: function () { return (feature.p == 5 && $zoom >= 8 ); }
             draw:
                 english_text:
-                    priority: 3
+                    priority: 7
                     visible: true
                     text_source: r
                     anchor: center
                     align: center
-                    repeat_distance: 1000px
+                    # repeat_distance: 512px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: white
-                        size: [[7, 9px],[15, 15px]]
-                        #weight: bold
-                        stroke: { color: '#3878c7', width: [[7, 1px],[15, 3px]] }
+                        size: [[7, 9px], [15, 15px]]
+                        stroke: { color: '#3878c7', width: [[7, 2px], [15, 3px]] }
 
-        labels-z14:
-            filter: { $zoom: { min: 13 }, p: [2,3] }
+        labels_secondary:
+            filter: { $zoom: { min: 13}, p: [ 3] }
             draw:
                 road_text:
-                    order: 30
+                    priority: 33
                     text_source: n
+                    text_wrap: 15
                     anchor: center
                     align: center
-                    collide: true
-                    repeat_distance: 1000px
+                    # collide: true
+                    # repeat_distance: 512px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.road_text
-                        size: [[13, 10px],[16,16px],[20, 23px]]
+                        size: 10px #[[13, 10px], [16, 16px], [20, 23px]]
                         stroke: { color: global.colorscheme.road_text_stroke, width: 1.5 }
-
+        labels_teritiary:
+            filter: { $zoom: { min: 14 }, p: [2] }
+            draw:
+                road_text:
+                    priority: 33
+                    text_source: n
+                    text_wrap: 15
+                    anchor: center
+                    align: center
+                    # collide: true
+                    # repeat_distance: 512px
+                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+                    font:
+                        family: sans-serif
+                        fill: global.colorscheme.road_text
+                        size: 10px #[[13, 10px], [16, 16px], [20, 23px]]
+                        stroke: { color: global.colorscheme.road_text_stroke, width: 1.5 }
 
     scale:
         data: { source: local }
         provinces-6:
-            filter: { k: 9, $zoom: [6,7,8] }
+            filter: { k: 9, $zoom: [5, 6, 7] }
             draw:
-                english_text:
-                    priority: 1
-                    anchor: bottom
-                    offset: [0,-18px]
-                    text_source: d
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.provinces_fill
-                        size: [[6,14px],[8,17px]]
-                        #weight: bold
-                        stroke: { color: global.colorscheme.provinces_stroke, width: 1 }
-                urdu_text:
-                    priority: 2
-                    anchor: bottom
-                    offset: [ 0, 0px ]
-                    text_source: s
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.provinces_fill
-                        size: [[6,14px],[8,17px]]
-                        #weight: bold
-                        stroke: { color: global.colorscheme.provinces_stroke , width: 1 }
-
-        provincial-capitals:
-            filter: { k: 5, p: 1, $zoom:  { max: 13 } }
-            draw:
-                urdu_text:
-                    priority: 4
-                    anchor: center
-                    offset: [ 0, 0px ]
-                    text_source: s
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.province_cap_fill
-                        size: [[6,13px],[10,18px]]
-                        #weight: bold
-                        transform: capitalize
-                        stroke: { color: global.colorscheme.province_cap_stroke , width: 1 }
                 english_text:
                     priority: 3
                     anchor: center
-                    offset: [[6,[0,-17px]],[7,[0,-19px]],[8,[0,-18px]],[9,[0,-20px]],[10,[0,-20px]]]
+                    # offset: [0,-18px]
+                    text_source: d
+                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+                    font:
+                        family: sans-serif
+                        fill: global.colorscheme.provinces_fill
+                        size: [[5, 16px], [7, 18px]]
+                        #weight: bold
+                        stroke: { color: global.colorscheme.provinces_stroke, width: 1 }
+
+        provincial-capitals:
+            filter: { k: 5, p: 1, $zoom:  { min: 5, max: 13 } }
+            draw:
+                english_text:
+                    priority: 4
+                    anchor: center
+                    # offset: [[6,[0,-17px]],[7,[0,-19px]],[8,[0,-18px]],[9,[0,-20px]],[10,[0,-20px]]]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.province_cap_fill
-                        size: [[6,13px],[10,18px]]
+                        size: [[4, 15px], [7, 16px]]
                         #weight: bold
                         transform: capitalize
                         stroke: { color: global.colorscheme.province_cap_stroke , width: 1 }
 
         major-cities:
-            filter: { k: 5, p: 2, $zoom:  { max: 14 }  }
+            filter: { k: 5, p: 2, $zoom:  { min: 7, max: 14 }  }
             draw:
-                urdu_text:
-                    priority: 6
-                    anchor: center
-                    offset: [ 0, 0px ]
-                    text_source: s
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.cities_fill
-                        size: [[7,11px],[8,12px],[9,13px],[10,15px],[15,22px]]
-                        weight: 400
-                        transform: capitalize
-                        stroke: { color: global.colorscheme.cities_stroke , width: 1 }
                 english_text:
                     priority: 5
                     anchor: center
-                    offset: [[7,[0,-13px]],[8,[0,-14.5px]],[9,[0,-17px]],[10,[0,-18px]],[15,[0,-26px]]]
+                    # offset: [[7,[0,-13px]],[8,[0,-14.5px]],[9,[0,-17px]],[10,[0,-18px]],[15,[0,-26px]]]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.cities_fill
-                        size: [[7,11px],[8,13px],[9,14px],[10,15px],[15,22px]]
-                        weight: 400
+                        size: [[7, 15px], [10, 16px]]
+                        # weight: 400
                         transform: capitalize
                         stroke: { color: global.colorscheme.cities_stroke , width: 1 }
         cities:
-            filter: { k: 5, p: 3 , $zoom:  { max: 15 } }
+            filter: { k: 5, p: 3 , $zoom:  { min: 8, max: 15 } }
             draw:
-                urdu_text:
-                    priority: 8
-                    anchor: center
-                    offset: [ 0, 0px ]
-                    text_source: s
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.cities_fill
-                        size: [[8,10px],[9,11px],[10,12px],[11,14px],[15,20px]]
-                        weight: 350
-                        transform: capitalize
-                        stroke: { color: global.colorscheme.cities_stroke , width: 1 }
                 english_text:
-                    priority: 7
+                    priority: 6
                     anchor: center
-                    offset: [[8,[0,-12px]],[9,[0,-13.5px]],[10,[0,-14.5px]],[11,[0,-17px]],[15,[0,-23px]]]
+                    # offset: [[8,[0,-12px]],[9,[0,-13.5px]],[10,[0,-14.5px]],[11,[0,-17px]],[15,[0,-23px]]]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.cities_fill
-                        size: [[8,10px],[9,12px],[10,13px],[11,14px],[15,20px]]
-                        weight: 350
+                        size: [[8, 15px], [11, 16px]]
+                        # weight: 350
                         transform: capitalize
                         stroke: { color: global.colorscheme.cities_stroke , width: 1 }
         minor-cities1:
-            filter: { k: 5, p: [4,5] }
+            filter: { k: 5, p: [4,5], $zoom: {min: 9,  max: 15} }
             draw:
-                urdu_text:
+                english_text:
                     priority: 8
                     anchor: center
-                    offset: [ 0, 0px ]
-                    text_source: s
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.cities_fill
-                        size: [[11,12px],[18,20px]]
-                        weight: 300
-                        transform: capitalize
-                        stroke: { color: global.colorscheme.cities_stroke , width: 1 }
-                english_text:
-                    priority: 7
-                    anchor: center
-                    offset: [[11,[0,-14px]],[18,[0,-22px]]]
+                    # offset: [[11,[0,-14px]],[18,[0,-22px]]]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.cities_fill
-                        size: [[11,12px],[18,20px]]
-                        weight: 300
+                        size: [[9, 14px], [12, 15px]]
+                        # weight: 300
                         transform: capitalize
                         stroke: { color: global.colorscheme.cities_stroke , width: 1 }
 
         areas-sectors:
-            filter: { k: [3], p: [1,2,3,4,5] }
+            filter: { k: [3], p: [1,2,3,4,5], $zoom: {min: 10,  max: 15}  }
             draw:
                 english_text:
                     priority: 9
                     anchor: center
-                    offset: [ 0, 0px ]
+                    # offset: [ 0, 0px ]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.area_sector_fill
                         size: [[11,12px],[18,20px]]
-                        weight: 400
-                        style: italic
+                        # weight: 400
+                        # style: italic
                         transform: capitalize
                         stroke: { color: global.colorscheme.area_sector_stroke , width: 1 }
         areas-subsectors:
-            filter: { k: [1,2], p: [1,2,3,4,5] }
+            filter: { k: [1,2], p: [1,2,3,4,5],  $zoom: {min: 12,  max: 17} }
             draw:
                 english_text:
                     priority: 9
                     anchor: center
-                    offset: [ 0, 0px ]
+                    # offset: [ 0, 0px ]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
                         fill: global.colorscheme.area_sector_fill
                         size: [[11,11px],[18,18px]]
-                        weight: 400
-                        style: italic
+                        # weight: 400
+                        # style: italic
                         transform: capitalize
                         stroke: { color: global.colorscheme.area_sector_stroke , width: 1 }
 
@@ -1736,38 +2043,25 @@ layers:
             filter: { p: [0], $zoom: [3,4] }
             draw:
                 english_text:
-                    priority: 3
+                    priority: 1
                     anchor: center
-                    offset: [0px,0px]
+                    # offset: [0px,0px]
                     text_source: n
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
-                        fill: global.colorscheme.country_34
+                        fill: global.colorscheme.country
                         size: [[3,10px],[4,13px]]
                         #weight: bold
                         transform: uppercase
-                        stroke: { color: global.colorscheme.country_34_stroke , width: 1 }
-                urdu_text:
-                    priority: 3
-                    anchor: center
-                    offset: [[3,[0,9px]],[4,[0,12px]]]
-                    text_source: u
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.country_34
-                        size: [[3,10px],[4,13px]]
-                        #weight: bold
-                        transform: uppercase
-                        stroke: { color: global.colorscheme.country_34_stroke , width: 1 }
+                        stroke: { color: global.colorscheme.country_stroke , width: 1 }
         country0-567:
-            filter: { p: [0], $zoom: [5,6,7] }
+            filter: { p: [0,1], $zoom: [5,6,7] }
             draw:
                 english_text:
-                    priority: 3
+                    priority: 1
                     anchor: center
-                    offset: [0px,0px]
+                    # offset: [0px,0px]
                     text_source: n
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
@@ -1777,60 +2071,15 @@ layers:
                         #weight: bold
                         transform: uppercase
                         stroke: { color: global.colorscheme.country_567_stroke , width: 1 }
-                urdu_text:
-                    priority: 3
-                    anchor: center
-                    offset: [[5,[0,17px]],[6,[0,18px]] ,[7,[0,22px]]]
-                    text_source: u
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.country_567
-                        size: [[5,14px],[7,17px]]
-                        #weight: bold
-                        transform: uppercase
-                        stroke: { color: global.colorscheme.country_567_stroke , width: 1 }
-        country1-567:
-            filter: { p: [1], $zoom: [5,6,7] }
-            draw:
-                english_text:
-                    priority: 3
-                    anchor: center
-                    offset: [0px,0px]
-                    text_source: n
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.country_567
-                        size: [[5,14px],[6,17px],[7,20px]]
-                        #weight: bold
-                        transform: uppercase
-                        stroke: { color: global.colorscheme.country_567_stroke , width: 1 }
-                urdu_text:
-                    priority: 3
-                    anchor: center
-                    offset: [[5,[0,14px]],[6,[0,15px]] ,[7,[0,19px]]]
-                    text_source: u
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.country_567
-                        size: [[5,14px],[6,17px],[7,20px]]
-                        weight: bold
-                        transform: uppercase
-                        stroke: { color: global.colorscheme.country_567_stroke , width: 1 }
+
+
         capitals:
-            filter: { p: 2, $zoom: [5,6] }
+            filter: { p: 2, $zoom: [4,5,6,7,8] }
             draw:
-                black:
-                    priority: 3
-                    interactive: true
-                    sprite: SPRITE
-                    size: [[5, 10px], [6, 13px]]
                 english_text:
                     priority: 4
                     anchor: center
-                    offset: [[5,[0,-12px]],[6,[0,-15px]]]
+                    # offset: [[5,[0,-12px]],[6,[0,-15px]]]
                     text_source: n
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
@@ -1842,84 +2091,101 @@ layers:
                         stroke: { color: global.colorscheme.capitals_stroke , width: 2 }
 
     cartographic:
-        data: { source: local }
+        data: { source: local, layer: [cartographic,cartographic150,cartographic500] }
         parks:
-            filter: { k: [parks] }
+            filter: { k: ["parks", "Park"] }
             draw:
                 polygons:
-                    order: 16
+                    # interactive: true
+                    order: 10
                     color: global.colorscheme.park
         forests:
-            filter: { k: [forests] }
+            filter: { k: ["forests", "Vegetation"] }
             draw:
                 polygons:
-                    order: 6
-                    color: global.colorscheme.grass
+                    # interactive: true
+                    order: function(){if (feature.s == "Forest"){return 6;} else {return 17;}}
+                    color: global.colorscheme.vegetation
         religious_places:
-            filter: { k: [religious places] }
+            filter: { k: ["religious places", "Religious Place"], $zoom: {min: 16} }
             draw:
                 polygons:
+                    # interactive: true  
                     order: 15
                     color: global.colorscheme.religious
         industries:
-            filter: { k: [industry] }
+            filter: { k: ["industry", "Industry"] }
             draw:
                 polygons:
+                    # interactive: true
                     order: 7
                     color: global.colorscheme.industrial
         educational:
-            filter: { k: [educational] }
+            filter: { k: ["educational", "Education"], $zoom: {min: 16} }
             draw:
                 polygons:
+                    # interactive: true
                     order: 12
                     color: global.colorscheme.school
         hospitals:
-            filter: { k: [hospitals] }
+            filter: { k: ["hospitals", "Medical"] }
             draw:
                 polygons:
+                    # interactive: true
                     order: 14
                     color: global.colorscheme.hospital
-        graveyards:
-            filter: { k: [graveyard] }
+        openarea:
+            filter: function(){ return ((feature.k == "port places") || (feature.k == "Open Area" && feature.s != "Runway")) }
             draw:
                 polygons:
-                    order: 10
-                    color: global.colorscheme.cemetery
-        runways:
-            filter: { k: [runway] }
+                    # interactive: true
+                    order: 9
+                    color: global.colorscheme.openarea
+        coveredarea:
+            filter:
+                all:
+                    - { k: ["runway", "Covered Area"] }
+                    # - { s: "Runway"}
+                    - $zoom: {min: 16}
             draw:
                 polygons:
+                    # interactive: true
                     order: 13
-                    color: global.colorscheme.runway
-        port_places:
-            filter: { k: [port places] }
+                    color: global.colorscheme.coveredarea
+        touristattraction:
+            filter: { k: ["graveyard", "Tourist Attraction"] }
             draw:
                 polygons:
-                    order: 11
-                    color: global.colorscheme.port
-        parking_places:
-            filter: { k: [parking places] }
-            draw:
-                polygons:
+                    # interactive: true
                     order: 17
-                    color: global.colorscheme.parking
-        water:
-            filter: { k: [water]  }
+                    color: global.colorscheme.touristattraction
+        sport:
+            filter: { k: ["Sports"] }
+                    # - {s: "Parking Place"}
             draw:
                 polygons:
+                    # interactive: true
+                    order: 17
+                    color: global.colorscheme.sport
+        water:
+            filter: { k: ["water", "Waterbody"] }
+            draw:
+                polygons:
+                    # interactive: true
                     order: 19
-                    interactive: true
                     color: global.colorscheme.water
         misc:
-            filter: { k: [misc] }
+            filter: { k: ["misc", "Misc"] }
             draw:
                 polygons:
-                    order: 9
+                    # interactive: true
+                    order: 10
                     color: global.colorscheme.misc
         commercial:
-            filter: { k: [commercial] }
+            filter: { k: ["commercial", "Commercial"], s: ["market","Market", "Shopping Mall"] }
             draw:
                 polygons:
+                    # interactive: true
                     order: 8
                     color: global.colorscheme.commercial
     buildings:
@@ -2010,50 +2276,10 @@ layers:
     carto_labels:
         data: { source: local }
         water:
-            filter: { k: 'water' }
-            labels-generic:
-                draw:
-                    english_text:
-                        interactive: true
-                        priority: 4
-                        anchor: center
-                        align: center
-                        visible: true
-                        text_source: n
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        font:
-                            family: Helvetica
-                            size:  [[7, 9px], [10, 10px],[14,14px],[15,16px] ]
-                            fill: global.colorscheme.water_fill
-                            style: italic
-                            stroke: { color: global.colorscheme.water_stroke , width: 1 }
-        parks:
-            filter: { k: ['parks','forests'] }
-            labels-generic:
-                draw:
-                    english_text:
-                        interactive: true
-                        priority: 4
-                        anchor: center
-                        align: center
-                        visible: true
-    #                    collide: false
-                        text_source: n
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        font:
-                            family: Helvetica
-                            size:  [[4, 9px],[15,14px] ]
-                            fill: global.colorscheme.parks_fill
-                            style: italic
-                            stroke: { color: global.colorscheme.parks_stroke , width: 0.5 }
-
-
-        labels-a12:
-            filter: { a : [1,2] }
+            filter: { k: ["water", "Waterbody"] , $zoom: {min: 9}}
             draw:
                 english_text:
-                    interactive: true
-                    priority: 4
+                    priority: 15
                     anchor: center
                     align: center
                     visible: true
@@ -2061,19 +2287,36 @@ layers:
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: Helvetica
-                        size:  [[10, 10px], [12, 14px],[14,10px],[15,10px] ]
-                        fill: '#888'
-                        stroke: { color: '#FFFFFF' , width: 1 }
+                        size:  [[7, 9px], [10, 10px],[14,14px],[15,16px] ]
+                        fill: global.colorscheme.water_fill
+                        # style: italic
+                        stroke: { color: global.colorscheme.water_stroke , width: 1 }
+        parks:
+            filter: { k: ["parks", "forests", "Park", "Vegetation"] , $zoom: {min: 12}}
+            draw:
+                english_text:
+                    priority: 15
+                    anchor: center
+                    align: center
+                    visible: true
+                    text_source: n
+                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+                    font:
+                        family: Helvetica
+                        size:  [[4, 9px],[15,14px] ]
+                        fill: global.colorscheme.parks_fill
+                        # style: italic
+                        stroke: { color: global.colorscheme.parks_stroke , width: 0.5 }
 
     waterways-labels:
-        data: { source: local , layer: waterways }
-        filter: { $zoom:  { min: 13 } , n: true }
+        data: { source: local , layer: [waterways,waterways150,waterways500] }
+        filter: { $zoom:  { min: 9 } , n: true }
         labels:
             filter: function() { return feature.n.slice(0, 1) != '?' && feature.n != 'Korang River' }
             draw:
                 english_text:
                     interactive: true
-                    priority: 4
+                    priority: 15
                     anchor: center
                     align: center
                     visible: true
@@ -2084,43 +2327,40 @@ layers:
                         family: Helvetica
                         size:  [[7, 9px], [10, 10px],[14,14px],[15,16px] ]
                         fill: global.colorscheme.water_fill
-                        style: italic
+                        # style: italic
                         transform: capitalize
                         stroke: { color: global.colorscheme.water_stroke , width: 1 }
-    waterways-z5:
-        data: { source: local, layer: waterways }
-        filter: { $zoom:  { max: 8 } }
-        draw:
-            lines:
-                order: 18
-                interactive: true
-                color: global.colorscheme.water
-                width: [[5,1px],[7,2px]]
+
     waterways:
         data: { source: local }
-        filter: function() { return feature.n != '????' && $zoom >= 10 ;  }
-        draw:
-            lines:
-                order: 18
-                interactive: true
-                color: global.colorscheme.water
-                width: [[12,2px],[20,20px]]
-        rivers:
-            filter: { t: [river] }
+        waterways:
+            filter: function() { return feature.n != '????' && $zoom >= 9  }
             draw:
                 lines:
                     order: 18
-                    interactive: true
                     color: global.colorscheme.water
-                    width: [[10,2px],[20,20px]]
-        streams:
-            filter: { t: [stream] }
+                    width: [[12, 2px], [20, 20px]]
+            rivers:
+                filter: { t: [river] }
+                draw:
+                    lines:
+                        order: 18
+                        color: global.colorscheme.water
+                        width: [[10, 2px], [20, 20px]]
+            streams:
+                filter: { t: [stream] }
+                draw:
+                    lines:
+                        order: 18
+                        color: global.colorscheme.water
+                        width: [[12, 2px], [20, 15px]]
+        waterways-z5:
+            filter: { $zoom: { max: 9 } }
             draw:
                 lines:
                     order: 18
-                    interactive: true
                     color: global.colorscheme.water
-                    width: [[12,2px],[20,15px]]
+                    width: [[5, 1px], [7, 2px]]
     railways:
         data: { source: local }
         draw:
@@ -2132,11 +2372,11 @@ layers:
         data: { source: local-pois }
         filter: function(){ return global.poiStatus == true}
         poisiconsandtext:
-            filter: { $zoom: [10,11,12,13,14,15,16,17] , z: [12,13,14,15,16,17,18,19] }
+            filter: function(){return (feature.z <= $zoom) ;}
             draw:
                 icons:
                     interactive: true
-                    priority: 10
+                    priority: function(){return feature.z;}
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     sprite: |
                         function() {
@@ -2167,87 +2407,228 @@ layers:
                             }
                         font:
                             family: sans-serif
-                            fill: global.colorscheme.poi_fill
-                            size: [[10, 12px], [18, 15px]]
-                            stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
-
-        poisiconsandtext-18:
-            filter: { $zoom: [18] , z: [12,13,14,15,16,17,18,19,20] }
-            draw:
-                icons:
-                    interactive: true
-                    priority: 10
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    sprite: |
-                        function() {
-                            if(feature.s == null)
-                            {
-                              return 'othergeneral';
-                            }
-                            else
-                            {
-                              var str = feature.s;
-                              str = str.replace(/\s+/g,'');
-                              str = str.replace(/\&+/g,'');
-                              str = str.replace(/\/+/g,'');
-                              str = str.replace(/\-+/g,'');
-                              return str.toLowerCase();
-                            }
-                            }
-                    size: [[10, 13px], [20, 20px]]
-                    text:
-                        interactive: true
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        text_source: |
+                            fill: |
                                 function() {
-                                    if (feature.d && feature.d.length > 30) {
-                                        return feature.d.slice(0, 30) + '…';
+                                    if(global.currentTime == 'dark'){
+                                        return global.pois_color.dark_mode;
                                     }
-                                    return feature.d;
-                                }
-                        font:
-                            family: sans-serif
-                            fill: global.colorscheme.poi_fill
-                            size: [[10, 12px], [18, 15px]]
-                            stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
-
-        poisiconsandtext-19:
-            filter: { $zoom: [19,20,21] , z: [12,13,14,15,16,17,18,19,20,21] }
-            draw:
-                icons:
-                    interactive: true
-                    priority: 10
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    sprite: |
-                        function() {
-                            if(feature.s == null)
-                            {
-                              return 'othergeneral';
-                            }
-                            else
-                            {
-                              var str = feature.s;
-                              str = str.replace(/\s+/g,'');
-                              str = str.replace(/\&+/g,'');
-                              str = str.replace(/\/+/g,'');
-                              str = str.replace(/\-+/g,'');
-                              return str.toLowerCase();
-                            }
-                            }
-                    size: [[10, 13px], [20, 20px]]
-                    text:
-                        interactive: true
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        text_source: |
-                                function() {
-                                    if (feature.d && feature.d.length > 30) {
-                                        return feature.d.slice(0, 30) + '…';
+                                    else if(feature.s == null)
+                                    {
+                                        return global.pois_color.othergeneral;
                                     }
-                                    return feature.d;
+                                    else
+                                    {
+                                        var str = feature.s;
+                                        str = str.replace(/\s+/g,'');
+                                        str = str.replace(/\&+/g,'');
+                                        str = str.replace(/\/+/g,'');
+                                        str = str.replace(/\-+/g,'');
+                                        str=  str.toLowerCase();
+                                        if (str=='accounting'){return global.pois_color.accounting;}
+                                        else if (str=='advertisingagency'){return global.pois_color.advertisingagency;}
+                                        else if (str=='agribusiness'){return global.pois_color.agribusiness;}
+                                        else if (str=='airport'){return global.pois_color.airport;}
+                                        else if (str=='ambulance'){return global.pois_color.ambulance;}
+                                        else if (str=='amusementpark'){return global.pois_color.amusementpark;}
+                                        else if (str=='aquarium'){return global.pois_color.aquarium;}
+                                        else if (str=='artgallery'){return global.pois_color.artgallery;}
+                                        else if (str=='atm'){return global.pois_color.atm;}
+                                        else if (str=='auditorium'){return global.pois_color.auditorium;}
+                                        else if (str=='autospareparts'){return global.pois_color.autospareparts;}
+                                        else if (str=='bank'){return global.pois_color.bank;}
+                                        else if (str=='barber'){return global.pois_color.barber;}
+                                        else if (str=='basketballcourt'){return global.pois_color.basketballcourt;}
+                                        else if (str=='beautysalon'){return global.pois_color.beautysalon;}
+                                        else if (str=='bookstore'){return global.pois_color.bookstore;}
+                                        else if (str=='booksandstationers'){return global.pois_color.booksandstationers;}
+                                        else if (str=='busstation'){return global.pois_color.busstation;}
+                                        else if (str=='busstop'){return global.pois_color.busstop;}
+                                        else if (str=='cafe'){return global.pois_color.cafe;}
+                                        else if (str=='campground'){return global.pois_color.campground;}
+                                        else if (str=='canteen'){return global.pois_color.canteen;}
+                                        else if (str=='carrepair'){return global.pois_color.carrepair;}
+                                        else if (str=='carshowroom'){return global.pois_color.carshowroom;}
+                                        else if (str=='carwash'){return global.pois_color.carwash;}
+                                        else if (str=='catererseventplanners'){return global.pois_color.catererseventplanners;}
+                                        else if (str=='cemetery'){return global.pois_color.cemetery;}
+                                        else if (str=='church'){return global.pois_color.church;}
+                                        else if (str=='cinema'){return global.pois_color.cinema;}
+                                        else if (str=='cleaningandlaundry'){return global.pois_color.cleaningandlaundry;}
+                                        else if (str=='clothingstore'){return global.pois_color.clothingstore;}
+                                        else if (str=='college'){return global.pois_color.college;}
+                                        else if (str=='communitycenter'){return global.pois_color.communitycenter;}
+                                        else if (str=='computerstore'){return global.pois_color.computerstore;}
+                                        else if (str=='constructionservices'){return global.pois_color.constructionservices;}
+                                        else if (str=='conveniencestore'){return global.pois_color.conveniencestore;}
+                                        else if (str=='cosmeticsstore'){return global.pois_color.cosmeticsstore;}
+                                        else if (str=='courierservice'){return global.pois_color.courierservice;}
+                                        else if (str=='court'){return global.pois_color.court;}
+                                        else if (str=='cricketground'){return global.pois_color.cricketground;}
+                                        else if (str=='currencyexchange'){return global.pois_color.currencyexchange;}
+                                        else if (str=='dairyshop'){return global.pois_color.dairyshop;}
+                                        else if (str=='dentist'){return global.pois_color.dentist;}
+                                        else if (str=='dhaba'){return global.pois_color.dhaba;}
+                                        else if (str=='drivingschool'){return global.pois_color.drivingschool;}
+                                        else if (str=='dryport'){return global.pois_color.dryport;}
+                                        else if (str=='electricalstore'){return global.pois_color.electricalstore;}
+                                        else if (str=='electrician'){return global.pois_color.electrician;}
+                                        else if (str=='electricityoffice'){return global.pois_color.electricityoffice;}
+                                        else if (str=='electronicsstore'){return global.pois_color.electronicsstore;}
+                                        else if (str=='embassy'){return global.pois_color.embassy;}
+                                        else if (str=='equipment'){return global.pois_color.equipment;}
+                                        else if (str=='exhibitionhall'){return global.pois_color.exhibitionhall;}
+                                        else if (str=='factory'){return global.pois_color.factory;}
+                                        else if (str=='fastfood'){return global.pois_color.fastfood;}
+                                        else if (str=='filterationplant'){return global.pois_color.filterationplant;}
+                                        else if (str=='firestation'){return global.pois_color.firestation;}
+                                        else if (str=='fitnesscenter'){return global.pois_color.fitnesscenter;}
+                                        else if (str=='florist'){return global.pois_color.florist;}
+                                        else if (str=='flyingclub'){return global.pois_color.flyingclub;}
+                                        else if (str=='footballground'){return global.pois_color.footballground;}
+                                        else if (str=='fruitandvegetable'){return global.pois_color.fruitandvegetable;}
+                                        else if (str=='fuelstation'){return global.pois_color.fuelstation;}
+                                        else if (str=='functionhall'){return global.pois_color.functionhall;}
+                                        else if (str=='furniturestore'){return global.pois_color.furniturestore;}
+                                        else if (str=='giftstore'){return global.pois_color.giftstore;}
+                                        else if (str=='glasswork'){return global.pois_color.glasswork;}
+                                        else if (str=='governmentbuilding'){return global.pois_color.governmentbuilding;}
+                                        else if (str=='guesthouse'){return global.pois_color.guesthouse;}
+                                        else if (str=='gurdwara'){return global.pois_color.gurdwara;}
+                                        else if (str=='hardwareandsanitary'){return global.pois_color.hardwareandsanitary;}
+                                        else if (str=='herbalclinic'){return global.pois_color.herbalclinic;}
+                                        else if (str=='hijamacenter'){return global.pois_color.hijamacenter;}
+                                        else if (str=='hikmat'){return global.pois_color.hikmat;}
+                                        else if (str=='historicalplace'){return global.pois_color.historicalplace;}
+                                        else if (str=='hockeyground'){return global.pois_color.hockeyground;}
+                                        else if (str=='homegoodsstore'){return global.pois_color.homegoodsstore;}
+                                        else if (str=='homeopathicclinic'){return global.pois_color.homeopathicclinic;}
+                                        else if (str=='hospital'){return global.pois_color.hospital;}
+                                        else if (str=='hostel'){return global.pois_color.hostel;}
+                                        else if (str=='hotel'){return global.pois_color.hotel;}
+                                        else if (str=='icecreamparlor'){return global.pois_color.icecreamparlor;}
+                                        else if (str=='imambargah'){return global.pois_color.imambargah;}
+                                        else if (str=='indoorgames'){return global.pois_color.indoorgames;}
+                                        else if (str=='insuranceagency'){return global.pois_color.insuranceagency;}
+                                        else if (str=='intersection'){return global.pois_color.intersection;}
+                                        else if (str=='jazz'){return global.pois_color.jazz;}
+                                        else if (str=='jewellerystore'){return global.pois_color.jewellerystore;}
+                                        else if (str=='juicebar'){return global.pois_color.juicebar;}
+                                        else if (str=='khokha'){return global.pois_color.khokha;}
+                                        else if (str=='laboratory'){return global.pois_color.laboratory;}
+                                        else if (str=='langar'){return global.pois_color.langar;}
+                                        else if (str=='lawenforcement'){return global.pois_color.lawenforcement;}
+                                        else if (str=='lawyer'){return global.pois_color.lawyer;}
+                                        else if (str=='library'){return global.pois_color.library;}
+                                        else if (str=='localadministration'){return global.pois_color.localadministration;}
+                                        else if (str=='lpgsupplier'){return global.pois_color.lpgsupplier;}
+                                        else if (str=='madrassa'){return global.pois_color.madrassa;}
+                                        else if (str=='materialsupplier'){return global.pois_color.materialsupplier;}
+                                        else if (str=='meatstore'){return global.pois_color.meatstore;}
+                                        else if (str=='medicalclinic'){return global.pois_color.medicalclinic;}
+                                        else if (str=='metalwork'){return global.pois_color.metalwork;}
+                                        else if (str=='mill'){return global.pois_color.mill;}
+                                        else if (str=='mobileshop'){return global.pois_color.mobileshop;}
+                                        else if (str=='moneytransfer'){return global.pois_color.moneytransfer;}
+                                        else if (str=='monument'){return global.pois_color.monument;}
+                                        else if (str=='mosque'){return global.pois_color.mosque;}
+                                        else if (str=='motel'){return global.pois_color.motel;}
+                                        else if (str=='motorbikerepair'){return global.pois_color.motorbikerepair;}
+                                        else if (str=='motorbikeshowroom'){return global.pois_color.motorbikeshowroom;}
+                                        else if (str=='museum'){return global.pois_color.museum;}
+                                        else if (str=='newspaper'){return global.pois_color.newspaper;}
+                                        else if (str=='ngo'){return global.pois_color.ngo;}
+                                        else if (str=='oiltraders'){return global.pois_color.oiltraders;}
+                                        else if (str=='optician'){return global.pois_color.optician;}
+                                        else if (str=='orphanage'){return global.pois_color.orphanage;}
+                                        else if (str=='otherbeautyandspa'){return global.pois_color.otherbeautyandspa;}
+                                        else if (str=='othercivicutilities'){return global.pois_color.othercivicutilities;}
+                                        else if (str=='otherconstruction'){return global.pois_color.otherconstruction;}
+                                        else if (str=='othereducation'){return global.pois_color.othereducation;}
+                                        else if (str=='otherevents'){return global.pois_color.otherevents;}
+                                        else if (str=='otherfinance'){return global.pois_color.otherfinance;}
+                                        else if (str=='otherfood'){return global.pois_color.otherfood;}
+                                        else if (str=='othergeneral'){return global.pois_color.othergeneral;}
+                                        else if (str=='othergovernment'){return global.pois_color.othergovernment;}
+                                        else if (str=='othergrocery'){return global.pois_color.othergrocery;}
+                                        else if (str=='otherindustry'){return global.pois_color.otherindustry;}
+                                        else if (str=='otherlocalbusinesses'){return global.pois_color.otherlocalbusinesses;}
+                                        else if (str=='otherlodging'){return global.pois_color.otherlodging;}
+                                        else if (str=='othermedia'){return global.pois_color.othermedia;}
+                                        else if (str=='othermedical'){return global.pois_color.othermedical;}
+                                        else if (str=='otherrecreation'){return global.pois_color.otherrecreation;}
+                                        else if (str=='otherreligion'){return global.pois_color.otherreligion;}
+                                        else if (str=='othershopping'){return global.pois_color.othershopping;}
+                                        else if (str=='othersocialservice'){return global.pois_color.othersocialservice;}
+                                        else if (str=='othersports'){return global.pois_color.othersports;}
+                                        else if (str=='othertourist'){return global.pois_color.othertourist;}
+                                        else if (str=='othertransportation'){return global.pois_color.othertransportation;}
+                                        else if (str=='othervehicle'){return global.pois_color.othervehicle;}
+                                        else if (str=='park'){return global.pois_color.park;}
+                                        else if (str=='parking'){return global.pois_color.parking;}
+                                        else if (str=='petstore'){return global.pois_color.petstore;}
+                                        else if (str=='pharmacy'){return global.pois_color.pharmacy;}
+                                        else if (str=='photostudio'){return global.pois_color.photostudio;}
+                                        else if (str=='plumber'){return global.pois_color.plumber;}
+                                        else if (str=='postoffice'){return global.pois_color.postoffice;}
+                                        else if (str=='powerstation'){return global.pois_color.powerstation;}
+                                        else if (str=='pressclub'){return global.pois_color.pressclub;}
+                                        else if (str=='printing'){return global.pois_color.printing;}
+                                        else if (str=='privatecompany'){return global.pois_color.privatecompany;}
+                                        else if (str=='radiostation'){return global.pois_color.radiostation;}
+                                        else if (str=='railwaystation'){return global.pois_color.railwaystation;}
+                                        else if (str=='realestateagency'){return global.pois_color.realestateagency;}
+                                        else if (str=='recyclestore'){return global.pois_color.recyclestore;}
+                                        else if (str=='refinery'){return global.pois_color.refinery;}
+                                        else if (str=='rentacar'){return global.pois_color.rentacar;}
+                                        else if (str=='rescueservice'){return global.pois_color.rescueservice;}
+                                        else if (str=='restaurant'){return global.pois_color.restaurant;}
+                                        else if (str=='school'){return global.pois_color.school;}
+                                        else if (str=='seaport'){return global.pois_color.seaport;}
+                                        else if (str=='shoestore'){return global.pois_color.shoestore;}
+                                        else if (str=='shoppingmall'){return global.pois_color.shoppingmall;}
+                                        else if (str=='shrine'){return global.pois_color.shrine;}
+                                        else if (str=='spa'){return global.pois_color.spa;}
+                                        else if (str=='sportsgoods'){return global.pois_color.sportsgoods;}
+                                        else if (str=='squashcourt'){return global.pois_color.squashcourt;}
+                                        else if (str=='stadium'){return global.pois_color.stadium;}
+                                        else if (str=='stockbroker'){return global.pois_color.stockbroker;}
+                                        else if (str=='suigasoffice'){return global.pois_color.suigasoffice;}
+                                        else if (str=='supermarket'){return global.pois_color.supermarket;}
+                                        else if (str=='sweetsandbakers'){return global.pois_color.sweetsandbakers;}
+                                        else if (str=='swimmingpool'){return global.pois_color.swimmingpool;}
+                                        else if (str=='tailor'){return global.pois_color.tailor;}
+                                        else if (str=='tandoor'){return global.pois_color.tandoor;}
+                                        else if (str=='taxistand'){return global.pois_color.taxistand;}
+                                        else if (str=='technicalservices'){return global.pois_color.technicalservices;}
+                                        else if (str=='telecommunication'){return global.pois_color.telecommunication;}
+                                        else if (str=='telenor'){return global.pois_color.telenor;}
+                                        else if (str=='temple'){return global.pois_color.temple;}
+                                        else if (str=='tenniscourt'){return global.pois_color.tenniscourt;}
+                                        else if (str=='tomb'){return global.pois_color.tomb;}
+                                        else if (str=='toystore'){return global.pois_color.toystore;}
+                                        else if (str=='tplcorp'){return global.pois_color.tplcorp;}
+                                        else if (str=='tplinsurance'){return global.pois_color.tplinsurance;}
+                                        else if (str=='tpllifeinsurance'){return global.pois_color.tpllifeinsurance;}
+                                        else if (str=='tplmaps'){return global.pois_color.tplmaps;}
+                                        else if (str=='tplproperties'){return global.pois_color.tplproperties;}
+                                        else if (str=='tpltrakker'){return global.pois_color.tpltrakker;}
+                                        else if (str=='traininginstitute'){return global.pois_color.traininginstitute;}
+                                        else if (str=='travelagency'){return global.pois_color.travelagency;}
+                                        else if (str=='tuitioncenter'){return global.pois_color.tuitioncenter;}
+                                        else if (str=='tvchannel'){return global.pois_color.tvchannel;}
+                                        else if (str=='tvstudio'){return global.pois_color.tvstudio;}
+                                        else if (str=='tyreshop'){return global.pois_color.tyreshop;}
+                                        else if (str=='university'){return global.pois_color.university;}
+                                        else if (str=='veterinarycare'){return global.pois_color.veterinarycare;}
+                                        else if (str=='vocationalcenter'){return global.pois_color.vocationalcenter;}
+                                        else if (str=='volleyballcourt'){return global.pois_color.volleyballcourt;}
+                                        else if (str=='warehouse'){return global.pois_color.warehouse;}
+                                        else if (str=='wholesale'){return global.pois_color.wholesale;}
+                                        else if (str=='woodwork'){return global.pois_color.woodwork;}
+                                        else if (str=='zoo'){return global.pois_color.zoo;}
+                                        else {return global.pois_color.othergeneral;}
+                                    }
                                 }
-                        font:
-                            family: sans-serif
-                            fill: global.colorscheme.poi_fill
                             size: [[10, 12px], [18, 15px]]
                             stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
 
