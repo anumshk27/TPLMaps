@@ -348,6 +348,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) BOOL myLocationButtonEnabled NS_SWIFT_NAME(myLocationButtonEnabled);
 
 /**
+ A Boolean indicating whether the map displays user location icon.
+ */
+@property(nonatomic) BOOL userLocationIconEnabled NS_SWIFT_NAME(userLocationIconEnabled);
+
+/**
  A Boolean indicating whether the map displays a compass control.
  */
 @property(nonatomic) BOOL showsCompass NS_SWIFT_NAME(showsCompass);

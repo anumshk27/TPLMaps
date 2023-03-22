@@ -2066,11 +2066,11 @@ layers:
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
                         family: sans-serif
-                        fill: global.colorscheme.country_567
+                        fill: global.colorscheme.country
                         size: [[5,14px],[7,17px]]
                         #weight: bold
                         transform: uppercase
-                        stroke: { color: global.colorscheme.country_567_stroke , width: 1 }
+                        stroke: { color: global.colorscheme.country_stroke , width: 1 }
 
 
         capitals:
