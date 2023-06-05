@@ -46,11 +46,11 @@
 		</data>
 		<key>Headers/NearbyPlace.h</key>
 		<data>
-		q/8tWMzplTUi+fbnv/As53sqP6w=
+		m1X6+T3iKkNhf1zPGpFw1IV4BgU=
 		</data>
 		<key>Headers/Place.h</key>
 		<data>
-		2VjhDR5Pfk7HFgOQ+EZdAgMod6E=
+		l4CYwOV6RyYCECQssEcPPvfSt6E=
 		</data>
 		<key>Headers/PolyLine.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/Search.h</key>
 		<data>
-		ykdivLI3+5a7iwbKlRcnDCs+jIY=
+		5bqolzKT9u771VOExhbuacEzIVs=
 		</data>
 		<key>Headers/TPLMapView.h</key>
 		<data>
@@ -157,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ThBxG4+gO65QugRL5k7g1pUDka4u24hsx5/9arxtfhI=
+			PH2owMRzlzJsIPjnq1DPAk2WfRNttVcZVLX6Wv0dVWg=
 			</data>
 		</dict>
 		<key>Headers/Place.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kum+OUXvUNfnTWdJ/EiVh3oF61VTFQHwU+KYPfwazqs=
+			vOBZ4i+LNbZhNPHbt4I2Mpfs9hIldKoLZueBYyzT31I=
 			</data>
 		</dict>
 		<key>Headers/PolyLine.h</key>
@@ -185,7 +185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V28Vl25R2YBlOnowaNE31ajQaT0/rJvQRtwlbdOitlA=
+			uBa+fFUNV0NC9z2mzwOjFbMGDyZfOvGobBk8qwhmBi8=
 			</data>
 		</dict>
 		<key>Headers/TPLMapView.h</key>

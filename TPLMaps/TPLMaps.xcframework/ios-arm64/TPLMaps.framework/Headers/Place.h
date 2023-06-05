@@ -67,6 +67,36 @@ Place object holds the required information about place
  */
 @property (nonatomic) double  lng;
 
+/**
+The subarea of local entity
+ */
+@property (nonatomic) NSString * parent;
+
+/**
+ The area of the local entity.
+ */
+@property (nonatomic) NSString * parent1;
+
+/**
+ The city of the local entity.
+ */
+@property (nonatomic) NSString * parent2;
+
+/**
+ The province of the local entity.
+ */
+@property (nonatomic) NSString * parent3;
+
+/**
+ The comma separated compound address of the local entity.
+ */
+@property (nonatomic) NSString * cpd_address;
+
+/**
+ The nearest street name of the local entity.
+ */
+@property (nonatomic) NSString * street;
+
 
 /**
  Initilize Place object with NSDictionary

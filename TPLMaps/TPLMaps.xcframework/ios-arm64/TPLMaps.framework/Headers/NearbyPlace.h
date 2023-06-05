@@ -49,6 +49,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString *tehsil;
 
 /**
+ The latitude of the local entity.
+ */
+@property (nonatomic) NSString *lat;
+
+/**
+ The longitude of the local entity.
+ */
+@property (nonatomic) NSString *lng;
+
+/**
  The sector of the local entity.
  */
 @property (nonatomic) NSString *sector;
