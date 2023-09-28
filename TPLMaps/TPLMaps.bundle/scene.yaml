@@ -7,88 +7,100 @@ global:
     poiStatus: true
     sdk_api_key : tmp
     trafficStatus: false
+    font_eng: SFProDisplay
 
 
     colorscheme:
         #roads
-        motorway: function(){if(global.currentTime == 'day'){return '#fff7e1'; }else if(global.currentTime == 'night'){return '#695e4d'; }}
-        motorway_outline: function(){if(global.currentTime == 'day'){return '#ffd983'; }else if(global.currentTime == 'night'){return '#202934'; }}
-        highway: function(){if(global.currentTime == 'day'){return '#fff7e1'; }else if(global.currentTime == 'night'){return '#695e4d'; }}
-        highway_outline: function(){if(global.currentTime == 'day'){return '#ffd983'; }else if(global.currentTime == 'night'){return '#202934'; }}
-        main_roads: function(){if(global.currentTime == 'day'){return '#fff7e1'; }else if(global.currentTime == 'night'){return '#7f725d'; }}
-        main_roads_outline: function(){if(global.currentTime == 'day'){return '#ffd983'; }else if(global.currentTime == 'night'){return '#232c39'; }}
-        secondary_roads: function(){if(global.currentTime == 'day'){return '#ffffff'; }else if(global.currentTime == 'night'){return '#38414e'; }}
-        secondary_roads_outline: function(){if(global.currentTime == 'day'){return '#cfd2d7'; }else if(global.currentTime == 'night'){return '#232c39'; }}
-        tertiary_roads: function(){if(global.currentTime == 'day'){return '#ffffff'; }else if(global.currentTime == 'night'){return '#38414e'; }}
-        tertiary_roads_outline: function(){if(global.currentTime == 'day'){return '#cfd2d7'; }else if(global.currentTime == 'night'){return '#232c39'; }}
-        streets: function(){if(global.currentTime == 'day'){return '#edeae6'; }else if(global.currentTime == 'night'){return '#38414e'; }}
-        streetview: function(){if(global.currentTime == 'day'){return '#009e83'; }else if(global.currentTime == 'night'){return '#e25936'; }}
-        selected_route: function(){if(global.currentTime == 'day'){return '#7ab899'; }else if(global.currentTime == 'night'){return '#7ab899'; }}
-        selected_route_outline: function(){if(global.currentTime == 'day'){return '#782bca'; }else if(global.currentTime == 'night'){return '#782bca'; }}
-        segment: function(){if(global.currentTime == 'day'){return '#136734'; }else if(global.currentTime == 'night'){return '#136734'; }}
-        segment_outline: function(){if(global.currentTime == 'day'){return '#67cc33'; }else if(global.currentTime == 'night'){return '#59a65d'; }}
-        nonselected_route: function(){if(global.currentTime == 'day'){return '#d1c7c7'; }else if(global.currentTime == 'night'){return '#A9A9A9'; }}
-        nonselected_route_outline: function(){if(global.currentTime == 'day'){return '#8c8c8c'; }else if(global.currentTime == 'night'){return '#8c8c8c'; }}
-
+        motorway: function(){if(global.currentTime == 'day'){return '#F9E39D'; }else if(global.currentTime == 'vibrant'){return '#f56b3d'; }else if(global.currentTime == 'night'){return '#695e4d'; }else if(global.currentTime == 'dark'){return '#262626'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
+        motorway_outline: function(){if(global.currentTime == 'day'){return '#F0B948'; }else if(global.currentTime == 'vibrant'){return '#ff4000'; }else if(global.currentTime == 'night'){return '#202934'; }else if(global.currentTime == 'dark'){return '#e4aa81'; }else if(global.currentTime == 'walkabout'){return '#B6ACAE'; }}
+        highway: function(){if(global.currentTime == 'day'){return '#F9E39D'; }else if(global.currentTime == 'vibrant'){return '#ff9f80'; }else if(global.currentTime == 'night'){return '#695e4d'; }else if(global.currentTime == 'dark'){return '#262626'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
+        highway_outline: function(){if(global.currentTime == 'day'){return '#F0B948'; }else if(global.currentTime == 'vibrant'){return '#f46d25'; }else if(global.currentTime == 'night'){return '#202934'; }else if(global.currentTime == 'dark'){return '#ddc588'; }else if(global.currentTime == 'walkabout'){return '#B6ACAE'; }}
+        main_roads: function(){if(global.currentTime == 'day'){return '#F9E39D'; }else if(global.currentTime == 'vibrant'){return '#ffc6b3'; }else if(global.currentTime == 'night'){return '#7f725d'; }else if(global.currentTime == 'dark'){return '#262626'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
+        main_roads_outline: function(){if(global.currentTime == 'day'){return '#F0B948'; }else if(global.currentTime == 'vibrant'){return '#ff9f80'; }else if(global.currentTime == 'night'){return '#232c39'; }else if(global.currentTime == 'dark'){return '#1785cf'; }else if(global.currentTime == 'walkabout'){return '#A89FA5'; }}
+        secondary_roads: function(){if(global.currentTime == 'day'){return '#ffffff'; }else if(global.currentTime == 'vibrant'){return '#e9e5e1'; }else if(global.currentTime == 'night'){return '#38414e'; }else if(global.currentTime == 'dark'){return '#262626'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
+        secondary_roads_outline: function(){if(global.currentTime == 'day'){return '#cfd2d7'; }else if(global.currentTime == 'vibrant'){return '#dbc6bd'; }else if(global.currentTime == 'night'){return '#232c39'; }else if(global.currentTime == 'dark'){return '#262626'; }else if(global.currentTime == 'walkabout'){return '#C0C6CB'; }}
+        tertiary_roads: function(){if(global.currentTime == 'day'){return '#ffffff'; }else if(global.currentTime == 'vibrant'){return '#e9e5e1'; }else if(global.currentTime == 'night'){return '#38414e'; }else if(global.currentTime == 'dark'){return '#262626'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
+        tertiary_roads_outline: function(){if(global.currentTime == 'day'){return '#cfd2d7'; }else if(global.currentTime == 'vibrant'){return '#dbc6bd'; }else if(global.currentTime == 'night'){return '#232c39'; }else if(global.currentTime == 'dark'){return '#262626'; }else if(global.currentTime == 'walkabout'){return '#C0C6CB'; }}
+        streets: function(){if(global.currentTime == 'day'){return '#ffffff'; }else if(global.currentTime == 'vibrant'){return '#edeae6'; }else if(global.currentTime == 'night'){return '#38414e'; }else if(global.currentTime == 'dark'){return '#282d35'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
+        streetview: function(){if(global.currentTime == 'day'){return '#009e83'; }else if(global.currentTime == 'vibrant'){return '#009e83'; }else if(global.currentTime == 'night'){return '#e25936'; }else if(global.currentTime == 'dark'){return '#e25936'; }else if(global.currentTime == 'walkabout'){return '#009e83'; }}
+        selected_route: function(){if(global.currentTime == 'day'){return '#7ab899'; }else if(global.currentTime == 'vibrant'){return '#7ab899'; }else if(global.currentTime == 'night'){return '#7ab899'; }else if(global.currentTime == 'dark'){return '#7ab899'; }else if(global.currentTime == 'walkabout'){return '#7ab899'; }}
+        selected_route_outline: function(){if(global.currentTime == 'day'){return '#782bca'; }else if(global.currentTime == 'vibrant'){return '#782bca'; }else if(global.currentTime == 'night'){return '#782bca'; }else if(global.currentTime == 'dark'){return '#782bca'; }else if(global.currentTime == 'walkabout'){return '#782bca'; }}
+        segment: function(){if(global.currentTime == 'day'){return '#136734'; }else if(global.currentTime == 'vibrant'){return '#136734'; }else if(global.currentTime == 'night'){return '#136734'; }else if(global.currentTime == 'dark'){return '#136734'; }else if(global.currentTime == 'walkabout'){return '#136734'; }}
+        segment_outline: function(){if(global.currentTime == 'day'){return '#67cc33'; }else if(global.currentTime == 'vibrant'){return '#67cc33'; }else if(global.currentTime == 'night'){return '#59a65d'; }else if(global.currentTime == 'dark'){return '#59a65d'; }else if(global.currentTime == 'walkabout'){return '#67cc33'; }}
+        nonselected_route: function(){if(global.currentTime == 'day'){return '#d1c7c7'; }else if(global.currentTime == 'vibrant'){return '#d1c7c7'; }else if(global.currentTime == 'night'){return '#A9A9A9'; }else if(global.currentTime == 'dark'){return '#A9A9A9'; }else if(global.currentTime == 'walkabout'){return '#d1c7c7'; }}
+        nonselected_route_outline: function(){if(global.currentTime == 'day'){return '#8c8c8c'; }else if(global.currentTime == 'vibrant'){return '#8c8c8c'; }else if(global.currentTime == 'night'){return '#8c8c8c'; }else if(global.currentTime == 'dark'){return '#8c8c8c'; }else if(global.currentTime == 'walkabout'){return '#8c8c8c'; }}
+    
         #landuse
-        religious: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        sport: function(){if(global.currentTime == 'day'){return '#EEDFC8'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        coveredarea: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        water: function(){if(global.currentTime == 'day'){return '#91B8F8'; }else if(global.currentTime == 'night'){return '#17263c'; }}
-        park: function(){if(global.currentTime == 'day'){return '#b3debf'; }else if(global.currentTime == 'night'){return '#263c3f'; }}
-        vegetation: function(){if(global.currentTime == 'day'){return '#b3debf'; }else if(global.currentTime == 'night'){return '#263c3f'; }}
-        commercial: function(){if(global.currentTime == 'day'){return '#fff6dc'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        hospital: function(){if(global.currentTime == 'day'){return '#fad8d4'; }else if(global.currentTime == 'night'){return '#9d6561'; }}
-        school: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        industrial: function(){if(global.currentTime == 'day'){return '#f8f9fa'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        misc: function(){if(global.currentTime == 'day'){return '#faf8f2'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        openarea: function(){if(global.currentTime == 'day'){return '#f8f9fa'; }else if(global.currentTime == 'night'){return '#2f3948'; }}
+        religious: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'vibrant'){return '#b2a899'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#a6b398'; }else if(global.currentTime == 'walkabout'){return '#EDF0F0'; }}
+        sport: function(){if(global.currentTime == 'day'){return '#EEDFC8'; }else if(global.currentTime == 'vibrant'){return '#e0d1b8'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#808080'; }else if(global.currentTime == 'walkabout'){return '#c8c6be'; }}
+        coveredarea: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'vibrant'){return '#c6b9c6'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#8B8B8B'; }else if(global.currentTime == 'walkabout'){return '#cccfd4'; }}
+        water: function(){if(global.currentTime == 'day'){return '#8AC3EF'; }else if(global.currentTime == 'vibrant'){return '#81e3e4'; }else if(global.currentTime == 'night'){return '#17263c'; }else if(global.currentTime == 'dark'){return '#001f33'; }else if(global.currentTime == 'walkabout'){return '#9BECF6'; }}
+        park: function(){if(global.currentTime == 'day'){return '#B3DEBF'; }else if(global.currentTime == 'vibrant'){return '#d3e996'; }else if(global.currentTime == 'night'){return '#263c3f'; }else if(global.currentTime == 'dark'){return '#197D77'; }else if(global.currentTime == 'walkabout'){return '#D9EDE2'; }}
+        vegetation: function(){if(global.currentTime == 'day'){return '#B3DEBF'; }else if(global.currentTime == 'vibrant'){return '#bbd279'; }else if(global.currentTime == 'night'){return '#263c3f'; }else if(global.currentTime == 'dark'){return '#1A6E69'; }else if(global.currentTime == 'walkabout'){return '#D0E2CC'; }}
+        commercial: function(){if(global.currentTime == 'day'){return '#fff6dc'; }else if(global.currentTime == 'vibrant'){return '#d1c7c7'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#2C4240'; }else if(global.currentTime == 'walkabout'){return '#EDEFEF'; }}
+        hospital: function(){if(global.currentTime == 'day'){return '#fad8d4'; }else if(global.currentTime == 'vibrant'){return '#eac8c8'; }else if(global.currentTime == 'night'){return '#9d6561'; }else if(global.currentTime == 'dark'){return '#c98983'; }else if(global.currentTime == 'walkabout'){return '#FCEFF3'; }}
+        school: function(){if(global.currentTime == 'day'){return '#e6eaeb'; }else if(global.currentTime == 'vibrant'){return '#f2da8c'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#a89d8a'; }else if(global.currentTime == 'walkabout'){return '#ced9d7'; }}
+        industrial: function(){if(global.currentTime == 'day'){return '#f8f9fa'; }else if(global.currentTime == 'vibrant'){return '#c7cdd1'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#858593'; }else if(global.currentTime == 'walkabout'){return '#DDE2E5'; }}
+        misc: function(){if(global.currentTime == 'day'){return '#faf8f2'; }else if(global.currentTime == 'vibrant'){return '#faf8f2'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#746f3e'; }else if(global.currentTime == 'walkabout'){return '#FFF3E6'; }}
+        openarea: function(){if(global.currentTime == 'day'){return '#f8f9fa'; }else if(global.currentTime == 'vibrant'){return '#fde2c6'; }else if(global.currentTime == 'night'){return '#2f3948'; }else if(global.currentTime == 'dark'){return '#666666'; }else if(global.currentTime == 'walkabout'){return '#cccccc'; }}
 
         #others
         citiesfill8_day: '#f8f9fa'
         citiesfill15_day: '#f8f9fa'
+        citiesfill8_vibrant: '#fff1e8'
+        citiesfill15_vibrant: '#fffaf5'
+        citiesfill8_dark: '#0A3B5C'
+        citiesfill15_dark: '#19394D'
 
-        world: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_a: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_p: function(){if(global.currentTime == 'day'){return '#fbf8f3'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_b: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_c: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_i: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_t: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_r: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_u: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
-        continent_s: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'night'){return '#242f3e'; }}
+        world: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#f7f3f1'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#4A95D9'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_a: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#d8e3b5'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#4696DD'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_p: function(){if(global.currentTime == 'day'){return '#fbf8f3'; }else if(global.currentTime == 'vibrant'){return '#fffbf5'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#0d4a73'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_b: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#FFF3EF'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#204F85'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_c: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#f5f5bc'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#4085BE'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_i: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#ffe0cc'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#2A97FC'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_t: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#f7efe5'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#225189'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_r: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#e5f7ef'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#518FDA'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_u: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#f7e5ee'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#3280C8'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        continent_s: function(){if(global.currentTime == 'day'){return '#f5f0e4'; }else if(global.currentTime == 'vibrant'){return '#f6f9eb'; }else if(global.currentTime == 'night'){return '#242f3e'; }else if(global.currentTime == 'dark'){return '#2C5A95'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+
+        borders_3: function(){if(global.currentTime == 'day'){return '#a09c9a'; }else if(global.currentTime == 'vibrant'){return '#a09c9a'; }else if(global.currentTime == 'night'){return '#2b384b'; }else if(global.currentTime == 'dark'){return '#16476a'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
+        borders_2: function(){if(global.currentTime == 'day'){return '#E6F3D8'; }else if(global.currentTime == 'vibrant'){return '#E6F3D8'; }else if(global.currentTime == 'night'){return '#16476a'; }else if(global.currentTime == 'dark'){return '#1e6394'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
+        borders_1: function(){if(global.currentTime == 'day'){return '#FFECE5'; }else if(global.currentTime == 'vibrant'){return '#FFECE5'; }else if(global.currentTime == 'night'){return '#2b384b'; }else if(global.currentTime == 'dark'){return '#0c2a41'; }else if(global.currentTime == 'walkabout'){return '#F1F1F1'; }}
+        province: function(){if(global.currentTime == 'day'){return '#808080'; }else if(global.currentTime == 'vibrant'){return '#808080'; }else if(global.currentTime == 'night'){return '#16476a'; }else if(global.currentTime == 'dark'){return '#93c5eb'; }else if(global.currentTime == 'walkabout'){return '#FFFFFF'; }}
         
-        borders_3: function(){if(global.currentTime == 'day'){return '#a09c9a'; }else if(global.currentTime == 'night'){return '#2b384b'; }}
-        borders_2: function(){if(global.currentTime == 'day'){return '#E6F3D8'; }else if(global.currentTime == 'night'){return '#16476a'; }}
-        borders_1: function(){if(global.currentTime == 'day'){return '#FFECE5'; }else if(global.currentTime == 'night'){return '#2b384b'; }}
-        province: function(){if(global.currentTime == 'day'){return '#808080'; }else if(global.currentTime == 'night'){return '#16476a'; }}
         #labels
+        capitals: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'vibrant'){return '#000000'; }else if(global.currentTime == 'night'){return '#c88e60'; }else if(global.currentTime == 'dark'){return '#FFFFFF'; }else if(global.currentTime == 'walkabout'){return '#000000'; }}
+        capitals_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'vibrant'){return '#ffffff'; }else if(global.currentTime == 'night'){return '#3a332f'; }else if(global.currentTime == 'dark'){return '#0c2a41'; }else if(global.currentTime == 'walkabout'){return '#DEE1E3'; }}
+        country: function(){if(global.currentTime == 'day'){return '#242424'; }else if(global.currentTime == 'vibrant'){return '#000'; }else if(global.currentTime == 'night'){return '#726654'; }else if(global.currentTime == 'dark'){return '#ffffff'; }else if(global.currentTime == 'walkabout'){return '#3B3C3D'; }}
+        country_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'vibrant'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }else if(global.currentTime == 'dark'){return '#0c2a41'; }else if(global.currentTime == 'walkabout'){return '#BDC0C1'; }}
+        provinces_fill: function(){if(global.currentTime == 'day'){return '#4e5256'; }else if(global.currentTime == 'vibrant'){return '#7f6e60'; }else if(global.currentTime == 'night'){return '#726654'; }else if(global.currentTime == 'dark'){return '#ffffff'; }else if(global.currentTime == 'walkabout'){return '#B8B8B8'; }}
+        provinces_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'vibrant'){return '#f6d7bc'; }else if(global.currentTime == 'night'){return '#0c2a41'; }else if(global.currentTime == 'dark'){return '#0c2a41'; }else if(global.currentTime == 'walkabout'){return '#BDC0C1'; }}
+        province_cap_fill: function(){if(global.currentTime == 'day'){return '#000'; }else if(global.currentTime == 'vibrant'){return '#49311c'; }else if(global.currentTime == 'night'){return '#d39463'; }else if(global.currentTime == 'dark'){return '#d4c4ca'; }else if(global.currentTime == 'walkabout'){return '#000000'; }}
+        province_cap_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'vibrant'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#000'; }else if(global.currentTime == 'dark'){return '#604020'; }else if(global.currentTime == 'walkabout'){return '#DEE1E3'; }}
 
-        capitals: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'night'){return '#c88e60'; }}
-        capitals_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#3a332f'; }}
-        country: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'night'){return '#726654'; }}
-        country_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
-        provinces_fill: function(){if(global.currentTime == 'day'){return '#4e5256'; }else if(global.currentTime == 'night'){return '#726654'; }}
-        provinces_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
-        province_cap_fill: function(){if(global.currentTime == 'day'){return '#000000'; }else if(global.currentTime == 'night'){return '#d39463'; }}
-        province_cap_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#000000'; }}
-
-        cities_fill: function(){if(global.currentTime == 'day'){return '#49311c'; }else if(global.currentTime == 'night'){return '#c88e60'; }}
+        cities_fill: function(){if(global.currentTime == 'day'){return '#3A414A'; }else if(global.currentTime == 'vibrant'){return '#49311c'; }else if(global.currentTime == 'night'){return '#c88e60'; }else if(global.currentTime == 'dark'){return '#e9f3fb'; }else if(global.currentTime == 'walkabout'){return '#404040'; }}
         cities_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#000000'; }}
-        area_sector_fill: function(){if(global.currentTime == 'day'){return '#717273'; }else if(global.currentTime == 'night'){return '#726654'; }}
-        area_sector_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }}
+        area_sector_fill: function(){if(global.currentTime == 'day'){return '#3A414A'; }else if(global.currentTime == 'vibrant'){return '#49311c'; }else if(global.currentTime == 'night'){return '#726654'; }else if(global.currentTime == 'dark'){return '#e9f3fb'; }else if(global.currentTime == 'walkabout'){return '#2D2D2E'; }}
+        area_sector_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'vibrant'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }else if(global.currentTime == 'dark'){return '#0c2a41'; }else if(global.currentTime == 'walkabout'){return '#DEE1E3'; }}
+        area_subsector_fill: function(){if(global.currentTime == 'day'){return '#60656C'; }else if(global.currentTime == 'vibrant'){return '#49311c'; }else if(global.currentTime == 'night'){return '#726654'; }else if(global.currentTime == 'dark'){return '#e9f3fb'; }else if(global.currentTime == 'walkabout'){return '#2D2D2E'; }}
+        area_subsector_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'vibrant'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#0c2a41'; }else if(global.currentTime == 'dark'){return '#0c2a41'; }else if(global.currentTime == 'walkabout'){return '#DEE1E3'; }}
 
-        road_text: function(){if(global.currentTime == 'day'){return '#4e5256'; }else if(global.currentTime == 'night'){return '#9ca5b3'; }}
-        road_text_stroke: function(){if(global.currentTime == 'day'){return '#d5d6d6'; }else if(global.currentTime == 'night'){return '#4e5868'; }}
-        highway_text: function(){if(global.currentTime == 'day'){return '#7a3e06'; }else if(global.currentTime == 'night'){return '#f3d19c'; }}
-        highway_text_border: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#333b45'; }}
+        road_text: function(){if(global.currentTime == 'day'){return '#4e5256'; }else if(global.currentTime == 'vibrant'){return '#595959'; }else if(global.currentTime == 'night'){return '#9ca5b3'; }else if(global.currentTime == 'dark'){return '#95b7b7'; }else if(global.currentTime == 'walkabout'){return '#7C7C7C'; }}
+        road_text_stroke: function(){if(global.currentTime == 'day'){return '#d5d6d6'; }else if(global.currentTime == 'vibrant'){return '#EEEEEE'; }else if(global.currentTime == 'night'){return '#4e5868'; }else if(global.currentTime == 'dark'){return '#532e19'; }else if(global.currentTime == 'walkabout'){return '#EBECED'; }}
+        highway_text: function(){if(global.currentTime == 'day'){return '#844C18'; }else if(global.currentTime == 'vibrant'){return '#8f473d'; }else if(global.currentTime == 'night'){return '#f3d19c'; }else if(global.currentTime == 'dark'){return '#e4eaef'; }else if(global.currentTime == 'walkabout'){return '#6f6f6f'; }}
+        highway_text_border: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'vibrant'){return '#ffd9cc'; }else if(global.currentTime == 'night'){return '#333b45'; }else if(global.currentTime == 'dark'){return '#532e19'; }else if(global.currentTime == 'walkabout'){return '#EBECED'; }}
+        main_text: function(){if(global.currentTime == 'day'){return '#7a3e06'; }else if(global.currentTime == 'vibrant'){return '#8f473d'; }else if(global.currentTime == 'night'){return '#f3d19c'; }else if(global.currentTime == 'dark'){return '#e4eaef'; }else if(global.currentTime == 'walkabout'){return '#6f6f6f'; }}
+        main_border: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'vibrant'){return '#ffd9cc'; }else if(global.currentTime == 'night'){return '#333b45'; }else if(global.currentTime == 'dark'){return '#532e19'; }else if(global.currentTime == 'walkabout'){return '#EBECED'; }}
+        secondary_text_13: function(){if(global.currentTime == 'day'){return '#808080'; }else if(global.currentTime == 'vibrant'){return '#595959'; }else if(global.currentTime == 'night'){return '#9ca5b3'; }else if(global.currentTime == 'dark'){return '#95b7b7'; }else if(global.currentTime == 'walkabout'){return '#7C7C7C'; }}
+        secondary_text_15: function(){if(global.currentTime == 'day'){return '#4E5256'; }else if(global.currentTime == 'vibrant'){return '#595959'; }else if(global.currentTime == 'night'){return '#9ca5b3'; }else if(global.currentTime == 'dark'){return '#95b7b7'; }else if(global.currentTime == 'walkabout'){return '#7C7C7C'; }}
+        secondary_stroke: function(){if(global.currentTime == 'day'){return '#d5d6d6'; }else if(global.currentTime == 'vibrant'){return '#EEEEEE'; }else if(global.currentTime == 'night'){return '#4e5868'; }else if(global.currentTime == 'dark'){return '#532e19'; }else if(global.currentTime == 'walkabout'){return '#EBECED'; }}
 
         poi_fill: function(){if(global.currentTime == 'day'){return '#636363'; }else if(global.currentTime == 'night'){return '#87d1f5'; }}
-        poi_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#17263d'; }}
+        poi_stroke: function(){if(global.currentTime == 'day'){return '#E8E8E8'; }else if(global.currentTime == 'vibrant'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#17263d'; }else if(global.currentTime == 'dark'){return '#532e19'; }else if(global.currentTime == 'walkabout'){return '#DEE1E3'; }}
         search_poi_stroke: function(){if(global.currentTime == 'day'){return '#FFFFFF'; }else if(global.currentTime == 'night'){return '#282d35'; }}
 
-        water_fill: function(){if(global.currentTime == 'day'){return '#3470c9'; }else if(global.currentTime == 'night'){return '#525c6c'; }}
+        water_fill: function(){if(global.currentTime == 'day'){return '#345C7A'; }else if(global.currentTime == 'night'){return '#525c6c'; }}
         water_stroke: function(){if(global.currentTime == 'day'){return '#5488d8'; }else if(global.currentTime == 'night'){return '#2a3546'; }}
 
         parks_fill: function(){if(global.currentTime == 'day'){return '#188038'; }else if(global.currentTime == 'night'){return '#659071'; }}
@@ -98,219 +110,219 @@ global:
     pois_color:
         dark_mode: '#87d1f5'
 
-        accounting: '#ab47bc'
-        advertisingagency: '#7b6242'
-        agribusiness: '#ab47bc'
-        airport: '#ec407a'
-        ambulance: '#29b6f6'
-        amusementpark: '#26c6da'
-        aquarium: '#26c6da'
-        artgallery: '#26c6da'
-        atm: '#5c6bc0'
-        auditorium: '#26c6da'
-        autospareparts: '#8d6e63'
-        bank: '#5c6bc0'
-        barber: '#ff7043'
-        basketballcourt: '#4527a0'
-        beautysalon: '#ff7043'
-        bookstore: '#c62828'
-        booksandstationers: '#ab47bc'
+        accounting: '#8C8C8C'
+        advertisingagency: '#8C8C8C'
+        agribusiness: '#8C8C8C'
+        airport: '#2E5387'
+        ambulance: '#A52635'
+        amusementpark: '#6F3188'
+        aquarium: '#6F3188'
+        artgallery: '#6F3188'
+        atm: '#026639'
+        auditorium: '#6F3188'
+        autospareparts: '#985C03'
+        bank: '#026639'
+        barber: '#0D41A8'
+        basketballcourt: '#6F3188'
+        beautysalon: '#0D41A8'
+        bookstore: '#0D41A8'
+        booksandstationers: '#0D41A8'
 
-        busstation: '#ec407a'
-        busstop: '#ec407a'
-        cafe: '#7e57c2'
-        campground: '#26c6da'
-        canteen: '#7e57c2'
-        carrepair: '#8d6e63'
-        carshowroom: '#8d6e63'
-        carwash: '#8d6e63'
-        catererseventplanners: '#ab47bc'
-        cemetery: '#4527a0'
-        church: '#ffca28'
-        cinema: '#26c6da'
-        cleaningandlaundry: '#ab47bc'
-        clothingstore: '#c62828'
-        college: '#42a5f5'
-        communitycenter: '#29b6f6'
+        busstation: '#2E5387'
+        busstop: '#2E5387'
+        cafe: '#D36913'
+        campground: '#6F3188'
+        canteen: '#D36913'
+        carrepair: '#985C03'
+        carshowroom: '#985C03'
+        carwash: '#985C03'
+        catererseventplanners: '#8C8C8C'
+        cemetery: '#8C8C8C'
+        church: '#026639'
+        cinema: '#6F3188'
+        cleaningandlaundry: '#8C8C8C'
+        clothingstore: '#0D41A8'
+        college: '#026639'
+        communitycenter: '#8C8C8C'
 
-        computerstore: '#c62828'
-        constructionservices: '#afb42b'
-        conveniencestore: '#c62961'
-        cosmeticsstore: '#c62828'
-        courierservice: '#424242'
-        court: '#26a69a'
-        cricketground: '#4527a0'
-        currencyexchange: '#9ccc65'
-        dairyshop: '#c62961'
-        dentist: '#ef5350'
-        dhaba: '#7e57c2'
-        drivingschool: '#ab47bc'
-        dryport: '#ec407a'
-        electricalstore: '#c62828'
-        electrician: '#ab47bc'
-        electricityoffice: '#26a69a'
-        electronicsstore: '#c62828'
+        computerstore: '#0D41A8'
+        constructionservices: '#8C8C8C'
+        conveniencestore: '#0D41A8'
+        cosmeticsstore: '#0D41A8'
+        courierservice: '#8C8C8C'
+        court: '#026639'
+        cricketground: '#6F3188'
+        currencyexchange: '#026639'
+        dairyshop: '#0D41A8'
+        dentist: '#A52635'
+        dhaba: '#D36913'
+        drivingschool: '#8C8C8C'
+        dryport: '#2E5387'
+        electricalstore: '#0D41A8'
+        electrician: '#8C8C8C'
+        electricityoffice: '#8C8C8C'
+        electronicsstore: '#0D41A8'
 
-        embassy: '#78909c'
-        equipment: '#afb42b'
-        exhibitionhall: '#6a1b9a'
-        factory: '#ffa81e'
-        fastfood: '#7e57c2'
-        filterationplant: '#26a69a'
-        firestation: '#26a69a'
-        fitnesscenter: '#4527a0'
-        florist: '#ab47bc'
-        flyingclub: '#26c6da'
-        footballground: '#4527a0'
-        fruitandvegetable: '#c62961'
-        fuelstation: '#8d6e63'
-        functionhall: '#6a1b9a'
-        furniturestore: '#c62828'
-        giftstore: '#c62828'
-        glasswork: '#afb42b'
+        embassy: '#026639'
+        equipment: '#8C8C8C'
+        exhibitionhall: '#6F3188'
+        factory: '#8C8C8C'
+        fastfood: '#D36913'
+        filterationplant: '#8C8C8C'
+        firestation: '#026639'
+        fitnesscenter: '#6F3188'
+        florist: '#0D41A8'
+        flyingclub: '#6F3188'
+        footballground: '#6F3188'
+        fruitandvegetable: '#0D41A8'
+        fuelstation: '#985C03'
+        functionhall: '#6F3188'
+        furniturestore: '#0D41A8'
+        giftstore: '#0D41A8'
+        glasswork: '#8C8C8C'
 
-        governmentbuilding: '#78909c'
-        guesthouse: '#ad1457'
-        gurdwara: '#ffca28'
-        hardwareandsanitary: '#afb42b'
-        herbalclinic: '#ef5350'
-        hijamacenter: '#ef5350'
-        hikmat: '#ef5350'
-        historicalplace: '#66bb6a'
-        hockeyground: '#4527a0'
-        homegoodsstore: '#c62828'
-        homeopathicclinic: '#ef5350'
-        hospital: '#ef5350'
-        hostel: '#ad1457'
-        hotel: '#ad1457'
-        icecreamparlor: '#7e57c2'
-        imambargah: '#66bb6a'
-        indoorgames: '#26c6da'
+        governmentbuilding: '#026639'
+        guesthouse: '#6F3188'
+        gurdwara: '#026639'
+        hardwareandsanitary: '#8C8C8Cf'
+        herbalclinic: '#A52635'
+        hijamacenter: '#A52635'
+        hikmat: '#A52635'
+        historicalplace: '#6F3188'
+        hockeyground: '#6F3188'
+        homegoodsstore: '#0D41A8'
+        homeopathicclinic: '#A52635'
+        hospital: '#A52635'
+        hostel: '#6F3188'
+        hotel: '#6F3188'
+        icecreamparlor: '#D36913'
+        imambargah: '#026639'
+        indoorgames: '#6F3188'
 
-        insuranceagency: '#ab47bc'
-        intersection: '#4527a0'
-        jazz: '#fcc718'
-        jewellerystore: '#c62828'
-        juicebar: '#7e57c2'
-        khokha: '#c62828'
-        laboratory: '#ef5350'
-        langar: '#29b6f6'
-        lawenforcement: '#26a69a'
-        lawyer: '#ab47bc'
-        library: '#29b6f6'
-        localadministration: '#26a69a'
-        lpgsupplier: '#ab47bc'
-        madrassa: '#29b6f6'
-        materialsupplier: '#afb42b'
-        meatstore: '#c62961'
-        medicalclinic: '#ef5350'
+        insuranceagency: '#8C8C8C'
+        intersection: '#6F3188'
+        jazz: '#8C8C8C'
+        jewellerystore: '#0D41A8'
+        juicebar: '#D36913'
+        khokha: '#0D41A8'
+        laboratory: '#A52635'
+        langar: '#8C8C8C'
+        lawenforcement: '#A52635'
+        lawyer: '#8C8C8C'
+        library: '#026639'
+        localadministration: '#8C8C8C'
+        lpgsupplier: '#8C8C8C'
+        madrassa: '#026639'
+        materialsupplier: '#8C8C8C'
+        meatstore: '#0D41A8'
+        medicalclinic: '#A52635'
 
-        metalwork: '#afb42b'
-        mill: '#ffca28'
-        mobileshop: '#ab47bc'
-        moneytransfer: '#9ccc65'
-        monument: '#66bb6a'
-        mosque: '#ffca28'
-        motel: '#ad1457'
-        motorbikerepair: '#8d6e63'
-        motorbikeshowroom: '#8d6e63'
-        museum: '#66bb6a'
-        newspaper: '#7b6242'
-        ngo: '#29b6f6'
-        oiltraders: '#ab47bc'
-        optician: '#ab47bc'
-        orphanage: '#29b6f6'
-        otherbeautyandspa: '#ff7043'
-        othercivicutilities: '#26a69a'
+        metalwork: '#8C8C8C'
+        mill: '#8C8C8C'
+        mobileshop: '#0D41A8'
+        moneytransfer: '#026639'
+        monument: '#6F3188'
+        mosque: '#026639'
+        motel: '#6F3188'
+        motorbikerepair: '#985C03'
+        motorbikeshowroom: '#985C03'
+        museum: '#6F3188'
+        newspaper: '#8C8C8C'
+        ngo: '#8C8C8C'
+        oiltraders: '#8C8C8C'
+        optician: '#0D41A8'
+        orphanage: '#8C8C8C'
+        otherbeautyandspa: '#0D41A8'
+        othercivicutilities: '#8C8C8C'
 
-        otherconstruction: '#afb42b'
-        othereducation: '#29b6f6'
-        otherevents: '#6a1b9a'
-        otherfinance: '#66bb6a'
-        otherfood: '#ab47bc'
-        othergeneral: '#4527a0'
-        othergovernment: '#78909c'
-        othergrocery: '#c62961'
-        otherindustry: '#ffa81e'
-        otherlocalbusinesses: '#ab47bc'
-        otherlodging: '#ad1457'
-        othermedia: '#7b6242'
-        othermedical: '#ef5350'
-        otherrecreation: '#26c6da'
-        otherreligion: '#ffca28'
-        othershopping: '#c62828'
-        othersocialservice: '#29b6f6'
+        otherconstruction: '#8C8C8C'
+        othereducation: '#026639'
+        otherevents: '#6F3188'
+        otherfinance: '#026639'
+        otherfood: '#D36913'
+        othergeneral: '#8C8C8C'
+        othergovernment: '#026639'
+        othergrocery: '#0D41A8'
+        otherindustry: '#8C8C8C'
+        otherlocalbusinesses: '#8C8C8C'
+        otherlodging: '#6F3188'
+        othermedia: '#8C8C8C'
+        othermedical: '#A52635'
+        otherrecreation: '#6F3188'
+        otherreligion: '#026639'
+        othershopping: '#0D41A8'
+        othersocialservice: '#8C8C8C'
 
-        othersports: '#4527a0'
-        othertourist: '#66bb6a'
-        othertransportation: '#ec407a'
-        othervehicle: '#8d6e63'
-        park: '#26c6da'
-        parking: '#8d6e63'
-        petstore: '#ab47bc'
-        pharmacy: '#ef5350'
-        photostudio: '#ab47bc'
-        plumber: '#ab47bc'
-        postoffice: '#424242'
-        powerstation: '#ffa81e'
-        pressclub: '#7b6242'
-        printing: '#4527a0'
-        privatecompany: '#ab47bc'
-        radiostation: '#7b6242'
-        railwaystation: '#ec407a'
+        othersports: '#6F3188'
+        othertourist: '#6F3188'
+        # othertransportation: '#2E5387'
+        othervehicle: '#985C03'
+        park: '#6F3188'
+        parking: '#985C03'
+        petstore: '#A52635'
+        pharmacy: '#A52635'
+        photostudio: '#8C8C8C'
+        plumber: '#8C8C8C'
+        postoffice: '#8C8C8C'
+        powerstation: '#8C8C8C'
+        pressclub: '#8C8C8C'
+        printing: '#8C8C8C'
+        privatecompany: '#8C8C8C'
+        radiostation: '#8C8C8C'
+        railwaystation: '#2E5387'
 
-        realestateagency: '#ab47bc'
-        recyclestore: '#4527a0'
-        refinery: '#ffa81e'
-        rentacar: '#8d6e63'
-        rescueservice: '#26a69a'
-        restaurant: '#7e57c2'
-        school: '#29b6f6'
-        seaport: '#ec407a'
-        shoestore: '#c62828'
-        shoppingmall: '#c62828'
-        shrine: '#ffca28'
-        spa: '#ff7043'
-        sportsgoods: '#c62828'
-        squashcourt: '#4527a0'
-        stadium: '#4527a0'
-        stockbroker: '#9ccc65'
-        suigasoffice: '#26a69a'
+        realestateagency: '#8C8C8C'
+        recyclestore: '#8C8C8C'
+        refinery: '#8C8C8C'
+        rentacar: '#985C03'
+        rescueservice: '#8C8C8C'
+        restaurant: '#D36913'
+        school: '#026639'
+        seaport: '#2E5387'
+        shoestore: '#0D41A8'
+        shoppingmall: '#0D41A8'
+        shrine: '#026639'
+        spa: '#0D41A8'
+        sportsgoods: '#0D41A8'
+        squashcourt: '#6F3188'
+        stadium: '#6F3188'
+        stockbroker: '#026639'
+        suigasoffice: '#8C8C8C'
 
-        supermarket: '#c62961'
-        sweetsandbakers: '#7e57c2'
-        swimmingpool: '#4527a0'
-        tailor: '#ab47bc'
-        tandoor: '#7e57c2'
-        taxistand: '#ec407a'
-        technicalservices: '#ab47bc'
-        telecommunication: '#26a69a'
-        telenor: '#00a8e4'
-        temple: '#ffca28'
-        tenniscourt: '#4527a0'
-        tomb: '#66bb6a'
-        toystore: '#c62828'
-        tplcorp: '#1e4079'
-        tplinsurance: '#f47920'
-        tpllifeinsurance: '#79c685'
-        tplmaps: '#156735'
-        tplproperties: '#47257a'
-        tpltrakker: '#a72c32'
-        traininginstitute: '#29b6f6'
-        travelagency: '#ab47bc'
-        tuitioncenter: '#29b6f6'
+        supermarket: '#0D41A8'
+        sweetsandbakers: '#D36913'
+        swimmingpool: '#6F3188'
+        tailor: '#8C8C8C'
+        tandoor: '#D36913'
+        taxistand: '#2E5387'
+        technicalservices: '#8C8C8C'
+        telecommunication: '#8C8C8C'
+        telenor: '#8C8C8C'
+        temple: '#026639'
+        tenniscourt: '#6F3188'
+        tomb: '#6F3188'
+        toystore: '#0D41A8'
+        tplcorp: '#8C8C8C'
+        tplinsurance: '#8C8C8C'
+        tpllifeinsurance: '#8C8C8C'
+        tplmaps: '#8C8C8C'
+        tplproperties: '#8C8C8C'
+        tpltrakker: '#8C8C8C'
+        traininginstitute: '#026639'
+        travelagency: '#8C8C8C'
+        tuitioncenter: '#026639'
 
-        tvchannel: '#7b6242'
-        tvstudio: '#7b6242'
-        tyreshop: '#8d6e63'
-        university: '#29b6f6'
-        veterinarycare: '#ef5350'
-        vocationalcenter: '#29b6f6'
-        volleyballcourt: '#4527a0'
-        warehouse: '#ffa81e'
-        wholesale: '#c62828'
-        woodwork: '#afb42b'
-        zoo: '#26c6da'
+        tvchannel: '#8C8C8C'
+        tvstudio: '#8C8C8C'
+        tyreshop: '#985C03'
+        university: '#026639'
+        veterinarycare: '#A52635'
+        vocationalcenter: '#026639'
+        volleyballcourt: '#6F3188'
+        warehouse: '#8C8C8C'
+        wholesale: '#0D41A8'
+        woodwork: '#8C8C8C'
+        zoo: '#6F3188'
 
 cameras:
     perspective:
@@ -344,404 +356,417 @@ cinnabar-colors:
 
 textures:
     pois:
-        url: TPLBaseMapResources.bundle/map_cat_icons/map_cat_icons.png
+        url: TPLBaseMapResources.bundle/map_cat_icons/POI_Icons_Unselected.png
         sprites:
-            accounting: [149,1,72,72]
-            advertisingagency: [223,1,72,72]
-            agribusiness: [297,1,72,72]
-            airport: [371,1,72,72]
-            ambulance: [445,1,72,72]
-            amusementpark: [519,1,72,72]
-            aquarium: [593,1,72,72]
-            artgallery: [667,1,72,72]
-            atm: [741,1,72,72]
-            auditorium: [815,1,72,72]
-            autospareparts: [889,1,72,72]
-            bank: [963,1,72,72]
-            barber: [1,74,72,72]
-            basketballcourt: [75,74,72,72]
-            beautysalon: [149,75,72,72]
-            bookstore: [741,963,80,80]
-            booksandstationers: [223,75,71,72]
-            busstation: [296,75,71,72]
-            busstop: [369,75,72,72]
-            cafe: [443,75,72,72]
-            campground: [517,75,72,72]
-            canteen: [591,75,72,72]
-            carrepair: [665,75,72,72]
-            carshowroom: [739,75,72,72]
-            carwash: [813,75,72,72]
-            catererseventplanners: [887,75,72,72]
-            cemetery: [961,75,72,72]
-            church: [1,148,72,72]
-            cinema: [75,148,72,72]
-            cleaningandlaundry: [149,149,72,72]
-            clothingstore: [223,149,72,72]
-            college: [297,149,72,72]
-            communitycenter: [371,149,72,72]
-            computerstore: [445,149,72,72]
-            constructionservices: [519,149,72,72]
-            conveniencestore: [593,149,72,72]
-            cosmeticsstore: [667,149,72,72]
-            courierservice: [741,149,72,72]
-            court: [815,149,72,72]
-            cricketground: [889,149,72,72]
-            currencyexchange: [963,149,72,72]
-            dairyshop: [1,222,72,72]
-            dentist: [75,222,72,72]
-            dhaba: [149,223,72,72]
-            drivingschool: [223,223,72,72]
-            dryport: [297,223,72,72]
-            electricalstore: [371,223,72,72]
-            electrician: [445,223,72,72]
-            electricityoffice: [519,223,72,72]
-            electronicsstore: [593,223,72,72]
-            embassy: [667,223,72,72]
-            equipment: [741,223,72,72]
-            exhibitionhall: [815,223,72,72]
-            factory: [889,223,72,72]
-            fastfood: [963,223,72,72]
-            filterationplant: [1,296,72,72]
-            firestation: [75,296,72,72]
-            fitnesscenter: [149,297,72,72]
-            florist: [223,297,72,72]
-            flyingclub: [297,297,72,72]
-            footballground: [371,297,72,72]
-            fruitandvegetable: [445,297,72,72]
-            fuelstation: [519,297,72,72]
-            functionhall: [593,297,72,72]
-            furniturestore: [1,1,72,71]
-            giftstore: [667,297,72,72]
-            glasswork: [741,297,72,72]
-            governmentbuildings: [815,297,72,72]
-            guesthouse: [889,297,72,72]
-            gurdwara: [963,297,72,72]
-            hardwareandsanitary: [1,370,72,72]
-            herbalclinic: [75,370,72,72]
-            hijamacenter: [149,371,72,72]
-            hikmat: [223,371,72,72]
-            historicalplace: [297,371,71,72]
-            hockeyground: [370,371,72,72]
-            homegoodsstore: [444,371,72,72]
-            homeopathicclinic: [518,371,72,72]
-            hospital: [592,371,72,72]
-            hostel: [666,371,72,72]
-            hotel: [740,371,72,72]
-            icecreamparlor: [814,371,72,72]
-            imambargah: [888,371,72,72]
-            indoorgames: [962,371,72,72]
-            insuranceagency: [1,444,72,72]
-            intersection: [75,444,71,72]
-            jewellerystore: [148,445,72,72]
-            juicebar: [222,445,72,72]
-            khokha: [296,445,72,72]
-            laboratory: [370,445,72,72]
-            langar: [444,445,72,72]
-            lawenforcement: [518,445,72,72]
-            lawyer: [592,445,72,72]
-            library: [666,445,72,72]
-            localadministration: [740,445,72,72]
-            lpgsupplier: [814,445,72,72]
-            madrassa: [888,445,72,72]
-            materialsupplier: [962,445,72,72]
-            meatstore: [1,518,72,72]
-            medicalclinic: [148,519,72,72]
-            metalwork: [222,519,72,72]
-            mill: [296,519,72,72]
-            mobileshop: [370,519,72,72]
-            moneytransfer: [444,519,72,72]
-            monument: [518,519,72,72]
-            mosque: [592,519,72,72]
-            motel: [666,519,72,72]
-            motorbikerepair: [740,519,72,72]
-            motorbikeshowroom: [814,519,72,72]
-            museum: [888,519,72,72]
-            newspaper: [962,519,72,72]
-            ngo: [1,592,72,72]
-            oiltraders: [75,593,72,72]
-            optician: [149,593,72,72]
-            orphanage: [223,593,72,72]
-            otherbeautyandspa: [297,593,72,72]
-            othercivicutilities: [371,593,72,72]
-            otherconstruction: [445,593,72,72]
-            othereducation: [519,593,72,72]
-            otherevents: [593,593,72,72]
-            otherfinance: [667,593,72,72]
-            otherfood: [741,593,72,72]
-            othergeneral: [815,593,72,72]
-            othergovernment: [889,593,72,72]
-            othergrocery: [963,593,72,72]
-            otherindustry: [1,666,72,72]
-            otherlocalbusinesses: [75,667,72,72]
-            otherlodging: [149,667,72,72]
-            othermedia: [223,667,72,72]
-            othermedical: [297,667,72,72]
-            otherrecreation: [371,667,72,72]
-            otherreligion: [445,667,72,72]
-            othershopping: [519,667,72,72]
-            othersocialservice: [593,667,72,72]
-            othersports: [667,667,72,72]
-            othertourist: [741,667,72,72]
-            othertransportation: [815,667,72,72]
-            othervehicle: [889,667,72,72]
-            park: [963,667,72,72]
-            parking: [1,740,72,72]
-            petstore: [75,741,72,72]
-            pharmacy: [149,741,72,72]
-            photostudio: [223,741,72,72]
-            plumber: [297,741,72,72]
-            postoffice: [371,741,72,72]
-            powerstation: [445,741,72,72]
-            pressclub: [519,741,72,72]
-            printers: [823,963,80,80]
-            privatecompany: [593,741,72,72]
-            radiostation: [667,741,72,72]
-            railwaystation: [741,741,72,72]
-            realestateagency: [815,741,72,72]
-            recyclestore: [889,741,72,72]
-            refinery: [963,741,72,72]
-            rentacar: [1,814,72,72]
-            rescueservice: [75,815,72,72]
-            restaurant: [149,815,72,72]
-            school: [223,815,72,72]
-            seaport: [297,815,72,72]
-            shoestore: [371,815,72,72]
-            shoppingmall: [445,815,72,72]
-            shrine: [519,815,72,72]
-            spa: [593,815,72,72]
-            sportsgoods: [667,815,72,72]
-            squashcourt: [741,815,72,72]
-            stadium: [815,815,72,72]
-            stockbroker: [889,815,72,72]
-            suigasoffice: [963,815,72,72]
-            supermarket: [1,888,72,72]
-            sweetsandbakers: [75,889,72,72]
-            swimmingpool: [149,889,72,72]
-            tailor: [223,889,72,72]
-            tandoor: [297,889,72,72]
-            taxistand: [371,889,72,72]
-            technicalservices: [445,889,72,72]
-            telecommunication: [519,889,72,72]
-            telenor: [905,963,80,80]
-            temple: [593,889,72,72]
-            tenniscourt: [667,889,72,72]
-            tomb: [741,889,72,72]
-            toystore: [815,889,72,72]
-            tpl: [0,1035,75,75]
-            traininginstitute: [889,889,72,72]
-            travelagency: [963,889,72,72]
-            tuitioncenter: [1,962,72,72]
-            tvchannel: [75,963,72,72]
-            tvstudio: [149,963,72,72]
-            tyreshop: [223,963,72,72]
-            university: [297,963,72,72]
-            veterinarycare: [371,963,72,72]
-            vocationalcenter: [445,963,72,72]
-            volleyballcourt: [519,963,72,72]
-            warehouse: [75,518,71,72]
-            wholesale: [75,1,72,71]
-            woodwork: [593,963,72,72]
-            zoo: [667,963,72,72]
+            accounting: [80, 300, 80, 100]
+            advertisingagency: [0, 400, 80, 100]
+            agribusiness: [80, 300, 80, 100]
+            airport: [240, 100, 80, 100]
+            ambulance: [0, 100, 80, 100]
+            amusementpark: [240, 200, 80, 100]
+            aquarium: [240, 200, 80, 100]
+            artgallery: [160, 200, 80, 100]
+            atm: [320, 0, 80, 100]
+            auditorium: [160, 200, 80, 100]
+            autospareparts: [80, 400, 80, 100]
+            bank: [320, 0, 80, 100]
+            barber: [560, 400, 80, 100]
+            basketballcourt: [0, 200, 80, 100]
+            beautysalon: [560, 400, 80, 100]
+            bookstore: [480, 400, 80, 100]
+            booksandstationers: [480, 400, 80, 100]
+            busstation: [400, 100, 80, 100]
+            busstop: [400, 100, 80, 100]
+            cafe: [560, 0, 80, 100]
+            campground: [240, 200, 80, 100]
+            canteen: [560, 0, 80, 100]
+            carrepair: [80, 400, 80, 100]
+            carshowroom: [80, 400, 80, 100]
+            carwash: [80, 400, 80, 100]
+            catererseventplanners: [80, 300, 80, 100]
+            cemetery: [160, 300, 80, 100]
+            church: [160, 0, 80, 100]
+            cinema: [400, 200, 80, 100]
+            cleaningandlaundry: [80, 300, 80, 100]
+            clothingstore: [480, 400, 80, 100]
+            college: [0, 0, 80, 100]
+            communitycenter: [0, 300, 80, 100]
+            computerstore: [480, 400, 80, 100]
+            constructionservices: [560, 300, 80, 100]
+            conveniencestore: [400, 400, 80, 100]
+            cosmeticsstore: [480, 400, 80, 100]
+            courierservice: [240, 300, 80, 100]
+            court: [400, 0, 80, 100]
+            cricketground: [0, 200, 80, 100]
+            currencyexchange: [320, 0, 80, 100]
+            dairyshop: [400, 400, 80, 100]
+            dentist: [0, 100, 80, 100]
+            dhaba: [560, 0, 80, 100]
+            drivingschool: [80, 300, 80, 100]
+            dryport: [480, 100, 80, 100]
+            electricalstore: [480, 400, 80, 100]
+            electrician: [560, 300, 80, 100]
+            electricityoffice: [320, 300, 80, 100]
+            electronicsstore: [480, 400, 80, 100]
+            embassy: [400, 0, 80, 100]
+            equipment: [560, 300, 80, 100]
+            exhibitionhall: [80, 200, 80, 100]
+            factory: [0, 400, 80, 100]
+            fastfood: [560, 0, 80, 100]
+            filterationplant: [400, 300, 80, 100]
+            firestation: [400, 0, 80, 100]
+            fitnesscenter: [0, 200, 80, 100]
+            florist: [480, 400, 80, 100]
+            flyingclub: [240, 200, 80, 100]
+            footballground: [0, 200, 80, 100]
+            fruitandvegetable: [400, 400, 80, 100]
+            fuelstation: [320, 400, 80, 100]
+            functionhall: [80, 200, 80, 100]
+            furniturestore: [480, 400, 80, 100]
+            giftstore: [480, 400, 80, 100]
+            glasswork: [560, 300, 80, 100]
+            governmentbuilding: [400, 0, 80, 100]
+            guesthouse: [480, 200, 80, 100]
+            gurdwara: [160, 0, 80, 100]
+            hardwareandsanitary: [560, 300, 80, 100]
+            herbalclinic: [0, 100, 80, 100]
+            hijamacenter: [0, 100, 80, 100]
+            hikmat: [0, 100, 80, 100]
+            historicalplace: [560, 200, 80, 100]
+            hockeyground: [0, 200, 80, 100]
+            homegoodsstore: [480, 400, 80, 100]
+            homeopathicclinic: [0, 100, 80, 100]
+            hospital: [0, 100, 80, 100]
+            hostel: [480, 200, 80, 100]
+            hotel: [480, 200, 80, 100]
+            icecreamparlor: [560, 0, 80, 100]
+            imambargah: [160, 0, 80, 100]
+            indoorgames: [160, 200, 80, 100]
+            insuranceagency: [80, 300, 80, 100]
+            intersection: [240, 200, 80, 100]
+            jazz: [0, 400, 80, 100]
+            jewellerystore: [480, 400, 80, 100]
+            juicebar: [560, 0, 80, 100]
+            khokha: [480, 400, 80, 100]
+            laboratory: [0, 100, 80, 100]
+            langar: [0, 300, 80, 100]
+            lawenforcement: [160, 100, 80, 100]
+            lawyer: [80, 300, 80, 100]
+            library: [80, 0, 80, 100]
+            localadministration: [400, 0, 80, 100]
+            lpgsupplier: [80, 300, 80, 100]
+            madrassa: [0, 0, 80, 100]
+            materialsupplier: [560, 300, 80, 100]
+            meatstore: [400, 400, 80, 100]
+            medicalclinic: [0, 100, 80, 100]
+            metalwork: [560, 300, 80, 100]
+            mill: [0, 400, 80, 100]
+            mobileshop: [480, 400, 80, 100]
+            moneytransfer: [320, 0, 80, 100]
+            monument: [560, 200, 80, 100]
+            mosque: [240, 0, 80, 100]
+            motel: [480, 200, 80, 100]
+            motorbikerepair: [160, 400, 80, 100]
+            motorbikeshowroom: [160, 400, 80, 100]
+            museum: [560, 200, 80, 100]
+            newspaper: [0, 400, 80, 100]
+            ngo: [0, 300, 80, 100]
+            oiltraders: [80, 300, 80, 100]
+            optician: [480, 400, 80, 100]
+            orphanage: [0, 300, 80, 100]
+            otherbeautyandspa: [560, 400, 80, 100]
+            othercivicutilities: [0, 400, 80, 100]
+            otherconstruction: [560, 300, 80, 100]
+            othereducation: [0, 0, 80, 100]
+            otherevents: [80, 200, 80, 100]
+            otherfinance: [320, 0, 80, 100]
+            otherfood: [560, 0, 80, 100]
+            othergeneral: [0, 400, 80, 100]
+            othergovernment: [400, 0, 80, 100]
+            othergrocery: [400, 400, 80, 100]
+            otherindustry: [0, 400, 80, 100]
+            otherlocalbusinesses: [80, 300, 80, 100]
+            otherlodging: [480, 200, 80, 100]
+            othermedia: [0, 400, 80, 100]
+            othermedical: [0, 100, 80, 100]
+            otherrecreation: [240, 200, 80, 100]
+            otherreligion: [160, 0, 80, 100]
+            othershopping: [480, 400, 80, 100]
+            othersocialservice: [0, 300, 80, 100]
+            othersports: [0, 200, 80, 100]
+            othertourist: [560, 200, 80, 100]
+            # othertransportation: [240,960,120,120]
+            othervehicle: [80, 400, 80, 100]
+            park: [240, 200, 80, 100]
+            parking: [240, 400, 80, 100]
+            petstore: [80, 100, 80, 100]
+            pharmacy: [0, 100, 80, 100]
+            photostudio: [80, 300, 80, 100]
+            plumber: [560, 300, 80, 100]
+            postoffice: [240, 300, 80, 100]
+            powerstation: [0, 400, 80, 100]
+            pressclub: [0, 400, 80, 100]
+            printing: [80, 300, 80, 100]
+            privatecompany: [80, 300, 80, 100]
+            radiostation: [0, 400, 80, 100]
+            railwaystation: [320, 100, 80, 100]
+            realestateagency: [80, 300, 80, 100]
+            recyclestore: [0, 400, 80, 100]
+            refinery: [0, 400, 80, 100]
+            rentacar: [80, 400, 80, 100]
+            rescueservice: [0, 400, 80, 100]
+            restaurant: [560, 0, 80, 100]
+            school: [0, 0, 80, 100]
+            seaport: [480, 100, 80, 100]
+            shoestore: [480, 400, 80, 100]
+            shoppingmall: [480, 400, 80, 100]
+            shrine: [160, 0, 80, 100]
+            spa: [560, 400, 80, 100]
+            sportsgoods: [480, 400, 80, 100]
+            squashcourt: [0, 200, 80, 100]
+            stadium: [0, 200, 80, 100]
+            stockbroker: [320, 0, 80, 100]
+            suigasoffice: [480, 300, 80, 100]
+            supermarket: [400, 400, 80, 100]
+            sweetsandbakers: [560, 0, 80, 100]
+            swimmingpool: [0, 200, 80, 100]
+            tailor: [80, 300, 80, 100]
+            tandoor: [560, 0, 80, 100]
+            taxistand: [560, 100, 80, 100]
+            technicalservices: [80, 300, 80, 100]
+            telecommunication: [0, 400, 80, 100]
+            telenor: [0, 400, 80, 100]
+            temple: [160, 0, 80, 100]
+            tenniscourt: [0, 200, 80, 100]
+            tomb: [560, 200, 80, 100]
+            toystore: [480, 400, 80, 100]
+            tplcorp: [0, 400, 80, 100]
+            tplinsurance: [0, 400, 80, 100]
+            tpllifeinsurance: [0, 400, 80, 100]
+            tplmaps: [0, 400, 80, 100]
+            tplproperties: [0, 400, 80, 100]
+            tpltrakker: [0, 400, 80, 100]
+            traininginstitute: [0, 0, 80, 100]
+            travelagency: [80, 300, 80, 100]
+            tuitioncenter: [0, 0, 80, 100]
+            tvchannel: [0, 400, 80, 100]
+            tvstudio: [0, 400, 80, 100]
+            tyreshop: [80, 400, 80, 100]
+            university: [0, 0, 80, 100]
+            veterinarycare: [80, 100, 80, 100]
+            vocationalcenter: [0, 0, 80, 100]
+            volleyballcourt: [0, 200, 80, 100]
+            warehouse: [0, 400, 80, 100]
+            wholesale: [480, 400, 80, 100]
+            woodwork: [560, 300, 80, 100]
+            zoo: [240, 200, 80, 100]
 
     pois_search:
-        url: TPLBaseMapResources.bundle/map_search_icons/map_search.png
+        url: TPLBaseMapResources.bundle/map_search_icons/POI_Icons_selected.png
         sprites:
-            search_accounting: [1,1,80,80]
-            search_advertisingagency: [1,83,80,80]
-            search_agribusiness: [1,165,80,80]
-            search_airport: [1,247,80,80]
-            search_ambulance: [1,329,80,80]
-            search_amusementpark: [1,411,80,80]
-            search_aquarium: [1,493,80,80]
-            search_artgallery: [1,575,80,80]
-            search_atm: [1,657,80,80]
-            search_auditorium: [1,739,80,80]
-            search_autospareparts: [1,821,80,80]
-            search_autospareparts: [1,903,80,80]
-            search_bank: [1,985,80,80]
-            search_barber: [1,1067,80,80]
-            search_basketballcourt: [83,1,80,80]
-            search_beautysalon: [165,1,80,80]
-            search_bookstore: [247,1,80,80]
-            search_booksandstationers: [903,985,79,80]
-            search_busstation: [903,1067,79,80]
-            search_busstop: [329,1,80,80]
-            search_cafe: [411,1,80,80]
-            search_campground: [493,1,80,80]
-            search_canteen: [575,1,80,80]
-            search_carrepair: [657,1,80,80]
-            search_carshowroom: [739,1,80,80]
-            search_carwash: [821,1,80,80]
-            search_catererseventplanners: [903,1,80,80]
-            search_cemetery: [985,1,80,80]
-            search_church: [1067,1,80,80]
-            search_cinema: [83,83,80,80]
-            search_cleaningandlaundry: [83,165,80,80]
-            search_clothingstore: [83,247,80,80]
-            search_college: [83,329,80,80]
-            search_communitycenter: [83,411,80,80]
-            search_computerstore: [83,493,80,80]
-            search_constructionservices: [83,575,80,80]
-            search_conveniencestore: [83,657,80,80]
-            search_cosmeticsstore: [83,739,80,80]
-            search_courierservice: [83,821,80,80]
-            search_court: [83,903,80,80]
-            search_cricketground: [83,985,80,80]
-            search_currencyexchange: [83,1067,80,80]
-            search_dairyshop: [165,83,80,80]
-            search_dentist: [247,83,80,80]
-            search_dhaba: [329,83,80,80]
-            search_drivingschool: [411,83,80,80]
-            search_dryport: [493,83,80,80]
-            search_electricalstore: [575,83,80,80]
-            search_electrician: [657,83,80,80]
-            search_electricityoffice: [739,83,80,80]
-            search_electronicsstore: [821,83,80,80]
-            search_embassy: [903,83,80,80]
-            search_equipment: [985,83,80,80]
-            search_exhibitionhall: [1067,83,80,80]
-            search_factory: [165,165,80,80]
-            search_fastfood: [165,247,80,80]
-            search_filterationplant: [165,329,80,80]
-            search_firestation: [165,411,80,80]
-            search_fitnesscenter: [165,493,80,80]
-            search_florist: [165,575,80,80]
-            search_flyingclub: [165,657,80,80]
-            search_footballground: [165,739,80,80]
-            search_fruitandvegetable: [165,821,80,80]
-            search_fuelstation: [165,903,80,80]
-            search_functionhall: [165,985,80,80]
-            search_furniturestore: [1066,903,80,79]
-            search_giftstore: [165,1067,80,80]
-            search_glasswork: [247,165,80,80]
-            search_governmentbuildings: [329,165,80,80]
-            search_guesthouse: [411,165,80,80]
-            search_gurdwara: [493,165,80,80]
-            search_hardwareandsanitary: [575,165,80,80]
-            search_herbalclinic: [657,165,80,80]
-            search_hijamacenter: [739,165,80,80]
-            search_hikmat: [821,165,80,80]
-            search_historicalplace: [984,985,79,80]
-            search_hockeyground: [903,165,80,80]
-            search_homegoodsstore: [985,165,80,80]
-            search_homeopathicclinic: [1067,165,80,80]
-            search_hospital: [247,247,80,80]
-            search_hostel: [247,329,80,80]
-            search_hotel: [247,411,80,80]
-            search_icecreamparlor: [247,493,80,80]
-            search_imambargah: [247,575,80,80]
-            search_indoorgames: [247,657,80,80]
-            search_insuranceagency: [247,739,80,80]
-            search_intersection: [985,903,79,80]
-            search_jewellerystore: [247,821,80,80]
-            search_juicebar: [247,903,80,80]
-            search_khokha: [247,985,80,80]
-            search_laboratory: [247,1067,80,80]
-            search_langar: [329,247,80,80]
-            search_lawenforcement: [411,247,80,80]
-            search_lawyer: [493,247,80,80]
-            search_library: [575,247,80,80]
-            search_localadministration: [657,247,80,80]
-            search_lpgsupplier: [739,247,80,80]
-            search_madrassa: [821,247,80,80]
-            search_materialsupplier: [903,247,80,80]
-            search_meatstore: [985,247,80,80]
-            search_medicalclinic: [1067,247,80,80]
-            search_metalwork: [329,329,80,80]
-            search_mill: [329,411,80,80]
-            search_mobileshop: [329,493,80,80]
-            search_moneytransfer: [329,575,80,80]
-            search_monument: [329,657,80,80]
-            search_mosque: [329,739,80,80]
-            search_motel: [329,821,80,80]
-            search_motorbikerepair: [329,903,80,80]
-            search_motorbikeshowroom: [329,985,80,80]
-            search_museum: [329,1067,80,80]
-            search_newspaper: [411,329,80,80]
-            search_ngo: [493,329,80,80]
-            search_oiltraders: [575,329,80,80]
-            search_optician: [657,329,80,80]
-            search_orphanage: [739,329,80,80]
-            search_otherbeautyandspa: [821,329,80,80]
-            search_othercivicutilities: [903,329,80,80]
-            search_otherconstruction: [985,329,80,80]
-            search_othereducation: [1067,329,80,80]
-            search_otherevents: [411,411,80,80]
-            search_otherfinance: [411,493,80,80]
-            search_otherfood: [411,575,80,80]
-            search_othergeneral: [411,657,80,80]
-            search_othergovernment: [411,739,80,80]
-            search_othergrocery: [411,821,80,80]
-            search_otherindustry: [411,903,80,80]
-            search_otherlocalbusinesses: [411,985,80,80]
-            search_otherlodging: [411,1067,80,80]
-            search_othermedia: [493,411,80,80]
-            search_othermedical: [575,411,80,80]
-            search_otherrecreation: [657,411,80,80]
-            search_otherreligion: [739,411,80,80]
-            search_othershopping: [821,411,80,80]
-            search_othersocialservice: [903,411,80,80]
-            search_othersports: [985,411,80,80]
-            search_othertourist: [1067,411,80,80]
-            search_othertransportation: [493,493,80,80]
-            search_othervehicle: [493,575,80,80]
-            search_park: [493,657,80,80]
-            search_parking: [493,739,80,80]
-            search_petstore: [493,821,80,80]
-            search_pharmacy: [493,903,80,80]
-            search_photostudio: [493,985,80,80]
-            search_plumber: [493,1067,80,80]
-            search_postoffice: [575,493,80,80]
-            search_powerstation: [657,493,80,80]
-            search_pressclub: [739,493,80,80]
-            search_privatecompany: [821,493,80,80]
-            search_radiostation: [903,493,80,80]
-            search_railwaystation: [985,493,80,80]
-            search_realestateagency: [1067,493,80,80]
-            search_recyclestore: [575,575,80,80]
-            search_refinery: [575,657,80,80]
-            search_rentacar: [575,739,80,80]
-            search_rescueservice: [575,821,80,80]
-            search_restaurant: [575,903,80,80]
-            search_school: [575,985,80,80]
-            search_seaport: [575,1067,80,80]
-            search_shoestore: [657,575,80,80]
-            search_shoppingmall: [739,575,80,80]
-            search_shrine: [821,575,80,80]
-            search_spa: [903,575,80,80]
-            search_sportsgoods: [985,575,80,80]
-            search_squashcourt: [1067,575,80,80]
-            search_stadium: [657,657,80,80]
-            search_stockbroker: [657,739,80,80]
-            search_suigasoffice: [657,821,80,80]
-            search_supermarket: [657,903,80,80]
-            search_sweetsandbakers: [657,985,80,80]
-            search_swimmingpool: [657,1067,80,80]
-            search_tailor: [739,657,80,80]
-            search_tandoor: [821,657,80,80]
-            search_taxistand: [903,657,80,80]
-            search_technicalservices: [985,657,80,80]
-            search_telecommunication: [1067,657,80,80]
-            search_telenor: [739,739,80,80]
-            search_temple: [739,821,80,80]
-            search_tenniscourt: [739,903,80,80]
-            search_tomb: [739,985,80,80]
-            search_toystore: [739,1067,80,80]
-            search_tpl: [1065,1065,80,80]
-            search_traininginstitute: [821,739,80,80]
-            search_travelagency: [903,739,80,80]
-            search_tuitioncenter: [985,739,80,80]
-            search_tvchannel: [1067,739,80,80]
-            search_tvstudio: [821,821,80,80]
-            search_tyreshop: [821,903,80,80]
-            search_university: [821,985,80,80]
-            search_veterinarycare: [821,1067,80,80]
-            search_vocationalcenter: [903,821,80,80]
-            search_volleyballcourt: [985,821,80,80]
-            search_warehouse: [984,1067,79,80]
-            search_wholesale: [1066,984,80,79]
-            search_woodwork: [1067,821,80,80]
-            search_zoo: [903, 903, 80, 80]
+            search_accounting: [80, 300, 80, 100]
+            search_advertisingagency: [0, 400, 80, 100]
+            search_agribusiness: [80, 300, 80, 100]
+            search_airport: [240, 100, 80, 100]
+            search_ambulance: [0, 100, 80, 100]
+            search_amusementpark: [240, 200, 80, 100]
+            search_aquarium: [240, 200, 80, 100]
+            search_artgallery: [160, 200, 80, 100]
+            search_atm: [320, 0, 80, 100]
+            search_auditorium: [160, 200, 80, 100]
+            search_autospareparts: [80, 400, 80, 100]
+            search_bank: [320, 0, 80, 100]
+            search_barber: [560, 400, 80, 100]
+            search_basketballcourt: [0, 200, 80, 100]
+            search_beautysalon: [560, 400, 80, 100]
+            search_bookstore: [480, 400, 80, 100]
+            search_booksandstationers: [480, 400, 80, 100]
+            search_busstation: [400, 100, 80, 100]
+            search_busstop: [400, 100, 80, 100]
+            search_cafe: [560, 0, 80, 100]
+            search_campground: [240, 200, 80, 100]
+            search_canteen: [560, 0, 80, 100]
+            search_carrepair: [80, 400, 80, 100]
+            search_carshowroom: [80, 400, 80, 100]
+            search_carwash: [80, 400, 80, 100]
+            search_catererseventplanners: [80, 300, 80, 100]
+            search_cemetery: [160, 300, 80, 100]
+            search_church: [160, 0, 80, 100]
+            search_cinema: [400, 200, 80, 100]
+            search_cleaningandlaundry: [80, 300, 80, 100]
+            search_clothingstore: [480, 400, 80, 100]
+            search_college: [0, 0, 80, 100]
+            search_communitycenter: [0, 300, 80, 100]
+            search_computerstore: [480, 400, 80, 100]
+            search_constructionservices: [560, 300, 80, 100]
+            search_conveniencestore: [400, 400, 80, 100]
+            search_cosmeticsstore: [480, 400, 80, 100]
+            search_courierservice: [240, 300, 80, 100]
+            search_court: [400, 0, 80, 100]
+            search_cricketground: [0, 200, 80, 100]
+            search_currencyexchange: [320, 0, 80, 100]
+            search_dairyshop: [400, 400, 80, 100]
+            search_dentist: [0, 100, 80, 100]
+            search_dhaba: [560, 0, 80, 100]
+            search_drivingschool: [80, 300, 80, 100]
+            search_dryport: [480, 100, 80, 100]
+            search_electricalstore: [480, 400, 80, 100]
+            search_electrician: [560, 300, 80, 100]
+            search_electricityoffice: [320, 300, 80, 100]
+            search_electronicsstore: [480, 400, 80, 100]
+            search_embassy: [400, 0, 80, 100]
+            search_equipment: [560, 300, 80, 100]
+            search_exhibitionhall: [80, 200, 80, 100]
+            search_factory: [0, 400, 80, 100]
+            search_fastfood: [560, 0, 80, 100]
+            search_favourite: [0, 500, 80, 100]
+            search_filterationplant: [400, 300, 80, 100]
+            search_firestation: [400, 0, 80, 100]
+            search_fitnesscenter: [0, 200, 80, 100]
+            search_florist: [480, 400, 80, 100]
+            search_flyingclub: [240, 200, 80, 100]
+            search_footballground: [0, 200, 80, 100]
+            search_fruitandvegetable: [400, 400, 80, 100]
+            search_fuelstation: [320, 400, 80, 100]
+            search_functionhall: [80, 200, 80, 100]
+            search_furniturestore: [480, 400, 80, 100]
+            search_giftstore: [480, 400, 80, 100]
+            search_glasswork: [560, 300, 80, 100]
+            search_governmentbuilding: [400, 0, 80, 100]
+            search_guesthouse: [480, 200, 80, 100]
+            search_gurdwara: [160, 0, 80, 100]
+            search_hardwareandsanitary: [560, 300, 80, 100]
+            search_herbalclinic: [0, 100, 80, 100]
+            search_hijamacenter: [0, 100, 80, 100]
+            search_hikmat: [0, 100, 80, 100]
+            search_historicalplace: [560, 200, 80, 100]
+            search_hockeyground: [0, 200, 80, 100]
+            search_homegoodsstore: [480, 400, 80, 100]
+            search_homeopathicclinic: [0, 100, 80, 100]
+            search_hospital: [0, 100, 80, 100]
+            search_hostel: [480, 200, 80, 100]
+            search_hotel: [480, 200, 80, 100]
+            search_icecreamparlor: [560, 0, 80, 100]
+            search_imambargah: [160, 0, 80, 100]
+            search_indoorgames: [160, 200, 80, 100]
+            search_insuranceagency: [80, 300, 80, 100]
+            search_intersection: [240, 200, 80, 100]
+            search_jazz: [0, 400, 80, 100]
+            search_jewellerystore: [480, 400, 80, 100]
+            search_juicebar: [560, 0, 80, 100]
+            search_khokha: [480, 400, 80, 100]
+            search_laboratory: [0, 100, 80, 100]
+            search_langar: [0, 300, 80, 100]
+            search_lawenforcement: [160, 100, 80, 100]
+            search_lawyer: [80, 300, 80, 100]
+            search_library: [80, 0, 80, 100]
+            search_localadministration: [400, 0, 80, 100]
+            search_lpgsupplier: [80, 300, 80, 100]
+            search_madrassa: [0, 0, 80, 100]
+            search_materialsupplier: [560, 300, 80, 100]
+            search_meatstore: [400, 400, 80, 100]
+            search_medicalclinic: [0, 100, 80, 100]
+            search_metalwork: [560, 300, 80, 100]
+            search_mill: [0, 400, 80, 100]
+            search_mobileshop: [480, 400, 80, 100]
+            search_moneytransfer: [320, 0, 80, 100]
+            search_monument: [560, 200, 80, 100]
+            search_mosque: [240, 0, 80, 100]
+            search_motel: [480, 200, 80, 100]
+            search_motorbikerepair: [160, 400, 80, 100]
+            search_motorbikeshowroom: [160, 400, 80, 100]
+            search_museum: [560, 200, 80, 100]
+            search_newspaper: [0, 400, 80, 100]
+            search_ngo: [0, 300, 80, 100]
+            search_oiltraders: [80, 300, 80, 100]
+            search_optician: [480, 400, 80, 100]
+            search_orphanage: [0, 300, 80, 100]
+            search_otherbeautyandspa: [560, 400, 80, 100]
+            search_othercivicutilities: [0, 400, 80, 100]
+            search_otherconstruction: [560, 300, 80, 100]
+            search_othereducation: [0, 0, 80, 100]
+            search_otherevents: [80, 200, 80, 100]
+            search_otherfinance: [320, 0, 80, 100]
+            search_otherfood: [560, 0, 80, 100]
+            search_othergeneral: [0, 400, 80, 100]
+            search_othergovernment: [400, 0, 80, 100]
+            search_othergrocery: [400, 400, 80, 100]
+            search_otherindustry: [0, 400, 80, 100]
+            search_otherlocalbusinesses: [80, 300, 80, 100]
+            search_otherlodging: [480, 200, 80, 100]
+            search_othermedia: [0, 400, 80, 100]
+            search_othermedical: [0, 100, 80, 100]
+            search_otherrecreation: [240, 200, 80, 100]
+            search_otherreligion: [160, 0, 80, 100]
+            search_othershopping: [480, 400, 80, 100]
+            search_othersocialservice: [0, 300, 80, 100]
+            search_othersports: [0, 200, 80, 100]
+            search_othertourist: [560, 200, 80, 100]
+            # search_othertransportation: [240,960,120,120]
+            search_othervehicle: [80, 400, 80, 100]
+            search_park: [240, 200, 80, 100]
+            search_parking: [240, 400, 80, 100]
+            search_petstore: [80, 100, 80, 100]
+            search_pharmacy: [0, 100, 80, 100]
+            search_photostudio: [80, 300, 80, 100]
+            search_plumber: [560, 300, 80, 100]
+            search_postoffice: [240, 300, 80, 100]
+            search_powerstation: [0, 400, 80, 100]
+            search_pressclub: [0, 400, 80, 100]
+            search_printing: [80, 300, 80, 100]
+            search_privatecompany: [80, 300, 80, 100]
+            search_radiostation: [0, 400, 80, 100]
+            search_railwaystation: [320, 100, 80, 100]
+            search_realestateagency: [80, 300, 80, 100]
+            search_recyclestore: [0, 400, 80, 100]
+            search_refinery: [0, 400, 80, 100]
+            search_rentacar: [80, 400, 80, 100]
+            search_rescueservice: [0, 400, 80, 100]
+            search_restaurant: [560, 0, 80, 100]
+            search_school: [0, 0, 80, 100]
+            search_seaport: [480, 100, 80, 100]
+            search_shoestore: [480, 400, 80, 100]
+            search_shoppingmall: [480, 400, 80, 100]
+            search_shrine: [160, 0, 80, 100]
+            search_spa: [560, 400, 80, 100]
+            search_sportsgoods: [480, 400, 80, 100]
+            search_squashcourt: [0, 200, 80, 100]
+            search_stadium: [0, 200, 80, 100]
+            search_stockbroker: [320, 0, 80, 100]
+            search_suigasoffice: [480, 300, 80, 100]
+            search_supermarket: [400, 400, 80, 100]
+            search_sweetsandbakers: [560, 0, 80, 100]
+            search_swimmingpool: [0, 200, 80, 100]
+            search_tailor: [80, 300, 80, 100]
+            search_tandoor: [560, 0, 80, 100]
+            search_taxistand: [560, 100, 80, 100]
+            search_technicalservices: [80, 300, 80, 100]
+            search_telecommunication: [0, 400, 80, 100]
+            search_telenor: [0, 400, 80, 100]
+            search_temple: [160, 0, 80, 100]
+            search_tenniscourt: [0, 200, 80, 100]
+            search_tomb: [560, 200, 80, 100]
+            search_toystore: [480, 400, 80, 100]
+            search_tplcorp: [0, 400, 80, 100]
+            search_tplinsurance: [0, 400, 80, 100]
+            search_tpllifeinsurance: [0, 400, 80, 100]
+            search_tplmaps: [0, 400, 80, 100]
+            search_tplproperties: [0, 400, 80, 100]
+            search_tpltrakker: [0, 400, 80, 100]
+            search_traininginstitute: [0, 0, 80, 100]
+            search_travelagency: [80, 300, 80, 100]
+            search_tuitioncenter: [0, 0, 80, 100]
+            search_tvchannel: [0, 400, 80, 100]
+            search_tvstudio: [0, 400, 80, 100]
+            search_tyreshop: [80, 400, 80, 100]
+            search_university: [0, 0, 80, 100]
+            search_veterinarycare: [80, 100, 80, 100]
+            search_vocationalcenter: [0, 0, 80, 100]
+            search_volleyballcourt: [0, 200, 80, 100]
+            search_warehouse: [0, 400, 80, 100]
+            search_wholesale: [480, 400, 80, 100]
+            search_woodwork: [560, 300, 80, 100]
+            search_zoo: [240, 200, 80, 100]
 
     restIcons:
         url: TPLBaseMapResources.bundle/BaseMapIcons/restIcons.png
@@ -1198,7 +1223,14 @@ sources:
         min_display_zoom: 5
         max_zoom: 17
 
-
+fonts:
+    SFProDisplay:
+        - weight: normal
+          url: assets.bundle/fonts/SF-Pro-Display-Regular.ttf
+        - weight: bold
+          url: assets.bundle/fonts/SF-Pro-Display-Bold.ttf
+        - weight: 400
+          url: assets.bundle/fonts/SF-Pro-Display-Medium.ttf
 # As we are using the Composite GeoJSON for the source, each layer drawn here is the object class, the layer name acts as the layer from
 # source JSON if we don't explicitly define it, boundary layer here is using the data in the JSON that is followed by the "boundary": key word
 # before the features are defined
@@ -1255,11 +1287,10 @@ layers:
             filter: { type: selectedRoute}
             draw:
                 lines:
-                    priority: 1
                     color: global.colorscheme.selected_route
                     cap: round
                     order: 310
-                    width: [[10,8px],[15,12px]]
+                    width: [ [ 7, 2px ],[ 10,3px ],[ 15,6px ],[ 20,15px ] ]
                     outline:
                         color: global.colorscheme.selected_route_outline
                         width: [[5, 0.1px],[10, 0.5px],[15,1px],[20,2px]]
@@ -1289,13 +1320,12 @@ layers:
             filter: { type: segmentedRoute}
             draw:
                 lines:
-                    priority: 1
                     color:  global.colorscheme.segment
                     outline:
                         color: global.colorscheme.segment_outline
                         width: 1px
                     order: 320
-                    width: [[10,8px],[15,12px]]
+                    width: [ [ 7, 2px ],[ 10,3px ],[ 15,6px ],[ 20,15px ] ]
 
         Route:
             filter: { type: Route}
@@ -1305,10 +1335,10 @@ layers:
                     color: global.colorscheme.nonselected_route
                     cap: round
                     order: 300
-                    width: [[10,8px],[15,12px]]
+                    width: [ [ 7, 2px ],[ 10,3px ],[ 15,6px ],[ 20,15px ] ]
                     outline:
                         color: global.colorscheme.nonselected_route_outline
-                        width: [[5, 0.1px],[10, 0.5px],[15,1px],[20,2px]]
+                        width: 1px
                 filter:
                     name: true
         line:
@@ -1351,7 +1381,7 @@ layers:
                                 }
                         transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                         font:
-                            family: sans-serif
+                            family: global.font_eng
                             fill: global.colorscheme.endflag
                             size: 13px
                             stroke: { color: global.colorscheme.poi_stroke , width: 1.0 }
@@ -1537,7 +1567,7 @@ layers:
     borders:
         data: { source: local, layer: [borders,borders150,borders500]  }
         country3:
-            filter: { p: 0, $zoom: { min: 1 }  }
+            filter: { p: [0, 1], $zoom: { min: 1 }  }
             draw:
                 lines:
                     order: 3
@@ -1598,7 +1628,7 @@ layers:
                                 return 25;
                             }
                     color: global.colorscheme.motorway
-                    width: [[5, 2px], [10, 4px], [15, 8.5px], [17, 18px], [20, 28px]]
+                    width: [[5, 1.2px], [6, 1.45px], [7, 1.95px], [8, 1.97px], [9, 2px], [10, 2.55px], [11, 2.65px], [12, 2.7px], [13, 3px], [14, 4.8px], [15, 8.05px], [16, 15.6px], [17, 13px], [18, 25px], [19, 50px], [20, 60px]]
                     outline:
                         order: |
                             function(){
@@ -1618,9 +1648,9 @@ layers:
                                 return 20;
                             }
                         color: global.colorscheme.motorway_outline
-                        width: [[5, 0.1px], [10, 0.5px], [15, 1px], [20, 2px]]
+                        width: [[5, 0.0072px], [10, 1.2px], [15, 1.2px], [20, 5.16px]]
         highway:
-            filter: function () { return (feature.p == 5 )}
+            filter: function () { return (feature.p == 5 ) && $zoom >= 6 }
             draw:
                 lines:
                     order: |
@@ -1641,7 +1671,7 @@ layers:
                                 return 24;
                             }
                     color: global.colorscheme.highway
-                    width: [[5, 2px], [10, 4px], [15, 5px], [17, 17px], [20, 27px]]
+                    width: [[6, 0.4px], [7, 0.5px], [8, 0.55px], [9, 2.1px], [10, 2.4px], [11, 2.55px], [12, 2.65px], [13, 2.75px], [14, 3.3px], [15, 4.5px], [16, 8px], [17, 13.15px], [18, 20.15px], [19, 40px], [20, 60px]]
                     outline:
                         order: |
                             function(){
@@ -1661,9 +1691,9 @@ layers:
                                 return 20;
                             }
                         color: global.colorscheme.highway_outline
-                        width: [[5, 0.1px], [10, 0.5px], [15, 1px]]
+                        width: [[5, 0.0072px], [10, 0.24px], [15, 1.2px]]
         main-roads:
-            filter: function() { return feature.p == 4 && $zoom >= 7 ; }
+            filter: function() { return feature.p == 4 && $zoom >= 6 ; }
             draw:
                 lines:
                     order: |
@@ -1684,7 +1714,7 @@ layers:
                                 return 23;
                             }
                     color: global.colorscheme.main_roads
-                    width: [[7, 2px], [10, 3px], [15, 7px], [17, 14px], [20, 25px]]
+                    width: [[6, 0.4px], [7, 0.5px], [8, 0.55px], [9, 1.05px], [10, 1.65px], [11, 2px], [12, 2.55px], [13, 3.15px], [14, 4.2px], [15, 4.5px], [16, 8px], [17, 13.15px], [18, 20.15px], [19, 40px], [20, 60px]]
                     outline:
                         order: |
                             function(){
@@ -1704,9 +1734,9 @@ layers:
                                 return 20;
                             }
                         color: global.colorscheme.main_roads_outline
-                        width: [[5, 0.1px], [10, 0.5px], [15, 1px]]
+                        width: [[10, 0.36px], [15, 1.2px]]
         secondary-roads:
-            filter: function() { return feature.p == 3; }
+            filter: function() { return feature.p == 3 && $zoom >= 8 ; }
             draw:
                 lines:
                     order: |
@@ -1727,7 +1757,7 @@ layers:
                                 return 22;
                             }
                     color: global.colorscheme.secondary_roads
-                    width: [[10, 2px], [15, 5.5px], [17, 12px], [20, 23px]]
+                    width: [[8, 0.65px], [9, 0.8px], [10, 1.5px], [11, 1.65px], [12, 1.75px], [13, 1.9px], [14, 4.2px], [15, 2.55px], [16, 5.45px], [17, 8.05px], [18, 13.05px], [19, 24px], [20, 40px]]
                     outline:
                         order: |
                             function(){
@@ -1747,9 +1777,9 @@ layers:
                                 return 20;
                             }
                         color: global.colorscheme.secondary_roads_outline
-                        width: [[10, 0px], [15, 0.75px]]
+                        width: [[15, 0.84px]]
         tertiary-roads:
-            filter: function() { return feature.p == 2; }
+            filter: function() { return feature.p == 2 && $zoom >= 14 ; }
             draw:
                 lines:
                     order: |
@@ -1770,7 +1800,7 @@ layers:
                                 return 21;
                             }
                     color: global.colorscheme.tertiary_roads
-                    width: [[12, 2px], [15, 5px], [17, 11px], [20, 21px]]
+                    width: [[14, 0.65px], [15, 2.2px], [16, 4.05px], [17, 6px], [18, 11.25px], [19, 20.5px], [20, 35px]]
                     outline:
                         order: |
                             function(){
@@ -1790,64 +1820,78 @@ layers:
                                 return 20;
                             }
                         color: global.colorscheme.tertiary_roads_outline
-                        width: [[12, 0px], [15, 0.5px]]
+                        width: [[14, 0.24px]]
         streets:
             filter: function() { return feature.p == 1 && $zoom >= 14 ; }
             draw:
                 lines:
                     order: 20
                     color: global.colorscheme.streets
-                    width: [[14, 2px], [15, 3.5px], [17, 9px], [20, 17px]]
-            road_text:
-                filter: function() { return $zoom >= 15 ; }
-                draw:
-                    road_text:
-                        priority: 34
-                        text_source: n
-                        anchor: center
-                        align: center
-                        # repeat_distance: 512px
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        font:
-                            family: sans-serif
-                            fill: global.colorscheme.road_text
-                            size: 9px #[[15, 12px], [20, 22px]]
-                            stroke: { color: global.colorscheme.road_text_stroke, width: 1.5 }
+                    width: [[14, 1.75px], [15, 2.2px], [16, 5.05px], [17, 8.05px], [18, 13.05px], [19, 24px], [20, 40px]]
+                    outline:
+                        order: 20
+                        color: "#CFD2D7"
+                        width: [[14, 0.3px], [15, 0.43px], [17, 0.72px], [20, 3px]]
+        labels_street_16_17:
+            filter: { $zoom: [ 15, 16, 17 ], p: [ 1 ] }
+            draw:
+                road_text:
+                    priority: 35
+                    text_source: n
+                    anchor: center
+                    align: center
+                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+                    font:
+                        family: global.font_eng
+                        fill: global.colorscheme.secondary_text_13
+                        size: [ [ 16, 9px ], [ 17, 10px ] ]
+        labels_street_18_19:
+            filter: { $zoom: [ 18, 19 ], p: [ 1 ] }
+            draw:
+                road_text:
+                    priority: 35
+                    text_source: n
+                    anchor: center
+                    align: center
+                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+                    font:
+                        family: global.font_eng
+                        fill: global.colorscheme.secondary_text_15
+                        size: [[18, 10px], [19, 11px]]
 
         labels_highway:
-            filter: { $zoom: { min: 11 }, p: 5 }
+            filter: { $zoom: { min: 15 }, p: 5 }
             draw:
                 road_text:
                     # repeat_group: labels-highway-z12
                     priority: 31
                     text_source: n
-                    text_wrap: 15
                     anchor: center
                     align: center
-                    repeat_distance: 150px
+                    repeat_distance: 300px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.highway_text
-                        size: 12px #[[12, 10px], [15, 14px], [17, 24px]]
-                        stroke: { color: global.colorscheme.highway_text_border, width: 1.5 }
+                        weight: 400
+                        size: [[15, 15px], [16, 15px], [17, 15px], [18, 16px], [19, 17px], [20, 17px]]
+        
         labels_main:
-            filter: { $zoom: { min: 13 }, p: 4 }
+            filter: { $zoom: { min: 14 }, p: 4 }
             draw:
                 road_text:
                     # repeat_group: labels-highway-z12
                     priority: 32
                     text_source: n
-                    text_wrap: 15
                     anchor: center
                     align: center
                     repeat_distance: 150px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
-                        fill: global.colorscheme.highway_text
-                        size: 12px #[[12, 10px], [15, 14px], [17, 24px]]
-                        stroke: { color: global.colorscheme.highway_text_border, width: 1.5 }
+                        family: global.font_eng
+                        fill: global.colorscheme.main_text
+                        weight: 400
+                        size: [[14, 10px], [15, 13px], [16, 13px], [17, 14px], [18, 16px], [19, 16px], [20, 19px]]
 
         symbol_motorway:
             filter: function () { return (feature.p == 6 && $zoom >= 7); }
@@ -1861,7 +1905,7 @@ layers:
                     # repeat_distance: 512px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: white
                         size: [[7, 9px], [15, 15px]]
                         stroke: { color: green, width: [[7, 2px], [15, 3px]] }
@@ -1878,300 +1922,281 @@ layers:
                     # repeat_distance: 512px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: white
                         size: [[7, 9px], [15, 15px]]
                         stroke: { color: '#3878c7', width: [[7, 2px], [15, 3px]] }
 
-        labels_secondary:
-            filter: { $zoom: { min: 13}, p: [ 3] }
+        labels_secondary_13_14:
+            filter: { $zoom: [ 13, 14 ], p: [ 3 ] }
             draw:
                 road_text:
                     priority: 33
                     text_source: n
-                    text_wrap: 15
                     anchor: center
                     align: center
-                    # collide: true
-                    # repeat_distance: 512px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
-                        fill: global.colorscheme.road_text
-                        size: 10px #[[13, 10px], [16, 16px], [20, 23px]]
-                        stroke: { color: global.colorscheme.road_text_stroke, width: 1.5 }
-        labels_teritiary:
-            filter: { $zoom: { min: 14 }, p: [2] }
+                        family: global.font_eng
+                        fill: global.colorscheme.secondary_text_13
+                        size: [ [ 13, 10px ], [ 14, 11px ] ]
+        labels_secondary_15_16:
+            filter: { $zoom: [ 15, 16 ], p: [ 3 ] }
             draw:
                 road_text:
                     priority: 33
                     text_source: n
-                    text_wrap: 15
                     anchor: center
                     align: center
-                    # collide: true
-                    # repeat_distance: 512px
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
-                        fill: global.colorscheme.road_text
-                        size: 10px #[[13, 10px], [16, 16px], [20, 23px]]
-                        stroke: { color: global.colorscheme.road_text_stroke, width: 1.5 }
+                        family: global.font_eng
+                        fill: global.colorscheme.secondary_text_15
+                        weight: 400
+                        size: [[15, 12px], [16, 12px]]
+        labels_tertiary_16_17:
+            filter: { $zoom: [ 16, 17 ], p: [ 2 ] }
+            draw:
+                road_text:
+                    priority: 34
+                    text_source: n
+                    anchor: center
+                    align: center
+                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+                    font:
+                        family: global.font_eng
+                        fill: global.colorscheme.secondary_text_13
+                        size: [[16, 10px], [17, 10px]]
+        labels_teritiary_18_19:
+            filter: { $zoom: [ 18, 19 ], p: [ 2 ] }
+            draw:
+                road_text:
+                    priority: 34
+                    text_source: n
+                    anchor: center
+                    align: center
+                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+                    font:
+                        family: global.font_eng
+                        fill: global.colorscheme.secondary_text_15
+                        size: [ [ 18, 11px ], [ 19, 11px ] ]
 
     scale:
         data: { source: local }
-        provinces-6:
+        label_provinces:
             filter: { k: 9, $zoom: [5, 6, 7] }
             draw:
                 english_text:
-                    priority: 3
-                    anchor: center
-                    # offset: [0,-18px]
+                    interactive: true
+                    priority: 2
+                    anchor: top
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.provinces_fill
-                        size: [[5, 16px], [7, 18px]]
-                        #weight: bold
+                        weight: 400
+                        size: [[5, 13px], [6, 13px], [7, 13px]]
+                        transform: uppercase
                         stroke: { color: global.colorscheme.provinces_stroke, width: 1 }
 
-        provincial-capitals:
-            filter: { k: 5, p: 1, $zoom:  { min: 5, max: 13 } }
+        label_provincial_capitals:
+            filter: { k: 5, p: 1, $zoom:  { min: 6, max: 14 } }
             draw:
                 english_text:
+                    interactive: true
                     priority: 4
                     anchor: center
-                    # offset: [[6,[0,-17px]],[7,[0,-19px]],[8,[0,-18px]],[9,[0,-20px]],[10,[0,-20px]]]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.province_cap_fill
-                        size: [[4, 15px], [7, 16px]]
-                        #weight: bold
+                        weight: 400
+                        size: [[6, 15px], [7, 16px], [8, 18px], [9, 20px], [10, 20px], [11, 23px], [12, 23px], [13, 23px]]
                         transform: capitalize
                         stroke: { color: global.colorscheme.province_cap_stroke , width: 1 }
 
-        major-cities:
-            filter: { k: 5, p: 2, $zoom:  { min: 7, max: 14 }  }
+        label_major_cities:
+            filter: { k: 5, p: 2, $zoom:  { min: 6, max: 14 }  }
             draw:
                 english_text:
+                    interactive: true
                     priority: 5
                     anchor: center
-                    # offset: [[7,[0,-13px]],[8,[0,-14.5px]],[9,[0,-17px]],[10,[0,-18px]],[15,[0,-26px]]]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.cities_fill
-                        size: [[7, 15px], [10, 16px]]
-                        # weight: 400
+                        weight: 400
+                        size: [[6, 14px], [7, 14px], [8, 14px], [9, 14px], [10, 15px], [11, 16px], [12, 16px], [13, 16px]]
                         transform: capitalize
                         stroke: { color: global.colorscheme.cities_stroke , width: 1 }
-        cities:
-            filter: { k: 5, p: 3 , $zoom:  { min: 8, max: 15 } }
+        label_cities:
+            filter: { k: 5, p: 3 , $zoom:  { min: 7, max: 16 } }
             draw:
                 english_text:
+                    interactive: true
                     priority: 6
                     anchor: center
-                    # offset: [[8,[0,-12px]],[9,[0,-13.5px]],[10,[0,-14.5px]],[11,[0,-17px]],[15,[0,-23px]]]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.cities_fill
-                        size: [[8, 15px], [11, 16px]]
-                        # weight: 350
+                        size: [[7, 13px], [8, 14px], [9, 15px], [10, 15px], [11, 15px], [12, 16px], [13, 16px], [14, 17px], [15, 17px]]
                         transform: capitalize
                         stroke: { color: global.colorscheme.cities_stroke , width: 1 }
-        minor-cities1:
-            filter: { k: 5, p: [4,5], $zoom: {min: 9,  max: 15} }
+        label_minor_cities:
+            filter: { k: 5, p: [4,5], $zoom: {min: 8,  max: 16} }
             draw:
                 english_text:
+                    interactive: true
                     priority: 8
                     anchor: center
-                    # offset: [[11,[0,-14px]],[18,[0,-22px]]]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.cities_fill
-                        size: [[9, 14px], [12, 15px]]
-                        # weight: 300
+                        size: [[7, 12px], [8, 12px], [9, 12px], [10, 12px], [11, 12px], [12, 14px], [13, 14px], [14, 16px], [15, 16px]]
                         transform: capitalize
                         stroke: { color: global.colorscheme.cities_stroke , width: 1 }
 
-        areas-sectors:
-            filter: { k: [3], p: [1,2,3,4,5], $zoom: {min: 10,  max: 15}  }
+        label_areas_sectors:
+            filter: { k: [3], p: [1,2,3,4,5], $zoom: {min: 11,  max: 14}  }
             draw:
                 english_text:
+                    interactive: true
                     priority: 9
                     anchor: center
-                    # offset: [ 0, 0px ]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.area_sector_fill
-                        size: [[11,12px],[18,20px]]
-                        # weight: 400
-                        # style: italic
+                        size: [[11, 11px], [12, 12px], [13, 13px]]
                         transform: capitalize
                         stroke: { color: global.colorscheme.area_sector_stroke , width: 1 }
-        areas-subsectors:
-            filter: { k: [1,2], p: [1,2,3,4,5],  $zoom: {min: 12,  max: 17} }
+        label_areas_subsectors:
+            filter: { k: [1,2], p: [1,2,3,4,5],  $zoom: {min: 13,  max: 17} }
             draw:
                 english_text:
-                    priority: 9
+                    interactive: true
+                    priority: 10
                     anchor: center
-                    # offset: [ 0, 0px ]
                     text_source: d
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
-                        fill: global.colorscheme.area_sector_fill
-                        size: [[11,11px],[18,18px]]
-                        # weight: 400
-                        # style: italic
-                        transform: capitalize
-                        stroke: { color: global.colorscheme.area_sector_stroke , width: 1 }
+                        family: global.font_eng
+                        fill: global.colorscheme.area_subsector_fill
+                        size: [[13, 11px], [14, 11px], [15, 12px], [16, 13px]]
+                        transform: uppercase
+                        stroke: { color: global.colorscheme.area_subsector_stroke , width: 1 }
 
     world_labels:
         data: { source: local }
-        country0-34:
-            filter: { p: [0], $zoom: [3,4] }
+        country_p_01:
+            filter: { p: [0,1], $zoom: [3,4,5,6] }
             draw:
                 english_text:
                     priority: 1
                     anchor: center
-                    # offset: [0px,0px]
                     text_source: n
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.country
-                        size: [[3,10px],[4,13px]]
-                        #weight: bold
-                        transform: uppercase
-                        stroke: { color: global.colorscheme.country_stroke , width: 1 }
-        country0-567:
-            filter: { p: [0,1], $zoom: [5,6,7] }
-            draw:
-                english_text:
-                    priority: 1
-                    anchor: center
-                    # offset: [0px,0px]
-                    text_source: n
-                    transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                    font:
-                        family: sans-serif
-                        fill: global.colorscheme.country
-                        size: [[5,14px],[7,17px]]
-                        #weight: bold
-                        transform: uppercase
+                        size: [[5, 16px], [6, 18px]]
+                        weight: bold
+                        transform: capitalize
                         stroke: { color: global.colorscheme.country_stroke , width: 1 }
 
 
         capitals:
-            filter: { p: 2, $zoom: [4,5,6,7,8] }
+            filter: { p: 2, $zoom: [ 5,6,7,8,9,10,11,12,13 ] }
             draw:
                 english_text:
-                    priority: 4
-                    anchor: center
-                    # offset: [[5,[0,-12px]],[6,[0,-15px]]]
+                    priority: 2
+                    anchor: bottom
+                    collide: false
                     text_source: n
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: sans-serif
+                        family: global.font_eng
                         fill: global.colorscheme.capitals
-                        size: [[5,12px],[6,14px]]
-                        #weight: bold
+                        weight: 400
                         transform: capitalize
-                        stroke: { color: global.colorscheme.capitals_stroke , width: 2 }
+                        size: [[5, 14px],[6, 15px], [7, 16px], [8, 18px], [9, 20px], [10, 20px], [11, 23px], [12, 23px], [13, 23px]]
+                        stroke: { color: global.colorscheme.capitals_stroke , width: 1 }
 
     cartographic:
         data: { source: local, layer: [cartographic,cartographic150,cartographic500] }
         parks:
-            filter: { k: ["parks", "Park"] }
+            filter:
+                any:
+                    - { k: ["parks", "Park"] }
+                    - { s: ["Golf Club"] }
             draw:
                 polygons:
-                    # interactive: true
                     order: 10
                     color: global.colorscheme.park
         forests:
             filter: { k: ["forests", "Vegetation"] }
             draw:
                 polygons:
-                    # interactive: true
                     order: function(){if (feature.s == "Forest"){return 6;} else {return 17;}}
                     color: global.colorscheme.vegetation
         religious_places:
             filter: { k: ["religious places", "Religious Place"], $zoom: {min: 16} }
             draw:
                 polygons:
-                    # interactive: true
                     order: 15
                     color: global.colorscheme.religious
         industries:
             filter: { k: ["industry", "Industry"] }
             draw:
                 polygons:
-                    # interactive: true
                     order: 7
                     color: global.colorscheme.industrial
         educational:
             filter: { k: ["educational", "Education"], $zoom: {min: 16} }
             draw:
                 polygons:
-                    # interactive: true
                     order: 12
                     color: global.colorscheme.school
         hospitals:
             filter: { k: ["hospitals", "Medical"] }
             draw:
                 polygons:
-                    # interactive: true
                     order: 14
                     color: global.colorscheme.hospital
         openarea:
             filter: function(){ return ((feature.k == "port places") || (feature.k == "Open Area" && feature.s != "Runway")) }
             draw:
                 polygons:
-                    # interactive: true
                     order: 9
                     color: global.colorscheme.openarea
         coveredarea:
             filter:
                 all:
-                    - { k: ["runway", "Covered Area"] }
-                    # - { s: "Runway"}
+                    - [ k: "Covered Area" , s: "Runway"]
                     - $zoom: {min: 16}
             draw:
                 polygons:
-                    # interactive: true
                     order: 13
                     color: global.colorscheme.coveredarea
-        touristattraction:
-            filter: { k: ["graveyard", "Tourist Attraction"] }
-            draw:
-                polygons:
-                    # interactive: true
-                    order: 17
-                    color: global.colorscheme.touristattraction
         sport:
-            filter: { k: ["Sports"] }
-                    # - {s: "Parking Place"}
+            filter: function(){ return (feature.k == "Sports" && feature.s != "Golf Club"); }
             draw:
                 polygons:
-                    # interactive: true
                     order: 17
                     color: global.colorscheme.sport
         water:
             filter: { k: ["water", "Waterbody"] }
             draw:
                 polygons:
-                    # interactive: true
                     order: 19
                     color: global.colorscheme.water
         misc:
@@ -2185,7 +2210,6 @@ layers:
             filter: { k: ["commercial", "Commercial"], s: ["market","Market", "Shopping Mall"] }
             draw:
                 polygons:
-                    # interactive: true
                     order: 8
                     color: global.colorscheme.commercial
     buildings:
@@ -2276,7 +2300,7 @@ layers:
     carto_labels:
         data: { source: local }
         water:
-            filter: { k: ["water", "Waterbody"] , $zoom: {min: 9}}
+            filter: { k: ["water", "Waterbody"] , $zoom: {min: 11}}
             draw:
                 english_text:
                     priority: 15
@@ -2286,10 +2310,10 @@ layers:
                     text_source: n
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: Helvetica
+                        family: global.font_eng
                         size:  [[7, 9px], [10, 10px],[14,14px],[15,16px] ]
                         fill: global.colorscheme.water_fill
-                        # style: italic
+                        transform: capitalize
                         stroke: { color: global.colorscheme.water_stroke , width: 1 }
         parks:
             filter: { k: ["parks", "forests", "Park", "Vegetation"] , $zoom: {min: 12}}
@@ -2302,7 +2326,7 @@ layers:
                     text_source: n
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: Helvetica
+                        family: global.font_eng
                         size:  [[4, 9px],[15,14px] ]
                         fill: global.colorscheme.parks_fill
                         # style: italic
@@ -2310,64 +2334,62 @@ layers:
 
     waterways-labels:
         data: { source: local , layer: [waterways,waterways150,waterways500] }
-        filter: { $zoom:  { min: 9 } , n: true }
+        filter: { $zoom:  { min: 11 } , n: true }
         labels:
-            filter: function() { return feature.n.slice(0, 1) != '?' && feature.n != 'Korang River' }
+            filter: function() { return feature.n.slice(0, 1) != '?' }
             draw:
                 english_text:
-                    interactive: true
                     priority: 15
                     anchor: center
                     align: center
                     visible: true
                     repeat_distance: 1000px
-                    text_source: n
+                    text_source:  |
+                        function() {
+                            var arr = feature.n.split(" ");
+                            for (var i = 0; i < arr.length; i++) {
+                                arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase();
+                            }
+                            return arr.join(" ");
+                        }
                     transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                     font:
-                        family: Helvetica
+                        family: global.font_eng
                         size:  [[7, 9px], [10, 10px],[14,14px],[15,16px] ]
                         fill: global.colorscheme.water_fill
-                        # style: italic
-                        transform: capitalize
                         stroke: { color: global.colorscheme.water_stroke , width: 1 }
 
     waterways:
         data: { source: local }
         waterways:
-            filter: function() { return feature.n != '????' && $zoom >= 9  }
+            filter: function() { return feature.n != '????' }
             draw:
                 lines:
                     order: 18
                     color: global.colorscheme.water
                     width: [[12, 2px], [20, 20px]]
             rivers:
-                filter: { t: [river] }
+                filter: { t: [river],  $zoom: {min: 9}  }
                 draw:
                     lines:
                         order: 18
                         color: global.colorscheme.water
                         width: [[10, 2px], [20, 20px]]
             streams:
-                filter: { t: [stream] }
+                filter: { t: [stream],  $zoom: {min: 9}  }
                 draw:
                     lines:
                         order: 18
                         color: global.colorscheme.water
                         width: [[12, 2px], [20, 15px]]
-        waterways-z5:
-            filter: { $zoom: { max: 9 } }
-            draw:
-                lines:
-                    order: 18
-                    color: global.colorscheme.water
-                    width: [[5, 1px], [7, 2px]]
+
     railways:
         data: { source: local }
         draw:
             dashedline:
                 order: 25
-                color: [0, 0, 0]
-                width: 2px
+                color: '#BEC1C5'
+                width: [[11, 0.5px], [20, 1px]]
     pois:
         data: { source: local-pois }
         filter: function(){ return global.poiStatus == true}
@@ -2394,7 +2416,7 @@ layers:
                               return str.toLowerCase();
                             }
                             }
-                    size: [[10, 13px], [20, 20px]]
+                    size: [19.8px, 25px]
                     text:
                         interactive: true
                         transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
@@ -2406,7 +2428,7 @@ layers:
                                 return feature.d;
                             }
                         font:
-                            family: sans-serif
+                            family: global.font_eng
                             fill: |
                                 function() {
                                     if(global.currentTime == 'dark'){
@@ -2629,8 +2651,8 @@ layers:
                                         else {return global.pois_color.othergeneral;}
                                     }
                                 }
-                            size: [[10, 12px], [18, 15px]]
-                            stroke: { color: global.colorscheme.poi_stroke , width: 1.5 }
+                            size: 12px
+                            stroke: { color: global.colorscheme.poi_stroke , width: 0.5 }
 
     search-pois:
         data: { source: search-pois }
@@ -2673,7 +2695,7 @@ layers:
                             }
 
                             }
-                    size: [[10, 15px], [20, 20px]]
+                    size: [31.6px, 40px]
                     text:
                         transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
                         text_source: |
@@ -2684,7 +2706,7 @@ layers:
                                     return feature.display_na;
                                 }
                         font:
-                            family: sans-serif
+                            family: global.font_eng
                             fill: global.colorscheme.poi_fill
-                            size: 12px
+                            size: 15px
                             stroke: { color: global.colorscheme.search_poi_stroke , width: 1.5 }
