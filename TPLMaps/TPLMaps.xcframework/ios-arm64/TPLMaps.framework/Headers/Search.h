@@ -73,6 +73,15 @@
 +(void)optimizedSearch:(NSString *)query place:(CLLocation *)place responseHandler:(void (^)(NSArray *, NSError *))responseHandler;
 
 
+/**
+ Executes an HTTP POST command and retrieves the information.
+ Method returns a place item (e.g: name, parent,cpd_address) around the given point.
+ 
+ @param point The coordinates of place where search going to be initiated.
+ @param responseHandler handle returns response of the search as an array of Place object and NSError if search fails.
+ */
++(void)searchByPoint:(CLLocation *)point responseHandler:(void (^)(NSArray *, NSError *))responseHandler;
+
 @end
 
 
