@@ -12,12 +12,12 @@ To build a project using the TPL Maps SDK for iOS, you need **version 9.0** or l
 
 ### Step 2: Generate Config File
 
-To use the TPLMaps SDK for iOS, you must get Config.plist file which you can then add to your iOS application.  The Config.plist is used to track API requests associated with your project for usage and billing.
+To use the TPLMaps SDK for iOS, you must get tplservices.plist file which you can then add to your iOS application.  The tplservices.plist is used to track API requests associated with your project for usage and billing.
 
 **Get the latest config file**
 [HERE](http://api.tplmaps.com/apiportal/#/portal/home).
 
-This file contains configuration details, such as keys and identifiers, for the services that you have just enabled. Add the Config.plist file to your xcode project downloaded from the TPLMaps portal to start working with TPLmaps sdk.
+This file contains configuration details, such as keys and identifiers, for the services that you have just enabled. Add the tplservices.plist file to your xcode project downloaded from the TPLMaps portal to start working with TPLMaps sdk.
 
 
 ### Step 3: Install the SDK
