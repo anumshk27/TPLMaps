@@ -231,7 +231,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param location the position in view coordinates to convert
  */
-- (void)animateToLocation:(CLLocationCoordinate2D)location NS_SWIFT_NAME(animateToLocation(location:));;
+- (void)animateToLocation:(CLLocationCoordinate2D)location NS_SWIFT_NAME(animateToLocation(location:));
 
 /**
  To animate the location movement with user define duration

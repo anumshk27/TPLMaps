@@ -70,6 +70,13 @@
 +(void)getAreaDetail:(NSString *)name place:(CLLocation *)place responseHandler:(void (^)(NSArray *, NSError *))responseHandler;
 
 
+/**
+ Executes an HTTP POST command and retrieves the information.
+ Method returns a place item (e.g: division, district, tehsil) around the given location.
+ 
+ @param place The coordinates of place where search going to be initiated.
+ @param responseHandler handle returns response of the search as an array of Place objects object and NSError if search fails.
+ */
 +(void)optimizedSearch:(NSString *)query place:(CLLocation *)place responseHandler:(void (^)(NSArray *, NSError *))responseHandler;
 
 

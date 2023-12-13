@@ -105,7 +105,7 @@ global:
 
         parks_fill: function(){if(global.currentTime == 'day'){return '#188038'; }else if(global.currentTime == 'night'){return '#659071'; }}
         parks_stroke: function(){if(global.currentTime == 'day'){return '#e6f4ea'; }else if(global.currentTime == 'night'){return '#324449'; }}
-        endflag: function(){if(global.currentTime == 'day'){return '#404040'; }else if(global.currentTime == 'night'){return '#FFFFFF'; }}
+#        endflag: function(){if(global.currentTime == 'day'){return '#404040'; }else if(global.currentTime == 'night'){return '#FFFFFF'; }}
 
     pois_color:
         dark_mode: '#87d1f5'
@@ -774,7 +774,7 @@ textures:
             currentLocationMarker: [0, 0, 32, 32]
             routeMarker: [90, 152, 160, 160]
             routeMarkerTilt: [154, 72, 80, 80]
-            endflag: [168, 0, 72, 72]
+#            endflag: [168, 0, 72, 72]
             droppin: [0, 152, 90, 90]
             favspin: [0, 72, 74, 75]
             aftarispin: [32, 0, 136, 49]
@@ -801,11 +801,11 @@ textures:
     #     sprites:
     #         SPRITE: [0, 0, 75, 50]
 
-    endFlag:
-        url: TPLBaseMapResources.bundle/Navigation/navigation_finishflag.png
-        filtering: mipmap
-        sprites:
-            SPRITE: [0, 0, 48, 48]
+#    endFlag:
+#        url: TPLBaseMapResources.bundle/Navigation/navigation_finishflag.png
+#        filtering: mipmap
+#        sprites:
+#            SPRITE: [0, 0, 48, 48]
 
 # Will have to define styles for each icon seperately as the textures can't be directly called in the draw function of the layer
 # The style will tell the type of object it can be applied to (points for pois) and the applicable texture file
@@ -856,9 +856,9 @@ styles:
     # startflag:
     #     base: points
     #     texture: startflag
-    endflag:
-        base: points
-        texture: endflag
+#    endflag:
+#        base: points
+#        texture: endflag
         
     droppin:
         base: points
@@ -1306,16 +1306,16 @@ layers:
                         sprite: SPRITE
                         size: [[12, 22px], [26, 22px]]
 
-        endFlag:
-            data: { source: endFlag }
-            endFlag:
-                filter: { type: endFlag }
-                draw:
-                    endFlag:
-                        priority: 1
-                        order: 330
-                        sprite: SPRITE
-                        size: [[12, 22px], [26, 22px]]
+#        endFlag:
+#            data: { source: endFlag }
+#            endFlag:
+#                filter: { type: endFlag }
+#                draw:
+#                    endFlag:
+#                        priority: 1
+#                        order: 330
+#                        sprite: SPRITE
+#                        size: [[12, 22px], [26, 22px]]
         segmentedRoute:
             filter: { type: segmentedRoute}
             draw:
@@ -1365,26 +1365,26 @@ layers:
                     sprite: SPRITE
                     size: [[12, 28px], [15, 22px]]
                     interactive: true
-    endflag:
-            filter: { type: endflag }
-            draw:
-                endflag:
-                    priority: 1
-                    order: 100
-                    sprite: SPRITE
-                    size: [[12, 22px], [21, 22px]]
-                    interactive: true
-                    text:
-                        text_source: |
-                                function() {
-                                    return feature.display_endflag_na;
-                                }
-                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
-                        font:
-                            family: global.font_eng
-                            fill: global.colorscheme.endflag
-                            size: 13px
-                            stroke: { color: global.colorscheme.poi_stroke , width: 1.0 }
+#    endflag:
+#            filter: { type: endflag }
+#            draw:
+#                endflag:
+#                    priority: 1
+#                    order: 100
+#                    sprite: SPRITE
+#                    size: [[12, 22px], [21, 22px]]
+#                    interactive: true
+#                    text:
+#                        text_source: |
+#                                function() {
+#                                    return feature.display_endflag_na;
+#                                }
+#                        transition: { show: { time: 0.5s }, hide: { time: 0.55s } }
+#                        font:
+#                            family: global.font_eng
+#                            fill: global.colorscheme.endflag
+#                            size: 13px
+#                            stroke: { color: global.colorscheme.poi_stroke , width: 1.0 }
 
     livetrafficlayer:
         data: { source: livetrafficlayer }
