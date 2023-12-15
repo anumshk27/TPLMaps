@@ -87,7 +87,7 @@
  @param point The coordinates of place where search going to be initiated.
  @param responseHandler handle returns response of the search as an array of Place object and NSError if search fails.
  */
-+(void)searchByPoint:(CLLocation *)point responseHandler:(void (^)(NSArray *, NSError *))responseHandler;
++(void)searchByPoint:(CLLocation *)point responseHandler:(void (^)(Place *, NSError *))responseHandler;
 
 @end
 
