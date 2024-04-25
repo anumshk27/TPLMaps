@@ -89,6 +89,8 @@
  */
 +(void)searchByPoint:(CLLocation *)point responseHandler:(void (^)(Place *, NSError *))responseHandler;
 
+
+
 @end
 
 

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "Direction.h"
 
+@class TPLDirection;
 @class TPLMapView;
 @class Marker;
 @class PolyLine;
@@ -18,7 +18,7 @@
 @class CameraPosition;
 @class MapBounds;
 @class Circle;
-@class Direction;
+@class TPLMapsNavigationWaypoint;
 
 /**
  * Enum provide MapView Mode Standard or Night.
@@ -27,6 +27,9 @@ typedef NS_ENUM (NSUInteger, MapViewTheme) {
     DAY = 0,
     NIGHT
 };
+
+typedef NS_ENUM(NSUInteger, RouteType);
+
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -444,7 +447,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param route is the Direction object obtained from Direction class.
  */
-- (void)drawRoute:(Direction *)route NS_SWIFT_NAME(drawRoute(Direction:));
+- (void)drawRoute:(TPLDirection *)route NS_SWIFT_NAME(drawRoute(Direction:));
 
 /**
  Draw single route on Map from start to end positions.
@@ -456,9 +459,20 @@ NS_ASSUME_NONNULL_BEGIN
  @param heading An integer value between 0 and 359 that represents degrees from north where north is 0 degrees and the heading is specified clockwise from north. For example, setting the heading of 270 degrees creates a route that initially heads west.
  @param routeType Type of the route required e.g ROUTE_TYPE_SHORTEST, ROUTE_TYPE_FASTEST, ROUTE_TYPE_UNDETERMINED.
  */
-- (void)drawRouteFrom:(CLLocationCoordinate2D)orgin to:(CLLocationCoordinate2D)destination heading:(float)heading routeType:(RouteType)routeType completionBlock:(void (^)(Direction* direction,NSError* error))completionBlock;
+- (void)drawRouteFrom:(CLLocationCoordinate2D)orgin
+                   to:(CLLocationCoordinate2D)destination
+              heading:(float)heading
+            routeType:(RouteType)routeType
+      completionBlock:(void (^)(TPLDirection* direction,NSError* error))completionBlock;
 
-- (void)removeRoute:(Direction *)route NS_SWIFT_NAME(removeRoute(Direction:));
+- (void)removeRoute:(TPLDirection *)route NS_SWIFT_NAME(removeRoute(Direction:));
+
+-(void)drawRoute:(TPLMapsNavigationWaypoint*)orgin
+              to:(TPLMapsNavigationWaypoint*)destination
+         heading:(float)heading
+     isRerouting:(BOOL)isRerouting
+       routeType:(RouteType)routeType;
+
 
 NS_ASSUME_NONNULL_END
 

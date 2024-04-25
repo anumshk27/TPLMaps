@@ -16,21 +16,13 @@
 		<data>
 		Q0vcYjfkUKVn1yRi5P1gQ/OvqeI=
 		</data>
-		<key>Headers/Direction.h</key>
-		<data>
-		pDmr3l2ZZF1IKf2n2JLiHBoXzAs=
-		</data>
 		<key>Headers/DirectionSegment.h</key>
 		<data>
-		EwnVEEurvxnenoUxDo4JuYMTKjM=
+		9C3RWdQ2DQLIKZyRQxp9sTIcKeA=
 		</data>
 		<key>Headers/Geocoder.h</key>
 		<data>
 		FMOG2tKkWivlXNO6xnG8wSypaC8=
-		</data>
-		<key>Headers/LocationManager.h</key>
-		<data>
-		hZeiH0sJ9en9fwiecjGAw3i2FXk=
 		</data>
 		<key>Headers/MapBounds.h</key>
 		<data>
@@ -62,23 +54,51 @@
 		</data>
 		<key>Headers/Search.h</key>
 		<data>
-		cG00mGG22WlxsLtNXQnDUuE++Js=
+		QYbKQ8wfEBEVsBhwCJm+/TohWlc=
+		</data>
+		<key>Headers/TPLDirection.h</key>
+		<data>
+		HSbBe7HB0gWMKU6Y0SWXn8Tb8L4=
+		</data>
+		<key>Headers/TPLLocationManager.h</key>
+		<data>
+		KQEcB4YP5jpnX+19wieLyEYVoOI=
 		</data>
 		<key>Headers/TPLMapView.h</key>
 		<data>
-		bTp74kkoWbIF9adGbg/o8bcaZxw=
+		iUiGYx1OdzLUeM92d9//f6V6kc0=
 		</data>
 		<key>Headers/TPLMaps.h</key>
 		<data>
-		YmZDJU9nOyjcLEhmQez4LII6lis=
+		gllZ3k/kTQGPVav0BaTN2CHshkQ=
+		</data>
+		<key>Headers/TPLMapsNavigationWaypoint.h</key>
+		<data>
+		NSY3c1YPq8wEDEaFgje65gx5Ey4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		16W4e9+tHXb419XlbFPuNwkwmxI=
+		8XaNYjSdCC30uAWQ6yZUOy9mT+I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		FzUGaloJ9vRm014hbXtmso/UUPs=
+		</data>
+		<key>RouteInstructionsBottomSheetView.nib/objects-13.0+.nib</key>
+		<data>
+		sL1Q7nqz8NTn1q6xL2kNzR516nk=
+		</data>
+		<key>RouteInstructionsBottomSheetView.nib/runtime.nib</key>
+		<data>
+		6zR79hdzeTRmsA63ScKIez4OVqg=
+		</data>
+		<key>TripEndPopup.nib/objects-13.0+.nib</key>
+		<data>
+		/1H0oiLDrKGIuwvcsaxEtvxOLuo=
+		</data>
+		<key>TripEndPopup.nib/runtime.nib</key>
+		<data>
+		ixq7jS3KwLDXZX40u7slAxyjVVE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -104,18 +124,11 @@
 			XiMlfdJ/A1vjkQ1mYP3M9uNPpmukB9Dzt3Fubi1a9OQ=
 			</data>
 		</dict>
-		<key>Headers/Direction.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9jpcQFbd8NQQVNh3QLkT592f2+953f7ilHFLIIOzWCo=
-			</data>
-		</dict>
 		<key>Headers/DirectionSegment.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0k8ZO6OZJF2IqVPA5laLUe6VaQkZwpkv3M+CVaikQfE=
+			0cfheYCme8Yny9Dz7VbnGh0Sm2F93Tg05nGmQ3qSD8c=
 			</data>
 		</dict>
 		<key>Headers/Geocoder.h</key>
@@ -123,13 +136,6 @@
 			<key>hash2</key>
 			<data>
 			1fegpgDRTHavfRG9c3pRnRAFHEi0X3GsNAfNnsDVy0s=
-			</data>
-		</dict>
-		<key>Headers/LocationManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7LAG+n+nVFjgg/6ktlB5tWmXFMNWBhbSC9X+FTx7doI=
 			</data>
 		</dict>
 		<key>Headers/MapBounds.h</key>
@@ -185,21 +191,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HLa4ZI1HIfFMDiMcHfnmx5uux4QK+sIsajJu0242Pg0=
+			EcprY/vC5WTcJ+lxw8DlJLzPk/+3XMfe/uDOsssBZ+s=
+			</data>
+		</dict>
+		<key>Headers/TPLDirection.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I6vhpyYHkPWB90AZdyd1qNFGw7DKA4H++XpapQY0IQQ=
+			</data>
+		</dict>
+		<key>Headers/TPLLocationManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6ofuEDDNkkb/sTgdPZDPd9bW3ebpI2zftYYGS5vm+Ss=
 			</data>
 		</dict>
 		<key>Headers/TPLMapView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e9Tvl6qBzDjqUa/ADj+hQRFD0qcyPlUYeGCdNpeIiU8=
+			MEYTREnUbkmL3Oth6HA5tMdo8W1aLoyMFVaC5KU190c=
 			</data>
 		</dict>
 		<key>Headers/TPLMaps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zE8emtcj+bQjSyXZloqZdo5LuXt4zdQuKt3cC02Y8Zo=
+			aJIP65okxKYfhie8WX7rk9Koic9a0HI6GM6/yG5B518=
+			</data>
+		</dict>
+		<key>Headers/TPLMapsNavigationWaypoint.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G+haKu4qqilXy645/QS9SEC8pfXz7v4WBscyhS4CahQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -207,6 +234,34 @@
 			<key>hash2</key>
 			<data>
 			/BB9Sj4G5uXjZqvPaN+pKHunnA0tnxOh2WnTpMmnAmk=
+			</data>
+		</dict>
+		<key>RouteInstructionsBottomSheetView.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A89Tzkxog+GOpxWvpp3Y8t5eNKEDIAbpH//1EsT2egU=
+			</data>
+		</dict>
+		<key>RouteInstructionsBottomSheetView.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bs6ulShDCSiXh6hxW8BHIUQmNp/59YPy/lt1nWpB8+U=
+			</data>
+		</dict>
+		<key>TripEndPopup.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mXIsJ+MeRf6DA48IZD/1ScK9m5/G5nS/a8yR8AZqVJA=
+			</data>
+		</dict>
+		<key>TripEndPopup.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8+NnA12kcdEM6MOj38p6BK5gsIemsGRmXfFmL6geF4M=
 			</data>
 		</dict>
 	</dict>
