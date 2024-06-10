@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CurrentNavigationDetailsBottomSheetView.nib</key>
+		<data>
+		kAMuymPdH/AxaVevkWJh86p/wDQ=
+		</data>
 		<key>Headers/CameraPosition.h</key>
 		<data>
 		azZDJ8jTfyBJUwAbocHqM67YN2I=
@@ -94,15 +98,22 @@
 		</data>
 		<key>TripEndPopup.nib/objects-13.0+.nib</key>
 		<data>
-		/1H0oiLDrKGIuwvcsaxEtvxOLuo=
+		iO2xAnTNE1DMr/8gl76BT6jmBbY=
 		</data>
 		<key>TripEndPopup.nib/runtime.nib</key>
 		<data>
-		ixq7jS3KwLDXZX40u7slAxyjVVE=
+		8nfK3xm+C0SkGUdkrbsrB0AS5fI=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CurrentNavigationDetailsBottomSheetView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tAEoIkxobe/kFWGrt5zVKX+rXj2ncP3IsnvzxE9nipI=
+			</data>
+		</dict>
 		<key>Headers/CameraPosition.h</key>
 		<dict>
 			<key>hash2</key>
@@ -254,14 +265,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXIsJ+MeRf6DA48IZD/1ScK9m5/G5nS/a8yR8AZqVJA=
+			P+J9DGJsWk/WMJMvOcmbKLENVy2GNPO+HZHuldCHyzI=
 			</data>
 		</dict>
 		<key>TripEndPopup.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8+NnA12kcdEM6MOj38p6BK5gsIemsGRmXfFmL6geF4M=
+			N2C/Y6Cl237b0c5Ajw7JADqbxtGPdHmsfxtnDDunhVc=
 			</data>
 		</dict>
 	</dict>
