@@ -102,6 +102,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)mapView:(nonnull TPLMapView *)mapView regionDidChangeAnimated:(BOOL)animated;
 
+/** Called when user location button tapped. */
+- (void)mapView:(TPLMapView *)mapView didTapLocationButton:(id)sender;
+
 
 @end
 
@@ -369,6 +372,11 @@ NS_ASSUME_NONNULL_BEGIN
  A Boolean indicating whether the map displays traffic.
  */
 @property(nonatomic) BOOL trafficEnabled NS_SWIFT_NAME(trafficEnabled);
+
+/**
+ A Boolean indicating whether location permission alert show on location button tap. default is NO.
+ */
+@property(nonatomic) BOOL showLocationPermissionAlert NS_SWIFT_NAME(showLocationPermissionAlert);
 
 /**
  The maximum zoom level that the map can be zoomed into.

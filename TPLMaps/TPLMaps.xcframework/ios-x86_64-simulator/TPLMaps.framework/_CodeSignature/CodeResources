@@ -6,7 +6,7 @@
 	<dict>
 		<key>CurrentNavigationDetailsBottomSheetView.nib</key>
 		<data>
-		kAMuymPdH/AxaVevkWJh86p/wDQ=
+		Qkc4IiEbFdMaXyzf6k2DBHMYHCg=
 		</data>
 		<key>Headers/CameraPosition.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/TPLMapView.h</key>
 		<data>
-		iUiGYx1OdzLUeM92d9//f6V6kc0=
+		mzppl2+9yFg6I6FJnBr42TzCIqA=
 		</data>
 		<key>Headers/TPLMaps.h</key>
 		<data>
@@ -82,27 +82,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8XaNYjSdCC30uAWQ6yZUOy9mT+I=
+		Cm6jGfbs4ZdkHmElR+gM04P+IPc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		FzUGaloJ9vRm014hbXtmso/UUPs=
+		c8LSzThtve8TYcVsNtdxTrzUoPA=
 		</data>
 		<key>RouteInstructionsBottomSheetView.nib/objects-13.0+.nib</key>
 		<data>
-		sL1Q7nqz8NTn1q6xL2kNzR516nk=
+		uqILPljRmLdX2ff2rNs884iqeMI=
 		</data>
 		<key>RouteInstructionsBottomSheetView.nib/runtime.nib</key>
 		<data>
-		6zR79hdzeTRmsA63ScKIez4OVqg=
+		qJeixHYRJmTfiyTrliXgXaOxk3M=
 		</data>
 		<key>TripEndPopup.nib/objects-13.0+.nib</key>
 		<data>
-		iO2xAnTNE1DMr/8gl76BT6jmBbY=
+		52SMKkEZ58s3EBQ2zYdkrRHKgdE=
 		</data>
 		<key>TripEndPopup.nib/runtime.nib</key>
 		<data>
-		8nfK3xm+C0SkGUdkrbsrB0AS5fI=
+		8rdnFEZpJJTNgrSXqO+yJ75p/EM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tAEoIkxobe/kFWGrt5zVKX+rXj2ncP3IsnvzxE9nipI=
+			qF3FE+nzcxoW3mQ1rp8fcNw5A0J9TLBd2tYYkJDQmgw=
 			</data>
 		</dict>
 		<key>Headers/CameraPosition.h</key>
@@ -223,7 +223,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MEYTREnUbkmL3Oth6HA5tMdo8W1aLoyMFVaC5KU190c=
+			Tr/8KurO0lSuYLr+9rTpbAQIew9YddTzy46NA1JRzuY=
 			</data>
 		</dict>
 		<key>Headers/TPLMaps.h</key>
@@ -244,35 +244,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/BB9Sj4G5uXjZqvPaN+pKHunnA0tnxOh2WnTpMmnAmk=
+			weoadC1pNHCBSToXS47/u0qg7/ZFEDGwVceAF6oZBwA=
 			</data>
 		</dict>
 		<key>RouteInstructionsBottomSheetView.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A89Tzkxog+GOpxWvpp3Y8t5eNKEDIAbpH//1EsT2egU=
+			N5E/FXv3rDdhCk4rp9grTFJbgamywj3C3CD5YUPn0JY=
 			</data>
 		</dict>
 		<key>RouteInstructionsBottomSheetView.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bs6ulShDCSiXh6hxW8BHIUQmNp/59YPy/lt1nWpB8+U=
+			S4AVkqu5VRIUqW9Nl7jepbv80aV2lXpS53PTxfARed4=
 			</data>
 		</dict>
 		<key>TripEndPopup.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P+J9DGJsWk/WMJMvOcmbKLENVy2GNPO+HZHuldCHyzI=
+			KA7D7Th+EoI+IM+QkpFUTLHX9fuEgw/BAvuX74hP28I=
 			</data>
 		</dict>
 		<key>TripEndPopup.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N2C/Y6Cl237b0c5Ajw7JADqbxtGPdHmsfxtnDDunhVc=
+			9B3/SYX3AyxYmHkU/HIimidhRENIufjQhdyqeN9CQJE=
 			</data>
 		</dict>
 	</dict>
