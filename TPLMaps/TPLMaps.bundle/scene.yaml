@@ -795,7 +795,7 @@ textures:
       woodwork: [560, 300, 80, 100]
       zoo: [240, 200, 80, 100]
   pois_search:
-    url: assets.bundle/map_cat_icons/POI_Icons_selected.png
+    url: TPLBaseMapResources.bundle/map_cat_icons/POI_Icons_selected.png
     sprites:
       search_accounting: [80, 300, 80, 100]
       search_advertisingagency: [0, 400, 80, 100]
@@ -1019,6 +1019,13 @@ textures:
       
 
 styles:
+  transparent_polygon:
+    base: polygons
+    blend: inlay
+    shaders:
+        blocks:
+            color: |
+                color.a = .5;
   icons:
     base: points
     texture: pois
@@ -1061,14 +1068,6 @@ styles:
     base: points
     texture: restIcons
     blend_order: 7
-  droppinDay:
-    base: points
-    texture: droppinDay
-    blend_order: 9
-  droppinNight:
-    base: points
-    texture: droppinNight
-    blend_order: 9
   droppin:
     base: points
     texture: restIcons
@@ -1199,11 +1198,11 @@ sources:
 fonts:
   SFProDisplay:
     - weight: normal
-      url: assets.bundle/fonts/SF-Pro-Display-Regular.ttf
+      url: TPLBaseMapResources.bundle/fonts/SF-Pro-Display-Regular.ttf
     - weight: bold
-      url: assets.bundle/fonts/SF-Pro-Display-Bold.ttf
+      url: TPLBaseMapResources.bundle/fonts/SF-Pro-Display-Bold.ttf
     - weight: 400
-      url: assets.bundle/fonts/SF-Pro-Display-Medium.ttf
+      url: TPLBaseMapResources.bundle/fonts/SF-Pro-Display-Medium.ttf
 
 
 layers:

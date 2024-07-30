@@ -45,6 +45,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)mapViewDidCompleteLoading:(TPLMapView *)mapView;
 
+/** Called after the map view finishes moving.*/
+- (void)mapViewDidEndMoving:(TPLMapView *)mapView;
+
+
 /** Called when tap on particular coordinate. Not get called when tap gets a Marker or POI */
 - (void)mapView:(TPLMapView *)mapView didSingleTapAtCoordinate:(CLLocationCoordinate2D)coordinate;
 
@@ -59,6 +63,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** Called when a POI is tapped. */
 - (void)mapView:(TPLMapView *)mapView didSelectPOI:(MapPOI *)poi;
+
+/** Called a Polyline is tapped. */
+-(void)mapView:(TPLMapView *)mapView didSelectPolyline:(PolyLine *)polyline;
+
+/** Called a Polygone is tapped. */
+-(void)mapView:(TPLMapView *)mapView didSelectPolygon:(Polygon *)polygon;
+
+/** Called a Circle is tapped. */
+-(void)mapView:(TPLMapView *)mapView didSelectCircle:(Circle *)circle;
 
 /** Called when user location is updated. It only gets called when showsUserLocation is set true  */
 - (void)mapView:(TPLMapView *)mapView userLocationUpdatedTo:(CLLocation *)location;
@@ -481,6 +494,8 @@ NS_ASSUME_NONNULL_BEGIN
      isRerouting:(BOOL)isRerouting
        routeType:(RouteType)routeType;
 
+
+-(void)setLocationButtonImage:(UIImage *)image NS_SWIFT_NAME(setLocationButtonImage(UImage:));
 
 NS_ASSUME_NONNULL_END
 
